@@ -626,26 +626,139 @@
         }
         
         .footer {
-            background: var(--text-dark);
+            background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
             color: var(--white);
-            padding: 3rem 0 1rem;
+            padding: 4rem 0 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
         }
         
         .footer h5 {
             color: var(--secondary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
         }
         
-        .social-links a {
-            color: var(--white);
-            font-size: 1.5rem;
-            margin-right: 1rem;
+        .footer p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none !important;
             transition: all 0.3s ease;
         }
         
-        .social-links a:hover {
+        .footer a:hover {
             color: var(--secondary-color);
+            text-decoration: none !important;
+        }
+        
+        .footer ul {
+            padding-left: 0;
+        }
+        
+        .footer ul li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer ul li a {
+            display: inline-block;
+            padding: 0.25rem 0;
+            position: relative;
+        }
+        
+        .footer ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .footer ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .footer hr {
+            border-color: rgba(255, 255, 255, 0.1);
+            margin: 2rem 0 1.5rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            text-decoration: none !important;
+        }
+        
+        .social-links a:hover {
+            color: var(--white);
+            background: var(--secondary-color);
             transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(50, 205, 50, 0.3);
+        }
+        
+        .social-links a:last-child {
+            margin-right: 0;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            margin-right: 15px;
+            filter: brightness(1.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .footer-logo:hover img {
+            transform: scale(1.05);
+        }
+        
+        .footer-logo h5 {
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+        
+        .footer-copyright {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
         }
         
         .floating-whatsapp {
@@ -1241,9 +1354,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A." style="height: 50px; margin-right: 15px;">
-                        <h5 class="mb-0">Villarrica Tours S.A.</h5>
+                    <div class="footer-logo">
+                        <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A.">
+                        <h5>Villarrica Tours S.A.</h5>
                     </div>
                     <p>{{ date("Y") - 1995 }} años de confianza en el transporte de personal y turístico a nivel nacional.</p>
                     <div class="social-links">
@@ -1267,10 +1380,14 @@
                     <p>Corporación HODELPE – Homologaciones Perú</p>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; 2024 Villarrica Tours S.A. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-0">&copy; 2024 Villarrica Tours S.A. Todos los derechos reservados.</p>
+                    </div>
                 </div>
             </div>
         </div>
