@@ -334,6 +334,8 @@
         }
         
         .hero-subtitle {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
             letter-spacing: 1px;
             color: var(--secondary-color) !important;
