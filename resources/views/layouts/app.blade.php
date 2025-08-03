@@ -1196,7 +1196,7 @@
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
                 <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A.">
-                <span>VILLARRICA TOURS</span>
+                <span>Villarrica Tours</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
