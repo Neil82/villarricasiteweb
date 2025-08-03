@@ -17,6 +17,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
+        @font-face {
+            font-family: 'Libertinus Mono';
+            src: url('{{ asset('fonts/LibertinusMono-Regular.ttf') }}') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
         :root {
             --primary-color: #000000;
             --secondary-color: #32CD32;
@@ -26,6 +34,7 @@
             --white: #ffffff;
             --light-bg: #f8fafc;
             --logo-green: #32CD32;
+            --font-mono: 'Libertinus Mono', 'Courier New', monospace;
         }
         
         * {
@@ -417,12 +426,14 @@
         }
         
         .hero-stat-number {
+            font-family: var(--font-mono);
             font-size: 3rem;
             font-weight: 700;
             color: var(--secondary-color);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             line-height: 1;
             animation: pulse 2s infinite;
+            letter-spacing: -2px;
         }
         
         .hero-scroll-indicator {
@@ -620,9 +631,11 @@
         }
         
         .stats-number {
+            font-family: var(--font-mono);
             font-size: 3rem;
             font-weight: 700;
             color: var(--secondary-color);
+            letter-spacing: -2px;
         }
         
         .footer {
@@ -761,6 +774,12 @@
             color: rgba(255, 255, 255, 0.7);
         }
         
+        .footer-copyright p {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            letter-spacing: -0.5px;
+        }
+        
         .floating-whatsapp {
             position: fixed;
             bottom: 30px;
@@ -823,11 +842,44 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         
+        .fleet-card .text-primary {
+            font-family: var(--font-mono);
+            letter-spacing: -0.5px;
+        }
+        
+        .fleet-card .text-muted strong {
+            font-family: var(--font-mono);
+        }
+        
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;
             border-radius: 15px;
             border-left: 4px solid var(--secondary-color);
+        }
+        
+        .contact-info p {
+            font-family: var(--font-mono);
+            letter-spacing: -0.5px;
+        }
+        
+        /* Clase para counters y números animados */
+        .counter {
+            font-family: var(--font-mono);
+            letter-spacing: -1px;
+        }
+        
+        /* Años y fechas */
+        .year-display {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        /* Badges con información técnica */
+        .badge {
+            font-family: var(--font-mono);
+            letter-spacing: 0;
         }
         
         /* Estilos para la nueva sección hero */
@@ -854,6 +906,7 @@
         
         .nav-phone {
             color: var(--secondary-color) !important;
+            font-family: var(--font-mono);
             font-weight: 600;
             text-decoration: none !important;
             display: flex;
@@ -865,6 +918,7 @@
             border: 1px solid var(--secondary-color);
             transition: all 0.3s ease;
             font-size: 0.9rem;
+            letter-spacing: -0.5px;
         }
         
         .nav-phone:hover {
