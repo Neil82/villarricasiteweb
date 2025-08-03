@@ -25,6 +25,14 @@
             font-display: swap;
         }
         
+        @font-face {
+            font-family: 'Signika Negative';
+            src: url('{{ asset('fonts/SignikaNegative-VariableFont_wght.ttf') }}') format('truetype');
+            font-weight: 300 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        
         :root {
             --primary-color: #000000;
             --secondary-color: #32CD32;
@@ -71,6 +79,12 @@
             opacity: 0;
             transform: translateX(-20px);
             transition: all 0.4s ease;
+        }
+        
+        .navbar-brand span {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.5px;
         }
         
         /* En home page - solo aparece al hacer scroll */
