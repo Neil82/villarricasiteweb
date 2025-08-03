@@ -52,9 +52,35 @@
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Signika Negative', 'Poppins', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+        }
+        
+        .card-title {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+        }
+        
+        .btn {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .lead {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 400;
+        }
+        
+        p {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 400;
         }
         
         .navbar {
@@ -585,8 +611,9 @@
         }
         
         .section-title {
+            font-family: 'Signika Negative', sans-serif;
             font-size: 2.5rem;
-            font-weight: 700;
+            font-weight: 600;
             text-align: center;
             margin-bottom: 1rem;
             color: var(--primary-color);
