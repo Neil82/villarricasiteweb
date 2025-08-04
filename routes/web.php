@@ -21,3 +21,20 @@ Route::get('/nuestra-flota', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 })->name('contacto');
+
+// Legal pages
+Route::get('/politica-privacidad', function () {
+    return view('politica-privacidad');
+})->name('politica-privacidad');
+
+Route::get('/politica-proteccion-datos', function () {
+    return view('politica-proteccion-datos');
+})->name('politica-proteccion-datos');
+
+Route::get('/politica-cookies', function () {
+    return view('politica-cookies');
+})->name('politica-cookies');
+
+Route::get('/terminos-condiciones', function () {
+    return view('terminos-condiciones');
+})->name('terminos-condiciones');

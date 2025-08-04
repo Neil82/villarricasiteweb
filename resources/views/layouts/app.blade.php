@@ -1831,6 +1831,140 @@
             }
         }
         
+        /* Legal Content Styles */
+        .legal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .update-date {
+            background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+            padding: 12px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        
+        .legal-content .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .legal-content .subsection-title {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .legal-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .legal-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .legal-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .principle-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .principle-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .principle-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .principle-card p {
+            margin-bottom: 0;
+            color: var(--text-muted);
+        }
+        
+        .legal-notice {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #90caf9;
+        }
+        
+        .legal-footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .cookie-type-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-type-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transform: translateY(-3px);
+        }
+        
+        .cookie-type-title {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .cookie-settings-box {
+            background: linear-gradient(135deg, var(--primary-color), #1976d2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .cookie-settings-box h3 {
+            color: white;
+        }
+        
+        .cookie-settings-box p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        @media (max-width: 768px) {
+            .legal-content {
+                padding: 20px;
+            }
+        }
+        
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;
@@ -2599,10 +2733,10 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Información Legal</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">Política de Privacidad</a></li>
-                        <li><a href="#" class="text-light">Política de Protección de Datos</a></li>
-                        <li><a href="#" class="text-light">Política de Cookies</a></li>
-                        <li><a href="#" class="text-light">Términos y Condiciones</a></li>
+                        <li><a href="{{ route('politica-privacidad') }}" class="text-light">Política de Privacidad</a></li>
+                        <li><a href="{{ route('politica-proteccion-datos') }}" class="text-light">Política de Protección de Datos</a></li>
+                        <li><a href="{{ route('politica-cookies') }}" class="text-light">Política de Cookies</a></li>
+                        <li><a href="{{ route('terminos-condiciones') }}" class="text-light">Términos y Condiciones</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
