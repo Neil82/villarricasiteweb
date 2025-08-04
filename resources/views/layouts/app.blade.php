@@ -2147,8 +2147,139 @@
         /* Años y fechas */
         .year-display {
             font-family: var(--font-mono);
+        }
+        
+        /* Advantage Cards - Comercial Design */
+        .advantage-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .advantage-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .advantage-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            border-color: rgba(50, 205, 50, 0.2);
+        }
+        
+        .advantage-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .advantage-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .advantage-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .advantage-icon.certified {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #b8860b;
+        }
+        
+        .advantage-icon.experience {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+            color: #d63031;
+        }
+        
+        .advantage-icon.technology {
+            background: linear-gradient(135deg, #4ecdc4 0%, #6eddd6 100%);
+            color: #00b894;
+        }
+        
+        .advantage-card:hover .advantage-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .advantage-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
             font-weight: 600;
-            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .advantage-badge .badge-text {
+            color: white;
+        }
+        
+        .advantage-badge {
+            background: linear-gradient(135deg, #32cd32 0%, #228b22 100%);
+        }
+        
+        .advantage-badge.popular {
+            background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+        }
+        
+        .advantage-badge.tech {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        
+        .advantage-content h5 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .advantage-content p {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+        
+        .advantage-benefit {
+            display: flex;
+            align-items: center;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            padding: 0.5rem 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .advantage-benefit i {
+            font-size: 1rem;
         }
         
         /* Badges con información técnica */

@@ -295,46 +295,73 @@
     </div>
 </section>
 
-<!-- Certifications Section -->
+<!-- Competitive Advantage Section -->
 <section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Certificaciones y Autorizaciones</h2>
-                <p class="section-subtitle">Cumplimos con todos los estándares de calidad y seguridad</p>
+                <h2 class="section-title">Nuestra Ventaja Competitiva</h2>
+                <p class="section-subtitle">Lo que nos diferencia y por qué elegir Villarrica Tours</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card text-center">
-                    <div class="card-body p-4">
-                        <div class="service-icon">
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <div class="advantage-icon certified">
                             <i class="fas fa-certificate"></i>
                         </div>
-                        <h5>ISO 9001</h5>
-                        <p class="text-muted">BUREAU VERITAS Certification</p>
+                        <div class="advantage-badge">
+                            <span class="badge-text">Certificado</span>
+                        </div>
+                    </div>
+                    <div class="advantage-content">
+                        <h5>Estándares Internacionales</h5>
+                        <p class="text-muted">Cumplimos con certificaciones ISO 9001 y homologaciones oficiales que garantizan la máxima calidad en nuestros servicios.</p>
+                        <div class="advantage-benefit">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Garantía de Calidad</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card text-center">
-                    <div class="card-body p-4">
-                        <div class="service-icon">
-                            <i class="fas fa-check-double"></i>
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <div class="advantage-icon experience">
+                            <i class="fas fa-trophy"></i>
                         </div>
-                        <h5>HODELPE</h5>
-                        <p class="text-muted">Corporación HODELPE – Homologaciones Perú</p>
+                        <div class="advantage-badge popular">
+                            <span class="badge-text">Líder</span>
+                        </div>
+                    </div>
+                    <div class="advantage-content">
+                        <h5>{{ date("Y") - 1995 }}+ Años de Experiencia</h5>
+                        <p class="text-muted">Décadas de trayectoria nos respaldan como líderes en transporte de personal y turístico a nivel nacional.</p>
+                        <div class="advantage-benefit">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Confianza Comprobada</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card text-center">
-                    <div class="card-body p-4">
-                        <div class="service-icon">
-                            <i class="fas fa-file-contract"></i>
+                <div class="advantage-card">
+                    <div class="advantage-header">
+                        <div class="advantage-icon technology">
+                            <i class="fas fa-satellite"></i>
                         </div>
-                        <h5>Autorización MTC</h5>
-                        <p class="text-muted">R.D. N4534-2015-MTC/15</p>
+                        <div class="advantage-badge tech">
+                            <span class="badge-text">Tecnología</span>
+                        </div>
+                    </div>
+                    <div class="advantage-content">
+                        <h5>Tecnología de Punta</h5>
+                        <p class="text-muted">Flota moderna con GPS en tiempo real, unidades EURO 4/5 y equipamiento de última generación.</p>
+                        <div class="advantage-benefit">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Control Total</span>
+                        </div>
                     </div>
                 </div>
             </div>
