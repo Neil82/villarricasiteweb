@@ -5,14 +5,14 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="hero-section">
+<section class="hero-section" style="background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-8 mx-auto">
-                <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">
+                <h1 class="display-4 fw-bold mb-4 text-white" data-aos="fade-up">
                     Contacto
                 </h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                <p class="lead text-white" data-aos="fade-up" data-aos-delay="200">
                     Estamos aquí para atenderte. Solicita tu cotización o consulta cualquier duda sobre nuestros servicios.
                 </p>
             </div>
