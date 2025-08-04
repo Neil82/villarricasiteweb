@@ -101,13 +101,13 @@
                         </div>
                         <div class="col-3">
                             <div class="hero-stat">
-                                <div class="hero-stat-number counter" data-count="1000" data-suffix="+">0+</div>
+                                <div class="hero-stat-number counter" data-count="100" data-suffix="+">0+</div>
                                 <div class="hero-stat-label">Clientes</div>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="hero-stat">
-                                <div class="hero-stat-number counter" data-count="50" data-suffix="+">0+</div>
+                                <div class="hero-stat-number counter" data-count="75" data-suffix="+">0+</div>
                                 <div class="hero-stat-label">Unidades</div>
                             </div>
                         </div>
@@ -223,11 +223,11 @@
                             <p>Años de Experiencia</p>
                         </div>
                         <div class="col-6 mb-3">
-                            <div class="stats-number">1000+</div>
+                            <div class="stats-number">100+</div>
                             <p>Clientes Satisfechos</p>
                         </div>
                         <div class="col-6 mb-3">
-                            <div class="stats-number">50+</div>
+                            <div class="stats-number">75+</div>
                             <p>Unidades Modernas</p>
                         </div>
                         <div class="col-6 mb-3">
