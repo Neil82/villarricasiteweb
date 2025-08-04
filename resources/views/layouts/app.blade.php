@@ -892,6 +892,74 @@
             transform: scale(1.1);
         }
         
+        /* Nueva sección de certificaciones global */
+        .certifications-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .certifications-title {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+        }
+        
+        .certifications-logos-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .certification-logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            padding: 1rem;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .certification-logo-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .certification-logo-item img {
+            max-width: 120px;
+            max-height: 80px;
+            object-fit: contain;
+            margin-bottom: 0.75rem;
+            transition: all 0.3s ease;
+        }
+        
+        .certification-logo-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .certification-logo-item span {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            line-height: 1.3;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .certification-logo-item:hover span {
+            opacity: 1;
+        }
+        
         .floating-whatsapp {
             position: fixed;
             bottom: 30px;
@@ -1603,6 +1671,30 @@
                 max-width: 50px;
                 max-height: 32px;
             }
+            
+            /* Ajustes para nueva sección de certificaciones en móvil */
+            .certifications-logos-container {
+                gap: 1.5rem;
+            }
+            
+            .certification-logo-item {
+                padding: 0.75rem;
+                width: 140px;
+            }
+            
+            .certification-logo-item img {
+                max-width: 90px;
+                max-height: 60px;
+            }
+            
+            .certification-logo-item span {
+                font-size: 0.75rem;
+            }
+            
+            .certifications-title {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+            }
         }
     </style>
     
@@ -1653,6 +1745,35 @@
     <main>
         @yield('content')
     </main>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h6 class="certifications-title mb-4">Certificaciones y Homologaciones</h6>
+                    <div class="certifications-logos-container">
+                        <div class="certification-logo-item">
+                            <img src="{{ asset('images/homologacion/BV_certification_9001.png') }}" alt="ISO 9001 Bureau Veritas Certification">
+                            <span>ISO 9001<br>Bureau Veritas</span>
+                        </div>
+                        <div class="certification-logo-item">
+                            <img src="{{ asset('images/homologacion/hodelpe-homologado.png') }}" alt="HODELPE Homologaciones Perú">
+                            <span>HODELPE<br>Homologaciones Perú</span>
+                        </div>
+                        <div class="certification-logo-item">
+                            <img src="{{ asset('images/homologacion/cial.png') }}" alt="CIAL Certification">
+                            <span>CIAL<br>Certificación</span>
+                        </div>
+                        <div class="certification-logo-item">
+                            <img src="{{ asset('images/homologacion/Mega-homologado.png') }}" alt="Mega Homologado">
+                            <span>Mega<br>Homologado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
