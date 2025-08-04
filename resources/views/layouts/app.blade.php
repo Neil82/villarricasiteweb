@@ -911,8 +911,8 @@
         .certifications-logos-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            gap: 3rem;
+            align-items: stretch;
+            gap: 2rem;
             flex-wrap: wrap;
         }
         
@@ -920,12 +920,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             text-align: center;
             transition: all 0.3s ease;
-            padding: 1rem;
+            padding: 1.5rem 1rem;
             border-radius: 12px;
             background: rgba(255, 255, 255, 0.7);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            width: 200px;
+            height: 160px;
+            flex: 0 0 200px;
         }
         
         .certification-logo-item:hover {
@@ -958,6 +962,19 @@
         
         .certification-logo-item:hover span {
             opacity: 1;
+        }
+        
+        /* Información de contacto en footer */
+        .contact-info-footer p {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .contact-info-footer i {
+            color: var(--secondary-color);
+            width: 20px;
         }
         
         .floating-whatsapp {
@@ -1674,12 +1691,15 @@
             
             /* Ajustes para nueva sección de certificaciones en móvil */
             .certifications-logos-container {
-                gap: 1.5rem;
+                gap: 1rem;
+                justify-content: center;
             }
             
             .certification-logo-item {
-                padding: 0.75rem;
-                width: 140px;
+                padding: 1rem 0.5rem;
+                width: 150px;
+                height: 140px;
+                flex: 0 0 150px;
             }
             
             .certification-logo-item img {
@@ -1689,6 +1709,7 @@
             
             .certification-logo-item span {
                 font-size: 0.75rem;
+                margin-top: 0.5rem;
             }
             
             .certifications-title {
@@ -1798,27 +1819,15 @@
                         <li><a href="#" class="text-light">Política de Privacidad</a></li>
                         <li><a href="#" class="text-light">Política de Protección de Datos</a></li>
                         <li><a href="#" class="text-light">Política de Cookies</a></li>
+                        <li><a href="#" class="text-light">Términos y Condiciones</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>Homologaciones</h5>
-                    <div class="homologation-logos">
-                        <div class="homologation-item">
-                            <img src="{{ asset('images/homologacion/BV_certification_9001.png') }}" alt="ISO 9001 Bureau Veritas Certification">
-                            <small>ISO 9001 Bureau Veritas</small>
-                        </div>
-                        <div class="homologation-item">
-                            <img src="{{ asset('images/homologacion/hodelpe-homologado.png') }}" alt="HODELPE Homologaciones Perú">
-                            <small>HODELPE - Homologaciones Perú</small>
-                        </div>
-                        <div class="homologation-item">
-                            <img src="{{ asset('images/homologacion/cial.png') }}" alt="CIAL Certification">
-                            <small>CIAL</small>
-                        </div>
-                        <div class="homologation-item">
-                            <img src="{{ asset('images/homologacion/Mega-homologado.png') }}" alt="Mega Homologado">
-                            <small>Mega Homologado</small>
-                        </div>
+                    <h5>Contacto</h5>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-phone me-2"></i> (511) 567-9670</p>
+                        <p><i class="fas fa-envelope me-2"></i> turismo@transvillarrica.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Lima, Perú</p>
                     </div>
                 </div>
             </div>
