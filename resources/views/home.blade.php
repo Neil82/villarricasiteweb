@@ -404,62 +404,134 @@
 </section>
 
 
-<!-- Testimonials Section -->
+<!-- Clients Section -->
 <section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-                <p class="section-subtitle">Testimonios de empresas que confían en nosotros</p>
+                <h2 class="section-title">Nuestros Clientes</h2>
+                <p class="section-subtitle">Empresas que confían en nosotros para su transporte</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-quote-left text-primary" style="font-size: 2rem;"></i>
-                        </div>
-                        <p class="card-text">
-                            "Villarrica Tours ha sido nuestro socio estratégico por más de 10 años. Su puntualidad y profesionalismo son excepcionales."
-                        </p>
-                        <div class="text-center">
-                            <h6 class="mb-1">Empresa Minera</h6>
-                            <small class="text-muted">Cliente desde 2013</small>
-                        </div>
-                    </div>
+        
+        <!-- Carousel de logos -->
+        <div class="clients-carousel-container">
+            <div class="clients-carousel">
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-alconsa.png') }}" alt="Alconsa">
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-quote-left text-primary" style="font-size: 2rem;"></i>
-                        </div>
-                        <p class="card-text">
-                            "La seguridad de nuestros empleados es prioridad y Villarrica Tours garantiza eso en cada viaje."
-                        </p>
-                        <div class="text-center">
-                            <h6 class="mb-1">Empresa Constructora</h6>
-                            <small class="text-muted">Cliente desde 2015</small>
-                        </div>
-                    </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-amp-terminals.png') }}" alt="AMP Terminals">
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-quote-left text-primary" style="font-size: 2rem;"></i>
-                        </div>
-                        <p class="card-text">
-                            "Excelente servicio turístico. Nuestros grupos siempre quedan satisfechos con la atención recibida."
-                        </p>
-                        <div class="text-center">
-                            <h6 class="mb-1">Agencia de Viajes</h6>
-                            <small class="text-muted">Cliente desde 2018</small>
-                        </div>
-                    </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-cemex.png') }}" alt="Cemex">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-fadesa.png') }}" alt="Fadesa">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-impala.png') }}" alt="Impala">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-ixm.png') }}" alt="IXM">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-maersk.png') }}" alt="Maersk">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-mixercon.png') }}" alt="Mixercon">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-mra.png') }}" alt="MRA">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-palcon.png') }}" alt="Palcon">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-prodac.png') }}" alt="Prodac">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-qb.png') }}" alt="QB">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-quimpac.png') }}" alt="Quimpac">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-rfs.png') }}" alt="RFS">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-schneider.png') }}" alt="Schneider">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-stierlift.png') }}" alt="Stierlift">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-tasa.png') }}" alt="Tasa">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-tpp.png') }}" alt="TPP">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-vartini.png') }}" alt="Vartini">
+                </div>
+                
+                <!-- Duplicar logos para efecto infinito -->
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-alconsa.png') }}" alt="Alconsa">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-amp-terminals.png') }}" alt="AMP Terminals">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-cemex.png') }}" alt="Cemex">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-fadesa.png') }}" alt="Fadesa">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-impala.png') }}" alt="Impala">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-ixm.png') }}" alt="IXM">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-maersk.png') }}" alt="Maersk">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-mixercon.png') }}" alt="Mixercon">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-mra.png') }}" alt="MRA">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-palcon.png') }}" alt="Palcon">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-prodac.png') }}" alt="Prodac">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-qb.png') }}" alt="QB">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-quimpac.png') }}" alt="Quimpac">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-rfs.png') }}" alt="RFS">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-schneider.png') }}" alt="Schneider">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-stierlift.png') }}" alt="Stierlift">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-tasa.png') }}" alt="Tasa">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-tpp.png') }}" alt="TPP">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('images/clientes/logotipo-vartini.png') }}" alt="Vartini">
                 </div>
             </div>
         </div>

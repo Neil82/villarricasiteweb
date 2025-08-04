@@ -925,6 +925,79 @@
             letter-spacing: 0;
         }
         
+        /* Carrusel de logos de clientes */
+        .clients-carousel-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            background: transparent;
+            padding: 2rem 0;
+        }
+        
+        .clients-carousel {
+            display: flex;
+            animation: scroll 60s linear infinite;
+            width: calc(200px * 38); /* 19 logos × 2 copias × 200px ancho */
+        }
+        
+        .client-logo {
+            flex: 0 0 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo img {
+            max-width: 160px;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo:hover img {
+            filter: grayscale(0%) opacity(1);
+            transform: scale(1.05);
+        }
+        
+        .clients-carousel:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-200px * 19)); /* Mover el ancho de 19 logos */
+            }
+        }
+        
+        /* Gradientes laterales para efecto suave */
+        .clients-carousel-container::before,
+        .clients-carousel-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        
+        .clients-carousel-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(248, 250, 252, 1), rgba(248, 250, 252, 0));
+        }
+        
+        .clients-carousel-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(248, 250, 252, 1), rgba(248, 250, 252, 0));
+        }
+        
         /* Estilos para la nueva sección hero */
         .hero-badges .badge {
             font-size: 0.85rem;
@@ -1394,6 +1467,37 @@
                 width: 100vw;
                 height: 100vh;
                 object-fit: cover;
+            }
+            
+            /* Ajustes para carrusel en móvil */
+            .client-logo {
+                flex: 0 0 160px;
+                height: 80px;
+                padding: 0 15px;
+            }
+            
+            .client-logo img {
+                max-width: 130px;
+                max-height: 60px;
+            }
+            
+            .clients-carousel {
+                width: calc(160px * 38);
+                animation: scroll 40s linear infinite;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-160px * 19));
+                }
+            }
+            
+            .clients-carousel-container::before,
+            .clients-carousel-container::after {
+                width: 50px;
             }
         }
     </style>
