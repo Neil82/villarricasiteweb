@@ -177,7 +177,7 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Van VTSA Villarrica Tours" class="img-fluid rounded">
+                        <img src="{{ asset('images/unidades/minivan.jpg') }}" alt="Van VTSA Villarrica Tours" class="img-fluid rounded">
                         <div class="fleet-badge compact">
                             <span class="badge-text">Compacto</span>
                         </div>
