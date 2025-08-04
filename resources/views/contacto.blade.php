@@ -48,70 +48,176 @@
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 mb-4" data-aos="fade-right">
-                <h2 class="section-title text-start">Información de Contacto</h2>
-                <div class="contact-info">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fas fa-building"></i>
-                        <div>
-                            <h5 class="mb-1">Villarrica Tours S.A.</h5>
-                            <p class="mb-0">Inscripción: Registros Públicos – Ficha Nº 9202</p>
-                            <p class="mb-0">Nº RUC: 20295999129</p>
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Múltiples Formas de Contactarnos</h2>
+                <p class="section-subtitle">Elige la opción que más te convenga para recibir atención inmediata</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Contact Cards -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-method-card phone-card">
+                    <div class="contact-method-header">
+                        <div class="contact-method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-method-badge urgent">
+                            <span class="badge-text">Inmediato</span>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h5 class="mb-1">Dirección Fiscal</h5>
-                            <p class="mb-0">Av. Los Próceres Nro. 201 Urb. Condevilla Señor</p>
-                            <p class="mb-0">San Martín de Porres, Lima – Lima</p>
+                    <div class="contact-method-content">
+                        <h5>Llámanos Ahora</h5>
+                        <p class="contact-benefit">Atención directa con nuestros especialistas</p>
+                        <div class="contact-details">
+                            <div class="contact-number-main">
+                                <a href="tel:+51567967">(01) 567-9670</a>
+                            </div>
+                            <div class="contact-number-mobile">
+                                <a href="tel:+51972736269">972 736 269</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h5 class="mb-1">Teléfonos</h5>
-                            <p class="mb-0">(01) 567-9670 / 972 736 269</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h5 class="mb-1">Correo Electrónico</h5>
-                            <p class="mb-0">turismo@transvillarrica.com</p>
+                        <div class="contact-action">
+                            <a href="tel:+51567967" class="btn btn-contact-primary">
+                                <i class="fas fa-phone me-2"></i>Llamar Ahora
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-method-card whatsapp-card">
+                    <div class="contact-method-header">
+                        <div class="contact-method-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-method-badge popular">
+                            <span class="badge-text">Popular</span>
+                        </div>
+                    </div>
+                    <div class="contact-method-content">
+                        <h5>WhatsApp Business</h5>
+                        <p class="contact-benefit">Respuesta rápida y documentos al instante</p>
+                        <div class="contact-details">
+                            <div class="whatsapp-number">
+                                <span>+51 954 778 370</span>
+                            </div>
+                            <div class="availability-tag">
+                                <i class="fas fa-circle text-success me-1"></i>
+                                <small>En línea ahora</small>
+                            </div>
+                        </div>
+                        <div class="contact-action">
+                            <a href="https://wa.me/51954778370?text=Hola, me interesa solicitar una cotización para transporte" target="_blank" class="btn btn-contact-whatsapp">
+                                <i class="fab fa-whatsapp me-2"></i>Chatear Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-method-card email-card">
+                    <div class="contact-method-header">
+                        <div class="contact-method-icon email">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-method-badge formal">
+                            <span class="badge-text">Formal</span>
+                        </div>
+                    </div>
+                    <div class="contact-method-content">
+                        <h5>Email Corporativo</h5>
+                        <p class="contact-benefit">Para solicitudes formales y documentación</p>
+                        <div class="contact-details">
+                            <div class="email-address">
+                                <a href="mailto:turismo@transvillarrica.com">turismo@transvillarrica.com</a>
+                            </div>
+                            <div class="response-time">
+                                <i class="fas fa-clock me-1"></i>
+                                <small>Respuesta en 2-4 horas</small>
+                            </div>
+                        </div>
+                        <div class="contact-action">
+                            <a href="mailto:turismo@transvillarrica.com?subject=Solicitud de Cotización&body=Estimados, me interesa solicitar una cotización para:" class="btn btn-contact-email">
+                                <i class="fas fa-envelope me-2"></i>Escribir Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company Information -->
+        <div class="row mt-5">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="company-info-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Villarrica Tours S.A.</h4>
+                        <p class="company-tagline">Tu socio confiable en transporte</p>
+                    </div>
+                    <div class="company-details">
+                        <div class="detail-item">
+                            <i class="fas fa-certificate me-3"></i>
+                            <div>
+                                <strong>RUC:</strong> 20295999129<br>
+                                <small>Empresa legalmente constituida</small>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <div>
+                                <strong>Dirección:</strong><br>
+                                Av. Los Próceres Nro. 201<br>
+                                San Martín de Porres, Lima
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-lg-6 mb-4" data-aos="fade-left">
-                <h2 class="section-title text-start">Horarios de Atención</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="contact-info">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-clock"></i>
-                                <h5 class="mb-0 ms-2">HORARIO DE OFICINA</h5>
-                            </div>
-                            <p class="mb-1"><strong>Lunes a Viernes:</strong></p>
-                            <p class="mb-0">8.00 AM – 05.00 PM</p>
-                        </div>
+                <div class="schedule-info-card">
+                    <div class="schedule-header">
+                        <h4>Horarios de Atención</h4>
+                        <p class="schedule-tagline">Disponibles cuando nos necesites</p>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="contact-info">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-route"></i>
-                                <h5 class="mb-0 ms-2">HORARIO DE SERVICIO</h5>
+                    <div class="schedule-grid">
+                        <div class="schedule-item office">
+                            <div class="schedule-icon">
+                                <i class="fas fa-business-time"></i>
                             </div>
-                            <p class="mb-0"><strong>24 horas</strong></p>
+                            <div class="schedule-content">
+                                <h6>Oficina Administrativa</h6>
+                                <p class="schedule-time">Lunes a Viernes<br><strong>8:00 AM - 5:00 PM</strong></p>
+                                <small>Para trámites y documentación</small>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="contact-info">
-                            <div class="d-flex align-items-center mb-2">
+                        <div class="schedule-item service highlight">
+                            <div class="schedule-icon">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <div class="schedule-content">
+                                <h6>Servicio de Transporte</h6>
+                                <p class="schedule-time featured">24 HORAS<br><strong>Todos los días</strong></p>
+                                <small>Disponibilidad total para tus viajes</small>
+                            </div>
+                            <div class="always-on-badge">
+                                <span>SIEMPRE</span>
+                            </div>
+                        </div>
+                        <div class="schedule-item support">
+                            <div class="schedule-icon">
                                 <i class="fas fa-headset"></i>
-                                <h5 class="mb-0 ms-2">HORARIO DE ATENCIÓN</h5>
                             </div>
-                            <p class="mb-0"><strong>24 horas</strong></p>
+                            <div class="schedule-content">
+                                <h6>Soporte y Emergencias</h6>
+                                <p class="schedule-time">24 HORAS<br><strong>Atención inmediata</strong></p>
+                                <small>Para consultas y emergencias</small>
+                            </div>
                         </div>
                     </div>
                 </div>

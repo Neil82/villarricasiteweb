@@ -2530,6 +2530,346 @@
             border: 1px solid rgba(34, 197, 94, 0.2);
         }
         
+        /* Contact Method Cards */
+        .contact-method-card {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            height: 100%;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        .contact-method-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .contact-method-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .contact-method-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+        }
+        
+        .contact-method-icon.whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        }
+        
+        .contact-method-icon.email {
+            background: linear-gradient(135deg, #ea4335 0%, #c23321 100%);
+        }
+        
+        .contact-method-card:hover .contact-method-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .contact-method-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-method-badge.urgent {
+            background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+        }
+        
+        .contact-method-badge.popular {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+        }
+        
+        .contact-method-badge.formal {
+            background: linear-gradient(135deg, #6c5ce7 0%, #5f3dc4 100%);
+        }
+        
+        .contact-method-badge .badge-text {
+            color: white;
+        }
+        
+        .contact-method-content h5 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+        
+        .contact-benefit {
+            font-family: 'Signika Negative', sans-serif;
+            color: #636e72;
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .contact-details {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-number-main a,
+        .whatsapp-number span,
+        .email-address a {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-number-mobile a {
+            font-family: var(--font-mono);
+            color: #636e72;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        
+        .availability-tag,
+        .response-time {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+        
+        .availability-tag small,
+        .response-time small {
+            font-family: 'Signika Negative', sans-serif;
+            color: #00b894;
+            font-weight: 500;
+        }
+        
+        .btn-contact-primary,
+        .btn-contact-whatsapp,
+        .btn-contact-email {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-contact-primary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+        }
+        
+        .btn-contact-whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+        }
+        
+        .btn-contact-email {
+            background: linear-gradient(135deg, #ea4335 0%, #c23321 100%);
+            color: white;
+        }
+        
+        .btn-contact-primary:hover,
+        .btn-contact-whatsapp:hover,
+        .btn-contact-email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        /* Company Info Card */
+        .company-info-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .company-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .company-header h4 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .company-tagline {
+            font-family: 'Signika Negative', sans-serif;
+            color: #636e72;
+            font-style: italic;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .detail-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+        
+        /* Schedule Info Card */
+        .schedule-info-card {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            padding: 2rem;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .schedule-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .schedule-header h4 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .schedule-tagline {
+            font-family: 'Signika Negative', sans-serif;
+            color: #636e72;
+            font-style: italic;
+        }
+        
+        .schedule-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .schedule-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .schedule-item.highlight {
+            background: linear-gradient(135deg, #fff8dc 0%, #ffeaa7 100%);
+            border: 2px solid #fdcb6e;
+        }
+        
+        .schedule-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .schedule-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+        }
+        
+        .schedule-item.highlight .schedule-icon {
+            background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+        }
+        
+        .schedule-content h6 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .schedule-time {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .schedule-time.featured {
+            font-size: 1.1rem;
+            color: #e17055;
+        }
+        
+        .schedule-content small {
+            font-family: 'Signika Negative', sans-serif;
+            color: #636e72;
+        }
+        
+        .always-on-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
         /* Badges con información técnica */
         .badge {
             font-family: var(--font-mono);
