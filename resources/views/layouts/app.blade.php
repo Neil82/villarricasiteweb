@@ -813,9 +813,10 @@
         .footer {
             background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
             color: var(--white);
-            padding: 4rem 0 1.5rem;
+            padding: 2.5rem 0 1rem;
             position: relative;
             overflow: hidden;
+            font-family: 'Signika Negative', sans-serif;
         }
         
         .footer::before {
@@ -830,21 +831,27 @@
         
         .footer h5 {
             color: var(--secondary-color);
-            margin-bottom: 1.5rem;
-            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
+            font-family: 'Signika Negative', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .footer p {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 1rem;
-            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 0.95rem;
         }
         
         .footer a {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.85);
             text-decoration: none !important;
             transition: all 0.3s ease;
+            font-family: 'Signika Negative', sans-serif;
         }
         
         .footer a:hover {
@@ -857,13 +864,14 @@
         }
         
         .footer ul li {
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
         
         .footer ul li a {
             display: inline-block;
-            padding: 0.25rem 0;
+            padding: 0.15rem 0;
             position: relative;
+            font-size: 0.95rem;
         }
         
         .footer ul li a::after {
@@ -883,22 +891,22 @@
         
         .footer hr {
             border-color: rgba(255, 255, 255, 0.1);
-            margin: 2rem 0 1.5rem;
+            margin: 1.5rem 0 1rem;
         }
         
         .social-links {
-            margin-top: 1rem;
+            margin-top: 0.75rem;
         }
         
         .social-links a {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1.5rem;
-            margin-right: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.3rem;
+            margin-right: 0.75rem;
             transition: all 0.3s ease;
             display: inline-block;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
             text-align: center;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.1);
@@ -908,8 +916,8 @@
         .social-links a:hover {
             color: var(--white);
             background: var(--secondary-color);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(50, 205, 50, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(50, 205, 50, 0.3);
         }
         
         .social-links a:last-child {
@@ -919,12 +927,12 @@
         .footer-logo {
             display: flex;
             align-items: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .footer-logo img {
-            height: 50px;
-            margin-right: 15px;
+            height: 42px;
+            margin-right: 12px;
             filter: brightness(1.2);
             transition: transform 0.3s ease;
         }
@@ -935,21 +943,25 @@
         
         .footer-logo h5 {
             margin-bottom: 0;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--secondary-color);
         }
         
         .footer-copyright {
             background: rgba(0, 0, 0, 0.2);
-            padding: 1.5rem 0;
-            margin-top: 2rem;
+            padding: 1rem 0 0.75rem;
+            margin-top: 1.5rem;
             text-align: center;
             color: rgba(255, 255, 255, 0.7);
         }
         
         .footer-copyright p {
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            letter-spacing: -0.5px;
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0;
         }
         
         /* Homologación logos en footer */
@@ -1095,15 +1107,15 @@
         
         /* Información de contacto en footer */
         .contact-info-footer p {
-            font-family: var(--font-mono);
+            font-family: 'Signika Negative', sans-serif;
             font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.4rem;
+            color: rgba(255, 255, 255, 0.85);
         }
         
         .contact-info-footer i {
             color: var(--secondary-color);
-            width: 20px;
+            width: 18px;
         }
         
         .floating-whatsapp {
@@ -2096,15 +2108,17 @@
         
         /* Powered by styling */
         .powered-by {
+            font-family: 'Signika Negative', sans-serif;
             font-size: 0.75rem;
             color: rgba(255, 255, 255, 0.5);
-            margin-top: 8px;
+            margin-top: 6px;
         }
         
         .powered-link {
             color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
             transition: all 0.3s ease;
+            font-family: 'Signika Negative', sans-serif;
         }
         
         .powered-link:hover {
