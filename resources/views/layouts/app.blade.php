@@ -931,8 +931,8 @@
             width: 100%;
             position: relative;
             background: transparent;
-            padding: 3rem 0;
-            margin: 1rem 0;
+            padding: 1rem 0 3rem 0;
+            margin: 0;
         }
         
         .clients-carousel {
