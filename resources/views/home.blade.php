@@ -265,52 +265,77 @@
 </section>
 
 <!-- About Section -->
-<section class="py-5">
+<section class="py-5 about-section-commercial">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6" data-aos="fade-right">
-                <h2 class="section-title text-start">¿Quienes Somos?</h2>
-                <h3 class="text-primary mb-4">Confianza, desde 1995.</h3>
-                <p class="lead mb-4">
-                    Don Camilo Paitan Obregón, fundó en el año 1995 la empresa Villarrica Tours S.A. 
-                    Siempre se caracterizó por ser un hombre luchador y perseverante con mucho deseo de superación.
-                </p>
-                <p class="mb-4">
-                    Actualmente contamos con una amplia cartera de clientes, quienes confían en nosotros 
-                    para el traslado seguro de su personal, siendo considerados como socio estratégico 
-                    para el crecimiento y desarrollo de ambas empresas.
-                </p>
-                <a href="{{ route('quienes-somos') }}" class="btn btn-primary">
-                    <i class="fas fa-info-circle me-2"></i>Conoce Más
-                </a>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <!-- Imagen histórica de la empresa -->
-                <div class="card mb-4">
-                    <img src="{{ asset('images/vtsa/3buses_2.png') }}" alt="Historia Villarrica Tours VTSA" class="card-img-top" style="height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Nuestra Trayectoria</h5>
-                        <p class="card-text">Desde 1995, construyendo confianza con cada viaje y una flota moderna.</p>
+                <div class="about-content-commercial">
+                    <div class="about-badge">
+                        <span class="badge-text">Desde 1995</span>
+                    </div>
+                    
+                    <h2 class="about-title-main">¿Quienes Somos?</h2>
+                    <div class="about-subtitle-highlight">
+                        <span class="highlight-text">Confianza, desde 1995.</span>
+                    </div>
+                    
+                    <div class="about-story">
+                        <p class="story-lead">
+                            Don Camilo Paitan Obregón, fundó en el año 1995 la empresa Villarrica Tours S.A. 
+                            Siempre se caracterizó por ser un hombre luchador y perseverante con mucho deseo de superación.
+                        </p>
+                        <p class="story-detail">
+                            Actualmente contamos con una amplia cartera de clientes, quienes confían en nosotros 
+                            para el traslado seguro de su personal, siendo considerados como socio estratégico 
+                            para el crecimiento y desarrollo de ambas empresas.
+                        </p>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="{{ route('quienes-somos') }}" class="btn btn-about-primary">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span>Conoce Más</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <div class="stats-card">
-                    <div class="row text-center">
-                        <div class="col-6 mb-3">
-                            <div class="stats-number">30+</div>
-                            <p>Años de Experiencia</p>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="about-visual-section">
+                    <!-- Imagen con overlay mejorado -->
+                    <div class="trajectory-card-commercial">
+                        <div class="trajectory-header">
+                            <img src="{{ asset('images/vtsa/3buses_2.png') }}" alt="Historia Villarrica Tours VTSA" class="trajectory-img">
+                            <div class="trajectory-overlay">
+                                <div class="trajectory-badge">
+                                    <span class="badge-text">Nuestra Trayectoria</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 mb-3">
-                            <div class="stats-number">100+</div>
-                            <p>Clientes Satisfechos</p>
+                        <div class="trajectory-content">
+                            <p class="trajectory-text">Desde 1995, construyendo confianza con cada viaje y una flota moderna.</p>
                         </div>
-                        <div class="col-6 mb-3">
-                            <div class="stats-number">75+</div>
-                            <p>Unidades Modernas</p>
-                        </div>
-                        <div class="col-6 mb-3">
-                            <div class="stats-number">24/7</div>
-                            <p>Atención Disponible</p>
+                    </div>
+                    
+                    <!-- Stats mejorados -->
+                    <div class="about-stats-commercial">
+                        <div class="stats-grid">
+                            <div class="stat-item-commercial">
+                                <div class="stat-number-about about-counter" data-count="{{ date('Y') - 1995 }}" data-suffix="+">0+</div>
+                                <div class="stat-label-about">Años de Experiencia</div>
+                            </div>
+                            <div class="stat-item-commercial">
+                                <div class="stat-number-about about-counter" data-count="100" data-suffix="+">0+</div>
+                                <div class="stat-label-about">Clientes Satisfechos</div>
+                            </div>
+                            <div class="stat-item-commercial">
+                                <div class="stat-number-about about-counter" data-count="75" data-suffix="+">0+</div>
+                                <div class="stat-label-about">Unidades Modernas</div>
+                            </div>
+                            <div class="stat-item-commercial">
+                                <div class="stat-number-about">24/7</div>
+                                <div class="stat-label-about">Atención Disponible</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -698,6 +723,48 @@
                 setInterval(nextImage, 4000);
             }, containerIndex * 1000);
         });
+        
+        // Animación counter específica para la sección About
+        function animateAboutCounters() {
+            const aboutCounters = document.querySelectorAll('.about-counter');
+            
+            aboutCounters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const suffix = counter.getAttribute('data-suffix') || '';
+                const duration = 2000; // 2 segundos
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current) + suffix;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target + suffix;
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+        
+        // Intersection Observer para activar la animación cuando sea visible
+        const aboutStatsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateAboutCounters();
+                    aboutStatsObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+        
+        const aboutStatsSection = document.querySelector('.about-stats-commercial');
+        if (aboutStatsSection) {
+            aboutStatsObserver.observe(aboutStatsSection);
+        }
     });
 </script>
 @endsection 
