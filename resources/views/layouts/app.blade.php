@@ -1965,6 +1965,24 @@
             }
         }
         
+        /* Powered by styling */
+        .powered-by {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 8px;
+        }
+        
+        .powered-link {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .powered-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;
@@ -2753,8 +2771,11 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <p class="mb-0">&copy; 2024 Villarrica Tours S.A. Todos los derechos reservados.</p>
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; {{ date('Y') }} Villarrica Tours S.A. Todos los derechos reservados.</p>
+                        <p class="powered-by mb-0">
+                            Powered by <a href="https://adratechsystems.com" target="_blank" rel="noopener" class="powered-link">Adratech Systems</a>
+                        </p>
                     </div>
                 </div>
             </div>
