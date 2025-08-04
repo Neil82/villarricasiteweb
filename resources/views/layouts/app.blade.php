@@ -1094,6 +1094,250 @@
             transition: all 0.3s ease;
         }
         
+        /* Diseño Comercial de Tarjetas de Flota */
+        .fleet-card-commercial {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .fleet-card-commercial:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .fleet-header {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .fleet-header img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .fleet-card-commercial:hover .fleet-header img {
+            transform: scale(1.08);
+        }
+        
+        .fleet-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, var(--secondary-color), #28a745);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(50, 205, 50, 0.3);
+        }
+        
+        .fleet-badge.popular {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .fleet-badge.compact {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .fleet-title {
+            padding: 24px 24px 16px;
+            text-align: center;
+        }
+        
+        .fleet-title h3 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+        
+        .fleet-subtitle {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin: 0;
+            font-style: italic;
+        }
+        
+        .fleet-capacity-highlight {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            margin: 0 20px 20px;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .fleet-capacity-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+        }
+        
+        .capacity-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .capacity-number {
+            font-family: var(--font-mono);
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .capacity-label {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+        
+        .capacity-visual {
+            background: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .capacity-img {
+            max-height: 50px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+        }
+        
+        .fleet-specs {
+            padding: 0 24px 16px;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+        }
+        
+        .spec-label {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        
+        .spec-value {
+            font-family: var(--font-mono);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .fleet-brands {
+            padding: 0 24px 20px;
+            flex-grow: 1;
+        }
+        
+        .fleet-brands h6 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+        
+        .brands-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .brand-tag {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid rgba(25, 118, 210, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .brand-tag:hover {
+            background: linear-gradient(135deg, #bbdefb, #90caf9);
+            transform: translateY(-1px);
+        }
+        
+        .fleet-cta {
+            padding: 0 24px 24px;
+            margin-top: auto;
+        }
+        
+        .btn-fleet-primary {
+            background: linear-gradient(135deg, var(--secondary-color), #28a745);
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 25px rgba(50, 205, 50, 0.3);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-fleet-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+        
+        .btn-fleet-primary:hover {
+            background: linear-gradient(135deg, #28a745, var(--secondary-color));
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(50, 205, 50, 0.4);
+        }
+        
+        .btn-fleet-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-fleet-primary:active {
+            transform: translateY(-1px) scale(1.01);
+        }
+        
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;

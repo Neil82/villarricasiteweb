@@ -56,81 +56,176 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="fleet-card">
-                    <img src="{{ asset('images/vtsa/bus.png') }}" alt="Ómnibus VTSA Villarrica Tours" class="img-fluid rounded mb-3" style="height: 200px; width: 100%; object-fit: cover;">
-                    <h4>Ómnibus</h4>
-                    <div class="row text-center mb-3">
-                        <div class="col-6">
-                            <h5 class="text-primary">Capacidad</h5>
-                            <p class="fw-bold">42-53 asientos</p>
-                            <div class="capacity-diagram mt-2">
-                                <img src="{{ asset('images/unidades/capacidad1.jpg') }}" alt="Distribución de asientos Ómnibus" class="img-fluid" style="max-height: 60px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="text-primary">Combustible</h5>
-                            <p class="fw-bold">Diesel</p>
+                <div class="fleet-card-commercial">
+                    <!-- Header con imagen -->
+                    <div class="fleet-header">
+                        <img src="{{ asset('images/vtsa/bus.png') }}" alt="Ómnibus VTSA Villarrica Tours" class="img-fluid rounded">
+                        <div class="fleet-badge">
+                            <span class="badge-text">Premium</span>
                         </div>
                     </div>
-                    <h6 class="text-primary mb-2">Marcas:</h6>
-                    <p class="text-muted small">
-                        Hyundai, Mercedes Benz, Higer, Iveco, Golden Dragon, Yutong, International, Marco Polo, DongFeng
-                    </p>
-                    <a href="{{ route('contacto') }}" class="btn btn-primary mt-3">
-                        <i class="fas fa-calculator me-2"></i>Solicitar Cotización
-                    </a>
+                    
+                    <!-- Título principal -->
+                    <div class="fleet-title">
+                        <h3>Ómnibus</h3>
+                        <p class="fleet-subtitle">Para grupos grandes</p>
+                    </div>
+                    
+                    <!-- Capacidad destacada -->
+                    <div class="fleet-capacity-highlight">
+                        <div class="capacity-main">
+                            <span class="capacity-number">42-53</span>
+                            <span class="capacity-label">Pasajeros</span>
+                        </div>
+                        <div class="capacity-visual">
+                            <img src="{{ asset('images/unidades/capacidad1.jpg') }}" alt="Distribución de asientos Ómnibus" class="capacity-img">
+                        </div>
+                    </div>
+                    
+                    <!-- Información técnica -->
+                    <div class="fleet-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-gas-pump text-primary"></i>
+                            <span class="spec-label">Combustible:</span>
+                            <span class="spec-value">Diesel</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Marcas disponibles -->
+                    <div class="fleet-brands">
+                        <h6><i class="fas fa-award text-primary me-2"></i>Marcas Disponibles</h6>
+                        <div class="brands-list">
+                            <span class="brand-tag">Hyundai</span>
+                            <span class="brand-tag">Mercedes Benz</span>
+                            <span class="brand-tag">Higer</span>
+                            <span class="brand-tag">Iveco</span>
+                            <span class="brand-tag">Golden Dragon</span>
+                            <span class="brand-tag">+4 más</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to action -->
+                    <div class="fleet-cta">
+                        <a href="{{ route('contacto') }}" class="btn btn-fleet-primary">
+                            <i class="fas fa-calculator me-2"></i>
+                            <span>Cotizar Ahora</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="fleet-card">
-                    <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Minibús VTSA Villarrica Tours" class="img-fluid rounded mb-3" style="height: 200px; width: 100%; object-fit: cover;">
-                    <h4>Minibús</h4>
-                    <div class="row text-center mb-3">
-                        <div class="col-6">
-                            <h5 class="text-primary">Capacidad</h5>
-                            <p class="fw-bold">30-38 asientos</p>
-                            <div class="capacity-diagram mt-2">
-                                <img src="{{ asset('images/unidades/capacidad2.jpg') }}" alt="Distribución de asientos Minibús" class="img-fluid" style="max-height: 60px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="text-primary">Combustible</h5>
-                            <p class="fw-bold">Diesel 2 (petróleo)</p>
+                <div class="fleet-card-commercial">
+                    <!-- Header con imagen -->
+                    <div class="fleet-header">
+                        <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Minibús VTSA Villarrica Tours" class="img-fluid rounded">
+                        <div class="fleet-badge popular">
+                            <span class="badge-text">Popular</span>
                         </div>
                     </div>
-                    <h6 class="text-primary mb-2">Marcas:</h6>
-                    <p class="text-muted small">
-                        Toyota, Hyundai, Higer, Marco Polo, Mercedes Benz, Yutong, Volare W9
-                    </p>
-                    <a href="{{ route('contacto') }}" class="btn btn-primary mt-3">
-                        <i class="fas fa-calculator me-2"></i>Solicitar Cotización
-                    </a>
+                    
+                    <!-- Título principal -->
+                    <div class="fleet-title">
+                        <h3>Minibús</h3>
+                        <p class="fleet-subtitle">Ideal para equipos</p>
+                    </div>
+                    
+                    <!-- Capacidad destacada -->
+                    <div class="fleet-capacity-highlight">
+                        <div class="capacity-main">
+                            <span class="capacity-number">30-38</span>
+                            <span class="capacity-label">Pasajeros</span>
+                        </div>
+                        <div class="capacity-visual">
+                            <img src="{{ asset('images/unidades/capacidad2.jpg') }}" alt="Distribución de asientos Minibús" class="capacity-img">
+                        </div>
+                    </div>
+                    
+                    <!-- Información técnica -->
+                    <div class="fleet-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-gas-pump text-primary"></i>
+                            <span class="spec-label">Combustible:</span>
+                            <span class="spec-value">Diesel 2</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Marcas disponibles -->
+                    <div class="fleet-brands">
+                        <h6><i class="fas fa-award text-primary me-2"></i>Marcas Disponibles</h6>
+                        <div class="brands-list">
+                            <span class="brand-tag">Toyota</span>
+                            <span class="brand-tag">Hyundai</span>
+                            <span class="brand-tag">Higer</span>
+                            <span class="brand-tag">Marco Polo</span>
+                            <span class="brand-tag">Mercedes Benz</span>
+                            <span class="brand-tag">+2 más</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to action -->
+                    <div class="fleet-cta">
+                        <a href="{{ route('contacto') }}" class="btn btn-fleet-primary">
+                            <i class="fas fa-calculator me-2"></i>
+                            <span>Cotizar Ahora</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="fleet-card">
-                    <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Van VTSA Villarrica Tours" class="img-fluid rounded mb-3" style="height: 200px; width: 100%; object-fit: cover;">
-                    <h4>Van</h4>
-                    <div class="row text-center mb-3">
-                        <div class="col-6">
-                            <h5 class="text-primary">Capacidad</h5>
-                            <p class="fw-bold">14-21 asientos</p>
-                            <div class="capacity-diagram mt-2">
-                                <img src="{{ asset('images/unidades/capacidad3.jpg') }}" alt="Distribución de asientos Van" class="img-fluid" style="max-height: 60px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="text-primary">Combustible</h5>
-                            <p class="fw-bold">Diesel 2 (petróleo)</p>
+                <div class="fleet-card-commercial">
+                    <!-- Header con imagen -->
+                    <div class="fleet-header">
+                        <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Van VTSA Villarrica Tours" class="img-fluid rounded">
+                        <div class="fleet-badge compact">
+                            <span class="badge-text">Compacto</span>
                         </div>
                     </div>
-                    <h6 class="text-primary mb-2">Marcas:</h6>
-                    <p class="text-muted small">
-                        Toyota Hiace y Joylong
-                    </p>
-                    <a href="{{ route('contacto') }}" class="btn btn-primary mt-3">
-                        <i class="fas fa-calculator me-2"></i>Solicitar Cotización
-                    </a>
+                    
+                    <!-- Título principal -->
+                    <div class="fleet-title">
+                        <h3>Van</h3>
+                        <p class="fleet-subtitle">Grupos pequeños</p>
+                    </div>
+                    
+                    <!-- Capacidad destacada -->
+                    <div class="fleet-capacity-highlight">
+                        <div class="capacity-main">
+                            <span class="capacity-number">14-21</span>
+                            <span class="capacity-label">Pasajeros</span>
+                        </div>
+                        <div class="capacity-visual">
+                            <img src="{{ asset('images/unidades/capacidad3.jpg') }}" alt="Distribución de asientos Van" class="capacity-img">
+                        </div>
+                    </div>
+                    
+                    <!-- Información técnica -->
+                    <div class="fleet-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-gas-pump text-primary"></i>
+                            <span class="spec-label">Combustible:</span>
+                            <span class="spec-value">Diesel 2</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Marcas disponibles -->
+                    <div class="fleet-brands">
+                        <h6><i class="fas fa-award text-primary me-2"></i>Marcas Disponibles</h6>
+                        <div class="brands-list">
+                            <span class="brand-tag">Toyota Hiace</span>
+                            <span class="brand-tag">Joylong</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to action -->
+                    <div class="fleet-cta">
+                        <a href="{{ route('contacto') }}" class="btn btn-fleet-primary">
+                            <i class="fas fa-calculator me-2"></i>
+                            <span>Cotizar Ahora</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
