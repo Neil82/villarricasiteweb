@@ -63,6 +63,9 @@
                         <div class="col-6">
                             <h5 class="text-primary">Capacidad</h5>
                             <p class="fw-bold">42-53 asientos</p>
+                            <div class="capacity-diagram mt-2">
+                                <img src="{{ asset('images/unidades/capacidad1.jpg') }}" alt="Distribución de asientos Ómnibus" class="img-fluid" style="max-height: 60px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+                            </div>
                         </div>
                         <div class="col-6">
                             <h5 class="text-primary">Combustible</h5>
@@ -86,6 +89,9 @@
                         <div class="col-6">
                             <h5 class="text-primary">Capacidad</h5>
                             <p class="fw-bold">30-38 asientos</p>
+                            <div class="capacity-diagram mt-2">
+                                <img src="{{ asset('images/unidades/capacidad2.jpg') }}" alt="Distribución de asientos Minibús" class="img-fluid" style="max-height: 60px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+                            </div>
                         </div>
                         <div class="col-6">
                             <h5 class="text-primary">Combustible</h5>
@@ -109,6 +115,9 @@
                         <div class="col-6">
                             <h5 class="text-primary">Capacidad</h5>
                             <p class="fw-bold">14-21 asientos</p>
+                            <div class="capacity-diagram mt-2">
+                                <img src="{{ asset('images/unidades/capacidad3.jpg') }}" alt="Distribución de asientos Van" class="img-fluid" style="max-height: 60px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+                            </div>
                         </div>
                         <div class="col-6">
                             <h5 class="text-primary">Combustible</h5>

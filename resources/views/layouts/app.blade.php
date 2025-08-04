@@ -1076,6 +1076,24 @@
             font-weight: 600;
         }
         
+        .capacity-diagram {
+            background: rgba(0, 123, 255, 0.05);
+            border-radius: 8px;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid rgba(0, 123, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .capacity-diagram:hover {
+            background: rgba(0, 123, 255, 0.1);
+            transform: scale(1.05);
+        }
+        
+        .capacity-diagram img {
+            transition: all 0.3s ease;
+        }
+        
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;
