@@ -1032,6 +1032,10 @@
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         
         .fleet-card:hover {
@@ -1039,13 +1043,37 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         
-        .fleet-card .text-primary {
+        .fleet-card h4 {
+            font-family: 'Signika Negative', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 600;
+        }
+        
+        .fleet-card h5 {
+            font-family: 'Signika Negative', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+        }
+        
+        .fleet-card h6 {
+            font-family: 'Signika Negative', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+        }
+        
+        .fleet-card p {
+            font-family: 'Signika Negative', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .fleet-card .fw-bold {
             font-family: var(--font-mono);
             letter-spacing: -0.5px;
         }
         
+        .fleet-card .text-muted {
+            font-family: 'Signika Negative', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
         .fleet-card .text-muted strong {
-            font-family: var(--font-mono);
+            font-family: 'Signika Negative', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 600;
         }
         
         .contact-info {
