@@ -449,45 +449,6 @@
             </div>
         </div>
         
-        <!-- Galería de Fotos de Flota VTSA -->
-        <div class="row mb-5">
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card gallery-card">
-                    <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Flota Completa VTSA" class="card-img-top" style="height: 250px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Flota Completa</h6>
-                        <p class="card-text small">Diferentes tamaños para cada necesidad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card gallery-card">
-                    <img src="{{ asset('images/vtsa/bus.png') }}" alt="Ómnibus VTSA" class="card-img-top" style="height: 250px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Ómnibus de Lujo</h6>
-                        <p class="card-text small">Máximo confort y seguridad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card gallery-card">
-                    <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Unidad Individual VTSA" class="card-img-top" style="height: 250px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Unidad Premium</h6>
-                        <p class="card-text small">Tecnología de vanguardia</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card gallery-card">
-                    <img src="{{ asset('images/vtsa/2.png') }}" alt="Flota VTSA en Servicio" class="card-img-top" style="height: 250px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">En Operación</h6>
-                        <p class="card-text small">Servicio profesional 24/7</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Tipos de Vehículos -->
         <div class="row">
