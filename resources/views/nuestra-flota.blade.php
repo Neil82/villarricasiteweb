@@ -46,7 +46,7 @@
 </section>
 
 <!-- Fleet Types Section -->
-<section class="py-5 bg-light">
+<section class="py-4 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">

@@ -1119,7 +1119,7 @@
         }
         
         .fleet-header img {
-            height: 220px;
+            height: 180px;
             width: 100%;
             object-fit: cover;
             transition: transform 0.4s ease;
@@ -1155,16 +1155,16 @@
         }
         
         .fleet-title {
-            padding: 24px 24px 16px;
+            padding: 18px 20px 12px;
             text-align: center;
         }
         
         .fleet-title h3 {
             font-family: 'Signika Negative', sans-serif;
             font-weight: 700;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--primary-color);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         
         .fleet-subtitle {
@@ -1176,9 +1176,9 @@
         
         .fleet-capacity-highlight {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            margin: 0 20px 20px;
-            padding: 20px;
-            border-radius: 15px;
+            margin: 0 18px 16px;
+            padding: 16px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -1205,7 +1205,7 @@
         
         .capacity-number {
             font-family: var(--font-mono);
-            font-size: 2.2rem;
+            font-size: 1.9rem;
             font-weight: 900;
             color: var(--primary-color);
             line-height: 1;
@@ -1223,26 +1223,26 @@
         
         .capacity-visual {
             background: white;
-            padding: 12px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
         
         .capacity-img {
-            max-height: 50px;
+            max-height: 42px;
             width: auto;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
         }
         
         .fleet-specs {
-            padding: 0 24px 16px;
+            padding: 0 20px 12px;
         }
         
         .spec-item {
             display: flex;
             align-items: center;
             gap: 8px;
-            padding: 8px 0;
+            padding: 6px 0;
         }
         
         .spec-label {
@@ -1257,15 +1257,15 @@
         }
         
         .fleet-brands {
-            padding: 0 24px 20px;
+            padding: 0 20px 16px;
             flex-grow: 1;
         }
         
         .fleet-brands h6 {
             color: var(--primary-color);
             font-weight: 600;
-            margin-bottom: 12px;
-            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
         }
         
         .brands-list {
@@ -1291,7 +1291,7 @@
         }
         
         .fleet-cta {
-            padding: 0 24px 24px;
+            padding: 0 20px 20px;
             margin-top: auto;
         }
         
@@ -1299,15 +1299,15 @@
             background: linear-gradient(135deg, var(--secondary-color), #28a745);
             border: none;
             color: white;
-            padding: 14px 28px;
+            padding: 12px 24px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             width: 100%;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 8px 25px rgba(50, 205, 50, 0.3);
+            box-shadow: 0 6px 20px rgba(50, 205, 50, 0.3);
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
