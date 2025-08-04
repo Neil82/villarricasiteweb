@@ -302,7 +302,23 @@
                         <i class="fas fa-certificate"></i>
                     </div>
                     <h5>Certificaciones</h5>
-                    <p class="text-muted">ISO 9001, HODELPE y autorizaciones MTC que garantizan calidad.</p>
+                    <p class="text-muted">Certificaciones que garantizan nuestra calidad y confiabilidad.</p>
+                    
+                    <!-- Logos de certificaciones -->
+                    <div class="certifications-grid mt-3">
+                        <div class="certification-item">
+                            <img src="{{ asset('images/homologacion/BV_certification_9001.png') }}" alt="ISO 9001 Bureau Veritas">
+                        </div>
+                        <div class="certification-item">
+                            <img src="{{ asset('images/homologacion/hodelpe-homologado.png') }}" alt="HODELPE">
+                        </div>
+                        <div class="certification-item">
+                            <img src="{{ asset('images/homologacion/cial.png') }}" alt="CIAL">
+                        </div>
+                        <div class="certification-item">
+                            <img src="{{ asset('images/homologacion/Mega-homologado.png') }}" alt="Mega">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

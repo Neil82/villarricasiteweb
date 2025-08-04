@@ -823,6 +823,75 @@
             letter-spacing: -0.5px;
         }
         
+        /* Homologación logos en footer */
+        .homologation-logos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .homologation-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .homologation-item img {
+            max-width: 80px;
+            max-height: 50px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+            filter: brightness(1.2);
+            transition: all 0.3s ease;
+        }
+        
+        .homologation-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.4);
+        }
+        
+        .homologation-item small {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+            line-height: 1.2;
+        }
+        
+        /* Certificaciones en la sección principal */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        
+        .certification-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.02);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .certification-item:hover {
+            background: rgba(50, 205, 50, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .certification-item img {
+            max-width: 60px;
+            max-height: 40px;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+        
+        .certification-item:hover img {
+            transform: scale(1.1);
+        }
+        
         .floating-whatsapp {
             position: fixed;
             bottom: 30px;
@@ -1513,6 +1582,27 @@
             .clients-carousel-container::after {
                 width: 50px;
             }
+            
+            /* Ajustes para homologaciones en móvil */
+            .homologation-logos {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+            
+            .homologation-item img {
+                max-width: 60px;
+                max-height: 40px;
+            }
+            
+            .certifications-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+            
+            .certification-item img {
+                max-width: 50px;
+                max-height: 32px;
+            }
         }
     </style>
     
@@ -1591,8 +1681,24 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Homologaciones</h5>
-                    <p>ISO9001 BUREAU VERITAS Certification</p>
-                    <p>Corporación HODELPE – Homologaciones Perú</p>
+                    <div class="homologation-logos">
+                        <div class="homologation-item">
+                            <img src="{{ asset('images/homologacion/BV_certification_9001.png') }}" alt="ISO 9001 Bureau Veritas Certification">
+                            <small>ISO 9001 Bureau Veritas</small>
+                        </div>
+                        <div class="homologation-item">
+                            <img src="{{ asset('images/homologacion/hodelpe-homologado.png') }}" alt="HODELPE Homologaciones Perú">
+                            <small>HODELPE - Homologaciones Perú</small>
+                        </div>
+                        <div class="homologation-item">
+                            <img src="{{ asset('images/homologacion/cial.png') }}" alt="CIAL Certification">
+                            <small>CIAL</small>
+                        </div>
+                        <div class="homologation-item">
+                            <img src="{{ asset('images/homologacion/Mega-homologado.png') }}" alt="Mega Homologado">
+                            <small>Mega Homologado</small>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
