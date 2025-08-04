@@ -931,35 +931,46 @@
             width: 100%;
             position: relative;
             background: transparent;
-            padding: 2rem 0;
+            padding: 3rem 0;
+            margin: 1rem 0;
         }
         
         .clients-carousel {
             display: flex;
-            animation: scroll 60s linear infinite;
-            width: calc(200px * 38); /* 19 logos × 2 copias × 200px ancho */
+            animation: scroll 80s linear infinite;
+            width: calc(300px * 38); /* 19 logos × 2 copias × 300px ancho (incluye márgenes) */
         }
         
         .client-logo {
-            flex: 0 0 200px;
-            height: 100px;
+            flex: 0 0 280px;
+            height: 140px;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 20px;
+            padding: 0 30px;
             transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 12px;
+            margin: 0 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
         
         .client-logo img {
-            max-width: 160px;
-            max-height: 80px;
+            max-width: 220px;
+            max-height: 120px;
             object-fit: contain;
-            filter: grayscale(100%) opacity(0.7);
+            opacity: 0.8;
             transition: all 0.3s ease;
         }
         
+        .client-logo:hover {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
         .client-logo:hover img {
-            filter: grayscale(0%) opacity(1);
+            opacity: 1;
             transform: scale(1.05);
         }
         
@@ -972,7 +983,7 @@
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(calc(-200px * 19)); /* Mover el ancho de 19 logos */
+                transform: translateX(calc(-300px * 19)); /* Mover el ancho de 19 logos */
             }
         }
         
@@ -1471,19 +1482,22 @@
             
             /* Ajustes para carrusel en móvil */
             .client-logo {
-                flex: 0 0 160px;
-                height: 80px;
-                padding: 0 15px;
+                flex: 0 0 200px;
+                height: 100px;
+                padding: 0 20px;
+                margin: 0 5px;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 8px;
             }
             
             .client-logo img {
-                max-width: 130px;
-                max-height: 60px;
+                max-width: 160px;
+                max-height: 80px;
             }
             
             .clients-carousel {
-                width: calc(160px * 38);
-                animation: scroll 40s linear infinite;
+                width: calc(210px * 38);
+                animation: scroll 60s linear infinite;
             }
             
             @keyframes scroll {
@@ -1491,7 +1505,7 @@
                     transform: translateX(0);
                 }
                 100% {
-                    transform: translateX(calc(-160px * 19));
+                    transform: translateX(calc(-210px * 19));
                 }
             }
             
