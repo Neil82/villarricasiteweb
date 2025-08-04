@@ -118,7 +118,7 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Minibús VTSA Villarrica Tours" class="img-fluid rounded">
+                        <img src="{{ asset('images/unidades/Midvan_hourdorade.jpg') }}" alt="Minibús VTSA Villarrica Tours" class="img-fluid rounded">
                         <div class="fleet-badge popular">
                             <span class="badge-text">Popular</span>
                         </div>
