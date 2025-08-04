@@ -141,44 +141,122 @@
         </div>
         <div class="row">
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
-                    <div class="service-image-container" style="height: 250px; overflow: hidden; position: relative;">
-                        <img src="{{ asset('images/vtsa/bus.png') }}" alt="Transporte de Personal" class="service-image active" data-index="0">
-                        <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Transporte de Personal" class="service-image" data-index="1">
-                        <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Transporte de Personal" class="service-image" data-index="2">
-                    </div>
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon">
-                            <i class="fas fa-users"></i>
+                <div class="service-card-commercial">
+                    <!-- Header con imagen y carousel -->
+                    <div class="service-header">
+                        <div class="service-image-container">
+                            <img src="{{ asset('images/vtsa/bus.png') }}" alt="Transporte de Personal" class="service-image active" data-index="0">
+                            <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Transporte de Personal" class="service-image" data-index="1">
+                            <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Transporte de Personal" class="service-image" data-index="2">
                         </div>
-                        <h4 class="card-title">Transporte de Personal</h4>
-                        <h5 class="text-primary mb-3">a nivel nacional</h5>
-                        <p class="card-text">
-                            Servicio especializado para empresas que requieren traslado seguro y puntual de su personal. 
-                            Contamos con unidades modernas y conductores certificados.
-                        </p>
-                        <a href="{{ route('servicios') }}" class="btn btn-primary">Ver Más</a>
+                        <div class="service-badge professional">
+                            <span class="badge-text">Profesional</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenido principal -->
+                    <div class="service-content">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon-modern">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-title-section">
+                            <h3 class="service-title-main">Transporte de Personal</h3>
+                            <div class="service-level">
+                                <span class="level-indicator">a nivel nacional</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-description">
+                            <p>
+                                Servicio especializado para empresas que requieren traslado seguro y puntual de su personal. 
+                                Contamos con unidades modernas y conductores certificados.
+                            </p>
+                        </div>
+                        
+                        <div class="service-features">
+                            <div class="feature-tag">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Seguridad</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-clock"></i>
+                                <span>Puntualidad</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <a href="{{ route('servicios') }}" class="btn btn-service-primary">
+                                <span>Ver Más Detalles</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
-                    <div class="service-image-container" style="height: 250px; overflow: hidden; position: relative;">
-                        <img src="{{ asset('images/vtsa/3buses_2.png') }}" alt="Transporte Turístico" class="service-image active" data-index="0">
-                        <img src="{{ asset('images/vtsa/2.png') }}" alt="Transporte Turístico" class="service-image" data-index="1">
-                        <img src="{{ asset('images/vtsa/bus_solo2.png') }}" alt="Transporte Turístico" class="service-image" data-index="2">
-                    </div>
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon">
-                            <i class="fas fa-map-marked-alt"></i>
+                <div class="service-card-commercial">
+                    <!-- Header con imagen y carousel -->
+                    <div class="service-header">
+                        <div class="service-image-container">
+                            <img src="{{ asset('images/vtsa/3buses_2.png') }}" alt="Transporte Turístico" class="service-image active" data-index="0">
+                            <img src="{{ asset('images/vtsa/2.png') }}" alt="Transporte Turístico" class="service-image" data-index="1">
+                            <img src="{{ asset('images/vtsa/bus_solo2.png') }}" alt="Transporte Turístico" class="service-image" data-index="2">
                         </div>
-                        <h4 class="card-title">Transporte Turístico</h4>
-                        <h5 class="text-primary mb-3">a nivel nacional</h5>
-                        <p class="card-text">
-                            Experiencias turísticas únicas con la mejor flota del país. 
-                            Excursiones, viajes corporativos y paquetes turísticos personalizados.
-                        </p>
-                        <a href="{{ route('servicios') }}" class="btn btn-primary">Ver Más</a>
+                        <div class="service-badge premium">
+                            <span class="badge-text">Premium</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenido principal -->
+                    <div class="service-content">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon-modern">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-title-section">
+                            <h3 class="service-title-main">Transporte Turístico</h3>
+                            <div class="service-level">
+                                <span class="level-indicator">a nivel nacional</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-description">
+                            <p>
+                                Experiencias turísticas únicas con la mejor flota del país. 
+                                Excursiones, viajes corporativos y paquetes turísticos personalizados.
+                            </p>
+                        </div>
+                        
+                        <div class="service-features">
+                            <div class="feature-tag">
+                                <i class="fas fa-star"></i>
+                                <span>Único</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-route"></i>
+                                <span>Excursiones</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-users-cog"></i>
+                                <span>Personalizado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-cta">
+                            <a href="{{ route('servicios') }}" class="btn btn-service-primary">
+                                <span>Ver Más Detalles</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

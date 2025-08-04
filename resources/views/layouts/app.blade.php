@@ -1338,6 +1338,232 @@
             transform: translateY(-1px) scale(1.01);
         }
         
+        /* Diseño Comercial de Tarjetas de Servicios */
+        .service-card-commercial {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card-commercial:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-header {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .service-image-container {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
+        
+        .service-image.active {
+            opacity: 1;
+        }
+        
+        .service-card-commercial:hover .service-image.active {
+            transform: scale(1.08);
+        }
+        
+        .service-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+        
+        .service-badge.professional {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+        }
+        
+        .service-badge.premium {
+            background: linear-gradient(135deg, #7c2d12, #ea580c);
+            box-shadow: 0 4px 15px rgba(124, 45, 18, 0.3);
+        }
+        
+        .service-content {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-icon-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .service-icon-modern {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--secondary-color), #28a745);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 8px 25px rgba(50, 205, 50, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card-commercial:hover .service-icon-modern {
+            transform: scale(1.1) rotateY(360deg);
+            box-shadow: 0 12px 35px rgba(50, 205, 50, 0.4);
+        }
+        
+        .service-title-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .service-title-main {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 700;
+            font-size: 1.7rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+        
+        .service-level {
+            display: inline-block;
+        }
+        
+        .level-indicator {
+            background: linear-gradient(135deg, var(--primary-color), #1976d2);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: lowercase;
+            font-style: italic;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+        }
+        
+        .service-description {
+            text-align: center;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .service-description p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .service-features {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .feature-tag {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            color: var(--primary-color);
+            padding: 8px 14px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid rgba(25, 118, 210, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-tag:hover {
+            background: linear-gradient(135deg, #e0f2fe, #b3e5fc);
+            transform: translateY(-2px);
+        }
+        
+        .feature-tag i {
+            font-size: 0.75rem;
+        }
+        
+        .service-cta {
+            text-align: center;
+        }
+        
+        .btn-service-primary {
+            background: linear-gradient(135deg, var(--secondary-color), #28a745);
+            border: none;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 6px 20px rgba(50, 205, 50, 0.3);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-service-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+        
+        .btn-service-primary:hover {
+            background: linear-gradient(135deg, #28a745, var(--secondary-color));
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(50, 205, 50, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .btn-service-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-service-primary:active {
+            transform: translateY(-1px) scale(1.02);
+        }
+        
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;
