@@ -547,6 +547,135 @@
             transform: scale(1.1);
         }
         
+        /* Enhanced Feature Cards */
+        .feature-card-enhanced {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .feature-card-enhanced.premium {
+            border: 2px solid rgba(50, 205, 50, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, #f8fff8 100%);
+        }
+        
+        .feature-card-enhanced:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-card-enhanced.premium:hover {
+            border-color: var(--secondary-color);
+            box-shadow: 0 25px 50px rgba(50, 205, 50, 0.2);
+        }
+        
+        .feature-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+        
+        .feature-badge.guaranteed {
+            background: linear-gradient(135deg, #28a745, var(--secondary-color));
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+        }
+        
+        .feature-badge.tech {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+        
+        .feature-badge.always-on {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        }
+        
+        .feature-icon-enhanced {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--secondary-color), #28a745);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: var(--white);
+            font-size: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .feature-card-enhanced:hover .feature-icon-enhanced {
+            transform: scale(1.15) rotateY(360deg);
+            box-shadow: 0 15px 30px rgba(50, 205, 50, 0.4);
+        }
+        
+        .feature-icon-enhanced.gps-pulse {
+            animation: gps-signal 2s infinite;
+        }
+        
+        @keyframes gps-signal {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(50, 205, 50, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(50, 205, 50, 0); }
+        }
+        
+        .pulse-number {
+            animation: pulse-text 2s infinite;
+        }
+        
+        @keyframes pulse-text {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .feature-cta-hover {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .feature-card-enhanced:hover .feature-cta-hover {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .btn-feature-sm {
+            background: linear-gradient(135deg, var(--secondary-color), #28a745);
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-feature-sm:hover {
+            background: linear-gradient(135deg, #28a745, var(--secondary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(50, 205, 50, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+        
         .bg-dark {
             background: var(--primary-color) !important;
         }

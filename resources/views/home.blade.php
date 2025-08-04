@@ -355,57 +355,84 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-card text-center p-4">
-                    <div class="feature-icon mb-3">
+                <div class="feature-card-enhanced premium text-center p-4">
+                    <div class="feature-badge guaranteed">
+                        <span class="badge-text">Garantizado</span>
+                    </div>
+                    <div class="feature-icon-enhanced mb-3">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h5>Seguridad Garantizada</h5>
                     <p class="text-muted">Conductores certificados y unidades con todos los estándares de seguridad internacionales.</p>
+                    <div class="feature-cta-hover">
+                        <a href="{{ route('servicios') }}" class="btn btn-feature-sm">Ver Más</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-card text-center p-4">
-                    <div class="feature-icon mb-3">
+                <div class="feature-card-enhanced text-center p-4">
+                    <div class="feature-icon-enhanced mb-3">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h5>Puntualidad</h5>
                     <p class="text-muted">Respetamos el tiempo de nuestros clientes con servicios siempre a tiempo.</p>
+                    <div class="feature-cta-hover">
+                        <a href="{{ route('servicios') }}" class="btn btn-feature-sm">Ver Más</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-card text-center p-4">
-                    <div class="feature-icon mb-3">
+                <div class="feature-card-enhanced premium text-center p-4">
+                    <div class="feature-badge tech">
+                        <span class="badge-text">Tiempo Real</span>
+                    </div>
+                    <div class="feature-icon-enhanced gps-pulse mb-3">
                         <i class="fas fa-satellite"></i>
                     </div>
                     <h5>GPS en Tiempo Real</h5>
                     <p class="text-muted">Todas nuestras unidades cuentan con rastreo satelital para mayor control.</p>
+                    <div class="feature-cta-hover">
+                        <a href="{{ route('servicios') }}" class="btn btn-feature-sm">Ver Más</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-card text-center p-4">
-                    <div class="feature-icon mb-3">
+                <div class="feature-card-enhanced text-center p-4">
+                    <div class="feature-icon-enhanced mb-3">
                         <i class="fas fa-snowflake"></i>
                     </div>
                     <h5>Aire Acondicionado</h5>
                     <p class="text-muted">Comodidad garantizada en todas nuestras unidades con clima controlado.</p>
+                    <div class="feature-cta-hover">
+                        <a href="{{ route('servicios') }}" class="btn btn-feature-sm">Ver Más</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-card text-center p-4">
-                    <div class="feature-icon mb-3">
+                <div class="feature-card-enhanced text-center p-4">
+                    <div class="feature-badge always-on">
+                        <span class="badge-text pulse-number">24/7</span>
+                    </div>
+                    <div class="feature-icon-enhanced mb-3">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h5>Atención 24/7</h5>
                     <p class="text-muted">Disponibilidad total para atender sus necesidades en cualquier momento.</p>
+                    <div class="feature-cta-hover">
+                        <a href="{{ route('contacto') }}" class="btn btn-feature-sm">Contactar</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="feature-card text-center p-4">
-                    <div class="feature-icon mb-3">
+                <div class="feature-card-enhanced text-center p-4">
+                    <div class="feature-icon-enhanced mb-3">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <h5>Certificaciones</h5>
                     <p class="text-muted">Certificaciones que garantizan nuestra calidad y confiabilidad.</p>
+                    <div class="feature-cta-hover">
+                        <a href="#certifications-section" class="btn btn-feature-sm">Ver Certificados</a>
+                    </div>
                 </div>
             </div>
         </div>
