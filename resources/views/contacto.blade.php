@@ -10,11 +10,33 @@
         <div class="row text-center">
             <div class="col-lg-8 mx-auto">
                 <h1 class="display-4 fw-bold mb-4 text-white" data-aos="fade-up">
-                    Contacto
+                    Solicita tu Cotización
                 </h1>
-                <p class="lead text-white" data-aos="fade-up" data-aos-delay="200">
-                    Estamos aquí para atenderte. Solicita tu cotización o consulta cualquier duda sobre nuestros servicios.
+                <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="200">
+                    Obtén una cotización personalizada en menos de 24 horas. {{ date("Y") - 1995 }} años de experiencia nos respaldan.
                 </p>
+                <div class="hero-benefits" data-aos="fade-up" data-aos-delay="300">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <div class="hero-benefit-item">
+                                <i class="fas fa-clock me-2"></i>
+                                <span>Respuesta en 24hrs</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="hero-benefit-item">
+                                <i class="fas fa-shield-alt me-2"></i>
+                                <span>Sin Compromiso</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="hero-benefit-item">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>Atención 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -98,54 +120,143 @@
     </div>
 </section>
 
-<!-- Contact Form Section -->
+<!-- Why Choose Us Section -->
 <section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">¿Por qué más de 100 empresas confían en nosotros?</h2>
+                <p class="section-subtitle">La tranquilidad que buscas para el transporte de tu equipo</p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="trust-card">
+                    <div class="trust-icon guarantee">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h5>Garantía Total</h5>
+                    <p class="text-muted">Certificaciones internacionales ISO 9001 y homologaciones oficiales que respaldan nuestro servicio.</p>
+                    <div class="trust-badge">
+                        <span class="badge-text">Certificado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="trust-card">
+                    <div class="trust-icon experience">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h5>{{ date("Y") - 1995 }} Años de Experiencia</h5>
+                    <p class="text-muted">Trayectoria sólida en transporte de personal para empresas líderes en el mercado peruano.</p>
+                    <div class="trust-badge popular">
+                        <span class="badge-text">Líder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="trust-card">
+                    <div class="trust-icon safety">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Seguridad Garantizada</h5>
+                    <p class="text-muted">Conductores certificados, seguros completos y tecnología GPS para máxima tranquilidad.</p>
+                    <div class="trust-badge safe">
+                        <span class="badge-text">Seguro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="text-center mb-5">
-                    <h2 class="section-title">¿En qué podemos ayudarte?</h2>
-                    <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+                    <h2 class="section-title">Solicita tu Cotización Gratuita</h2>
+                    <p class="section-subtitle">Completa el formulario y un especialista te contactará en menos de 24 horas</p>
+                    <div class="form-guarantee">
+                        <i class="fas fa-lock me-2 text-success"></i>
+                        <small class="text-muted">Tus datos están protegidos y no serán compartidos con terceros</small>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="quote-form-card">
+                    <div class="form-header">
+                        <div class="form-header-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Formulario de Cotización</h4>
+                        <p class="text-muted mb-0">Todos los campos marcados con * son obligatorios</p>
+                    </div>
                     <div class="card-body p-4">
                         <form>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="nombre" class="form-label">Nombre y apellidos *</label>
-                                    <input type="text" class="form-control" id="nombre" required>
+                                    <input type="text" class="form-control form-control-enhanced" id="nombre" placeholder="Ej: Juan Pérez García" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="email" class="form-label">Correo electrónico *</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <input type="email" class="form-control form-control-enhanced" id="email" placeholder="Ej: juan.perez@empresa.com" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="telefono" class="form-label">Teléfono *</label>
-                                    <input type="tel" class="form-control" id="telefono" required>
+                                    <input type="tel" class="form-control form-control-enhanced" id="telefono" placeholder="Ej: 987 654 321" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="servicio" class="form-label">Tipo de Servicio</label>
-                                    <select class="form-select" id="servicio">
-                                        <option value="">Selecciona un servicio</option>
+                                    <label for="empresa" class="form-label">Empresa</label>
+                                    <input type="text" class="form-control form-control-enhanced" id="empresa" placeholder="Nombre de tu empresa">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="servicio" class="form-label">Tipo de Servicio *</label>
+                                    <select class="form-select form-control-enhanced" id="servicio" required>
+                                        <option value="">¿Qué servicio necesitas?</option>
                                         <option value="transporte-personal">Transporte de Personal</option>
                                         <option value="transporte-turistico">Transporte Turístico</option>
-                                        <option value="omnibus">Ómnibus</option>
-                                        <option value="minibus">Minibús</option>
-                                        <option value="van">Van</option>
-                                        <option value="otro">Otro</option>
+                                        <option value="omnibus">Ómnibus (42-53 pasajeros)</option>
+                                        <option value="minibus">Minibús (30-38 pasajeros)</option>
+                                        <option value="van">Van (14-21 pasajeros)</option>
+                                        <option value="servicio-eventual">Servicio Eventual</option>
+                                        <option value="otro">Otro servicio</option>
                                     </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="pasajeros" class="form-label">Número de Pasajeros</label>
+                                    <input type="number" class="form-control form-control-enhanced" id="pasajeros" placeholder="¿Cuántos pasajeros?" min="1" max="60">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="mensaje" class="form-label">Mensaje *</label>
-                                <textarea class="form-control" id="mensaje" rows="5" placeholder="Describe tu solicitud o consulta..." required></textarea>
+                                <label for="mensaje" class="form-label">Detalles de tu solicitud *</label>
+                                <textarea class="form-control form-control-enhanced" id="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto: fechas, destinos, frecuencia del servicio, horarios, etc." required></textarea>
                             </div>
+                            
+                            <div class="urgency-box mb-4">
+                                <div class="urgency-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="urgency-content">
+                                    <h6>Respuesta Garantizada</h6>
+                                    <p class="mb-0">Te contactaremos en menos de 24 horas con tu cotización personalizada</p>
+                                </div>
+                            </div>
+                            
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                <button type="submit" class="btn btn-quote-submit btn-lg">
+                                    <i class="fas fa-rocket me-2"></i>
+                                    <span>Solicitar Cotización Gratuita</span>
+                                    <div class="btn-shine"></div>
                                 </button>
+                                <p class="form-disclaimer mt-3">
+                                    <i class="fas fa-shield-alt text-success me-1"></i>
+                                    <small class="text-muted">Sin compromiso • Respuesta en 24hrs • Datos seguros</small>
+                                </p>
                             </div>
                         </form>
                     </div>

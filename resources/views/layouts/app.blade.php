@@ -2282,6 +2282,254 @@
             font-size: 1rem;
         }
         
+        /* Contact Page Commercial Styles */
+        .hero-benefits {
+            margin-top: 2rem;
+        }
+        
+        .hero-benefit-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            color: white;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .hero-benefit-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        /* Trust Cards */
+        .trust-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            height: 100%;
+            text-align: center;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        .trust-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .trust-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .trust-icon.guarantee {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #b8860b;
+        }
+        
+        .trust-icon.experience {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+            color: #d63031;
+        }
+        
+        .trust-icon.safety {
+            background: linear-gradient(135deg, #4ecdc4 0%, #6eddd6 100%);
+            color: #00b894;
+        }
+        
+        .trust-card:hover .trust-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .trust-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #32cd32 0%, #228b22 100%);
+        }
+        
+        .trust-badge.popular {
+            background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+        }
+        
+        .trust-badge.safe {
+            background: linear-gradient(135deg, #4ecdc4 0%, #00b894 100%);
+        }
+        
+        .trust-badge .badge-text {
+            color: white;
+        }
+        
+        .trust-card h5 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        /* Quote Form Styles */
+        .quote-form-card {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .form-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .form-header-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .form-header h4 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control-enhanced {
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            font-family: 'Signika Negative', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control-enhanced:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(44, 123, 229, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .form-label {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .urgency-box {
+            background: linear-gradient(135deg, #fff8dc 0%, #ffeaa7 100%);
+            border: 2px solid #fdcb6e;
+            border-radius: 15px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .urgency-icon {
+            width: 50px;
+            height: 50px;
+            background: #e17055;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .urgency-content h6 {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 0.25rem;
+        }
+        
+        .urgency-content p {
+            font-family: 'Signika Negative', sans-serif;
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+        
+        .btn-quote-submit {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            border: none;
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 184, 148, 0.3);
+        }
+        
+        .btn-quote-submit:hover {
+            background: linear-gradient(135deg, #00a085 0%, #00b894 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 184, 148, 0.4);
+            color: white;
+        }
+        
+        .btn-shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .btn-quote-submit:hover .btn-shine {
+            left: 100%;
+        }
+        
+        .form-disclaimer {
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .form-guarantee {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+        
         /* Badges con información técnica */
         .badge {
             font-family: var(--font-mono);
