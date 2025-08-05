@@ -360,42 +360,153 @@
 </section>
 
 <!-- Quality Service Section -->
-<section class="py-5 bg-light">
+<section class="py-5 quality-service-commercial">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Servicio de Calidad</h2>
-                <p class="section-subtitle">Nuestros clientes confían en nosotros para el traslado de su personal</p>
+                <div class="quality-badge" data-aos="fade-up">
+                    <span class="badge-text">Excelencia Garantizada</span>
+                </div>
+                <h2 class="section-title-commercial" data-aos="fade-up" data-aos-delay="200">
+                    Servicio de Calidad <span class="text-primary">Superior</span>
+                </h2>
+                <p class="section-subtitle-commercial" data-aos="fade-up" data-aos-delay="400">
+                    La seguridad de tu equipo es nuestra prioridad número uno
+                </p>
             </div>
         </div>
+        
+        <!-- Estadísticas de calidad -->
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="quality-stat-card">
+                    <div class="quality-stat-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="quality-stat-number">0</div>
+                    <div class="quality-stat-label">Accidentes Graves</div>
+                    <div class="quality-stat-detail">en 30 años</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="quality-stat-card">
+                    <div class="quality-stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="quality-stat-number">100%</div>
+                    <div class="quality-stat-label">Conductores Certificados</div>
+                    <div class="quality-stat-detail">capacitación continua</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="quality-stat-card">
+                    <div class="quality-stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="quality-stat-number">99.8%</div>
+                    <div class="quality-stat-label">Puntualidad</div>
+                    <div class="quality-stat-detail">en todos los servicios</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="quality-stat-card">
+                    <div class="quality-stat-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="quality-stat-number">365</div>
+                    <div class="quality-stat-label">Días al Año</div>
+                    <div class="quality-stat-detail">disponibilidad total</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificaciones y licencias -->
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card">
-                    <div class="card-body p-4">
-                        <p class="mb-4">
-                            Nuestros clientes confían en nosotros para el traslado de su personal, donde diariamente 
-                            vamos demostrando puntualidad y eficiencia en el servicio brindado; nuestros conductores 
-                            cuentan con licencia de conducir AIIIC y AIIIA, y son capacitados anualmente en temas de 
-                            seguridad, salud ocupacional y cuidado del medio ambiente.
-                        </p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5 class="text-primary mb-3">Certificaciones de Conductores:</h5>
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-certificate text-success me-2"></i>Primeros Auxilios</li>
-                                    <li><i class="fas fa-certificate text-success me-2"></i>Manejo Defensivo</li>
-                                    <li><i class="fas fa-certificate text-success me-2"></i>Uso de Extintores</li>
-                                    <li><i class="fas fa-certificate text-success me-2"></i>Riesgos Psicosociales</li>
-                                </ul>
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="certification-card-commercial">
+                    <div class="certification-header">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Certificaciones de Elite</h4>
+                        <p class="certification-subtitle">Nuestros conductores son profesionales altamente calificados</p>
+                    </div>
+                    <div class="certification-grid">
+                        <div class="certification-item">
+                            <div class="cert-icon-wrapper">
+                                <i class="fas fa-medkit"></i>
                             </div>
-                            <div class="col-md-6">
-                                <h5 class="text-primary mb-3">Licencias de Conducción:</h5>
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-id-card text-primary me-2"></i>AIIIC - Ómnibus</li>
-                                    <li><i class="fas fa-id-card text-primary me-2"></i>AIIIA - Minibús</li>
-                                </ul>
+                            <div class="cert-content">
+                                <h6>Primeros Auxilios</h6>
+                                <small>Respuesta inmediata ante emergencias</small>
                             </div>
                         </div>
+                        <div class="certification-item">
+                            <div class="cert-icon-wrapper">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h6>Manejo Defensivo</h6>
+                                <small>Técnicas avanzadas de conducción</small>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-icon-wrapper">
+                                <i class="fas fa-fire-extinguisher"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h6>Uso de Extintores</h6>
+                                <small>Prevención y control de incendios</small>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-icon-wrapper">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h6>Riesgos Psicosociales</h6>
+                                <small>Bienestar mental y emocional</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="license-card-commercial">
+                    <div class="license-header">
+                        <div class="license-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h4>Licencias Profesionales</h4>
+                        <p class="license-subtitle">Autorizados para operar vehículos de gran capacidad</p>
+                    </div>
+                    <div class="license-types">
+                        <div class="license-type-card">
+                            <div class="license-badge">AIIIC</div>
+                            <div class="license-info">
+                                <h5>Ómnibus</h5>
+                                <p>Vehículos de 42-53 pasajeros</p>
+                                <div class="license-features">
+                                    <span><i class="fas fa-check-circle text-success me-1"></i>Rutas nacionales</span>
+                                    <span><i class="fas fa-check-circle text-success me-1"></i>Viajes largos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="license-type-card">
+                            <div class="license-badge">AIIIA</div>
+                            <div class="license-info">
+                                <h5>Minibús</h5>
+                                <p>Vehículos de 14-38 pasajeros</p>
+                                <div class="license-features">
+                                    <span><i class="fas fa-check-circle text-success me-1"></i>Rutas urbanas</span>
+                                    <span><i class="fas fa-check-circle text-success me-1"></i>Grupos medianos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="training-note">
+                        <i class="fas fa-info-circle text-primary me-2"></i>
+                        <span>Capacitación anual obligatoria en seguridad, salud ocupacional y medio ambiente</span>
                     </div>
                 </div>
             </div>

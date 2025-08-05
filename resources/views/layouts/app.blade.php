@@ -3050,6 +3050,622 @@
             }
         }
 
+        /* Quality Service Commercial Styles */
+        .quality-service-commercial {
+            background: #f8f9fa;
+        }
+        
+        .quality-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 25px;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(25, 101, 192, 0.3);
+        }
+        
+        .quality-stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .quality-stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .quality-stat-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .quality-stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: 'Libertinus Mono', monospace;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .quality-stat-label {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.25rem;
+        }
+        
+        .quality-stat-detail {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .certification-card-commercial,
+        .license-card-commercial {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+        
+        .certification-header,
+        .license-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .certification-icon,
+        .license-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #f39c12 0%, #f1c40f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .license-icon {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        
+        .certification-header h4,
+        .license-header h4 {
+            font-family: 'Signika Negative', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .certification-subtitle,
+        .license-subtitle {
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .certification-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .certification-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+        
+        .certification-item:hover {
+            background: #e9ecef;
+        }
+        
+        .cert-icon-wrapper {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .cert-content h6 {
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 0.25rem;
+            color: #2c3e50;
+        }
+        
+        .cert-content small {
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .license-types {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .license-type-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+            transition: border-color 0.3s ease;
+        }
+        
+        .license-type-card:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .license-badge {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Libertinus Mono', monospace;
+            color: var(--primary-color);
+            background: rgba(25, 101, 192, 0.1);
+            padding: 1rem;
+            border-radius: 12px;
+            min-width: 90px;
+            text-align: center;
+        }
+        
+        .license-info h5 {
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .license-info p {
+            color: #6c757d;
+            margin-bottom: 0.75rem;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .license-features {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .license-features span {
+            font-size: 0.85rem;
+            color: #495057;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .training-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(25, 101, 192, 0.1);
+            border-radius: 10px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-family: 'Signika Negative', sans-serif;
+            display: flex;
+            align-items: center;
+        }
+        
+        .quality-cta-section {
+            padding: 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 25px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .quality-cta-title {
+            font-family: 'Signika Negative', sans-serif;
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .quality-cta-subtitle {
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn-quality-primary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(25, 101, 192, 0.3);
+        }
+        
+        .btn-quality-primary:hover {
+            background: linear-gradient(135deg, #1565c0 0%, var(--primary-color) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(25, 101, 192, 0.4);
+            color: white;
+        }
+        
+        /* Service Detail Commercial Styles */
+        .service-detail-commercial {
+            position: relative;
+        }
+        
+        .service-header-commercial {
+            margin-bottom: 4rem;
+        }
+        
+        .service-badge-main {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 25px;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(25, 101, 192, 0.3);
+        }
+        
+        .service-badge-main.touristic {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
+        }
+        
+        .service-title-commercial {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: 'Signika Negative', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-subtitle-commercial {
+            font-size: 1.25rem;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .service-image-showcase {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image-showcase img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-image-showcase:hover img {
+            transform: scale(1.05);
+        }
+        
+        .service-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-image-showcase:hover .service-image-overlay {
+            transform: translateY(0);
+        }
+        
+        .service-image-overlay.touristic {
+            background: linear-gradient(to top, rgba(0, 184, 148, 0.9), transparent);
+        }
+        
+        .overlay-content h4 {
+            color: white;
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+        
+        .overlay-content p {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 0;
+        }
+        
+        .service-info-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 100%;
+        }
+        
+        .experience-badge-floating {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(25, 101, 192, 0.3);
+        }
+        
+        .experience-number {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Libertinus Mono', monospace;
+            display: block;
+        }
+        
+        .experience-text {
+            font-size: 0.9rem;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .authorization-badge {
+            background: rgba(25, 101, 192, 0.1);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .service-card-title {
+            font-family: 'Signika Negative', sans-serif;
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .service-description {
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .service-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-item-modern {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .feature-item-modern:hover {
+            background: #e9ecef;
+        }
+        
+        .feature-item-modern i {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .feature-item-modern span {
+            font-family: 'Signika Negative', sans-serif;
+            color: #495057;
+            font-weight: 500;
+        }
+        
+        .service-types-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .type-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .type-item:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(25, 101, 192, 0.2);
+        }
+        
+        .type-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .type-item:hover i {
+            color: white;
+        }
+        
+        .type-item h6 {
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+        
+        .type-item p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .type-item:hover p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .btn-service-gradient {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(25, 101, 192, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-service-gradient.touristic {
+            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            box-shadow: 0 8px 25px rgba(0, 184, 148, 0.3);
+        }
+        
+        .btn-service-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(25, 101, 192, 0.4);
+            color: white;
+        }
+        
+        .feature-card-commercial {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card-commercial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .feature-icon-wrap {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.75rem;
+        }
+        
+        .feature-card-commercial h5 {
+            font-family: 'Signika Negative', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+        }
+        
+        .feature-card-commercial p {
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+            margin-bottom: 0;
+        }
+        
+        .tourism-type-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .tourism-type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .tourism-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .tourism-icon.adventure {
+            background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+        }
+        
+        .tourism-icon.corporate {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        
+        .tourism-icon.cultural {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+        }
+        
+        .tourism-icon.gastronomic {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+        
+        .tourism-type-card h5 {
+            font-family: 'Signika Negative', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tourism-type-card p {
+            color: #6c757d;
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .rounded-20 {
+            border-radius: 20px;
+        }
+        
         /* About Page Commercial Styles */
         .about-hero-commercial {
             min-height: 100vh;

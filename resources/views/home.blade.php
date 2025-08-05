@@ -275,9 +275,6 @@
                     </div>
                     
                     <h2 class="about-title-main">¿Quienes Somos?</h2>
-                    <div class="about-subtitle-highlight">
-                        <span class="highlight-text">Confianza, desde 1995.</span>
-                    </div>
                     
                     <div class="about-story">
                         <p class="story-lead">
