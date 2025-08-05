@@ -3882,8 +3882,8 @@
             left: 45px;
             top: 0;
             bottom: 0;
-            width: 4px;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            width: 2px;
+            background: linear-gradient(180deg, rgba(108, 117, 125, 0.25) 0%, rgba(108, 117, 125, 0.4) 50%, rgba(108, 117, 125, 0.25) 100%);
             border-radius: 2px;
         }
         
@@ -3897,15 +3897,15 @@
         
         .timeline-year {
             background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
-            color: var(--primary-color);
+            color: rgba(28, 101, 192, 0.8);
             font-weight: 800;
             font-size: 1rem;
             padding: 0.75rem 1.25rem;
             border-radius: 25px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             min-width: 100px;
             text-align: center;
-            border: 3px solid var(--primary-color);
+            border: 2px solid rgba(108, 117, 125, 0.3);
             flex-shrink: 0;
             z-index: 3;
             position: relative;
@@ -3917,7 +3917,7 @@
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
-            border-left: 5px solid var(--primary-color);
+            border-left: 3px solid rgba(108, 117, 125, 0.4);
             position: relative;
         }
         
@@ -3928,7 +3928,7 @@
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(90deg, var(--primary-color), transparent);
+            background: linear-gradient(90deg, rgba(108, 117, 125, 0.3), transparent);
             border-radius: 20px 20px 0 0;
         }
         
@@ -3967,43 +3967,43 @@
         }
         
         .timeline-icon.success {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            background: linear-gradient(135deg, rgba(40, 167, 69, 0.8) 0%, rgba(40, 167, 69, 0.9) 100%);
         }
         
         .timeline-icon.warning {
-            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.8) 0%, rgba(224, 168, 0, 0.9) 100%);
         }
         
         .timeline-icon.primary {
-            background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+            background: linear-gradient(135deg, rgba(111, 66, 193, 0.8) 0%, rgba(90, 50, 163, 0.9) 100%);
         }
         
         .timeline-icon.current {
-            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.85) 0%, rgba(255, 179, 71, 0.85) 100%);
             width: 45px;
             height: 45px;
             font-size: 1.1rem;
             animation: pulse-gold 2s ease-in-out infinite;
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
             left: 25px;
         }
         
         .timeline-item.current .timeline-year {
-            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.9) 0%, rgba(255, 179, 71, 0.9) 100%);
             color: #333;
-            border-color: #ffd700;
+            border-color: rgba(255, 215, 0, 0.8);
             font-weight: 800;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-            border-width: 4px;
+            border-width: 3px;
         }
         
         .timeline-item.current .timeline-content {
-            border-left-color: #ffd700;
-            background: linear-gradient(135deg, #fffbf0 0%, #fff8e1 100%);
+            border-left-color: rgba(255, 215, 0, 0.8);
+            background: linear-gradient(135deg, rgba(255, 251, 240, 0.8) 0%, rgba(255, 248, 225, 0.8) 100%);
         }
         
         .timeline-item.current .timeline-content::before {
-            background: linear-gradient(90deg, #ffd700, transparent);
+            background: linear-gradient(90deg, rgba(255, 215, 0, 0.6), transparent);
         }
         
         @keyframes pulse-gold {
@@ -4298,19 +4298,19 @@
         }
         
         .equipment-icon.security {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            background: linear-gradient(135deg, rgba(40, 167, 69, 0.8) 0%, rgba(40, 167, 69, 0.9) 100%);
         }
         
         .equipment-icon.entertainment {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.8) 0%, rgba(238, 90, 82, 0.9) 100%);
         }
         
         .equipment-icon.tools {
-            background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
+            background: linear-gradient(135deg, rgba(254, 202, 87, 0.8) 0%, rgba(255, 159, 243, 0.8) 100%);
         }
         
         .equipment-icon.navigation {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            background: linear-gradient(135deg, rgba(28, 101, 192, 0.8) 0%, rgba(21, 101, 192, 0.9) 100%);
         }
         
         .equipment-badge {
@@ -4323,22 +4323,22 @@
         }
         
         .equipment-badge.premium {
-            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.8) 0%, rgba(255, 179, 71, 0.8) 100%);
             color: #333;
         }
         
         .equipment-badge.standard {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            background: linear-gradient(135deg, rgba(40, 167, 69, 0.8) 0%, rgba(40, 167, 69, 0.9) 100%);
             color: white;
         }
         
         .equipment-badge.safety {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.8) 0%, rgba(238, 90, 82, 0.9) 100%);
             color: white;
         }
         
         .equipment-badge.tech {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            background: linear-gradient(135deg, rgba(28, 101, 192, 0.8) 0%, rgba(21, 101, 192, 0.9) 100%);
             color: white;
         }
         
@@ -4374,7 +4374,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            background: linear-gradient(135deg, rgba(28, 101, 192, 0.8) 0%, rgba(21, 101, 192, 0.9) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -5569,7 +5569,16 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A.">
+                @php
+                    use App\Helpers\ImageHelper;
+                    $logoData = ImageHelper::webpImage('logo.png', false);
+                @endphp
+                <picture>
+                    @if($logoData['webp'])
+                        <source srcset="{{ $logoData['webp'] }}" type="image/webp">
+                    @endif
+                    <img src="{{ $logoData['fallback'] }}" alt="Villarrica Tours S.A.">
+                </picture>
                 <span>Villarrica Tours</span>
             </a>
             
@@ -5618,19 +5627,35 @@
                     <h6 class="certifications-title mb-4">Certificaciones y Homologaciones</h6>
                     <div class="certifications-logos-container">
                         <div class="certification-logo-item">
-                            <img src="{{ asset('images/homologacion/BV_certification_9001.png') }}" alt="ISO 9001 Bureau Veritas Certification">
+                            @include('components.optimized-image', [
+                                'src' => 'homologacion/BV_certification_9001.png',
+                                'alt' => 'ISO 9001 Bureau Veritas Certification',
+                                'lazy' => true
+                            ])
                             <span>ISO 9001<br>Bureau Veritas</span>
                         </div>
                         <div class="certification-logo-item">
-                            <img src="{{ asset('images/homologacion/hodelpe-homologado.png') }}" alt="HODELPE Homologaciones Perú">
+                            @include('components.optimized-image', [
+                                'src' => 'homologacion/hodelpe-homologado.png',
+                                'alt' => 'HODELPE Homologaciones Perú',
+                                'lazy' => true
+                            ])
                             <span>HODELPE<br>Homologaciones Perú</span>
                         </div>
                         <div class="certification-logo-item">
-                            <img src="{{ asset('images/homologacion/cial.png') }}" alt="CIAL Certification">
+                            @include('components.optimized-image', [
+                                'src' => 'homologacion/cial.png',
+                                'alt' => 'CIAL Certification',
+                                'lazy' => true
+                            ])
                             <span>CIAL<br>Certificación</span>
                         </div>
                         <div class="certification-logo-item">
-                            <img src="{{ asset('images/homologacion/Mega-homologado.png') }}" alt="Mega Homologado">
+                            @include('components.optimized-image', [
+                                'src' => 'homologacion/Mega-homologado.png',
+                                'alt' => 'Mega Homologado',
+                                'lazy' => true
+                            ])
                             <span>Mega<br>Homologado</span>
                         </div>
                     </div>
@@ -5645,7 +5670,11 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="footer-logo">
-                        <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A.">
+                        @include('components.optimized-image', [
+                            'src' => 'logo.png',
+                            'alt' => 'Villarrica Tours S.A.',
+                            'lazy' => true
+                        ])
                         <h5>Villarrica Tours S.A.</h5>
                     </div>
                     <p>{{ date("Y") - 1995 }} años de confianza en el transporte de personal y turístico a nivel nacional.</p>
@@ -5705,6 +5734,70 @@
         AOS.init({
             duration: 1000,
             once: true
+        });
+        
+        // Lazy loading para imágenes
+        document.addEventListener('DOMContentLoaded', function() {
+            // CSS para imágenes en carga
+            const style = document.createElement('style');
+            style.textContent = `
+                .lazy {
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }
+                .loaded {
+                    opacity: 1;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Verificar soporte para Intersection Observer
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const picture = img.closest('picture');
+                            
+                            // Cargar fuentes WebP si existen
+                            if (picture) {
+                                const sources = picture.querySelectorAll('source[data-srcset]');
+                                sources.forEach(source => {
+                                    source.srcset = source.dataset.srcset;
+                                    source.removeAttribute('data-srcset');
+                                });
+                            }
+                            
+                            // Cargar imagen
+                            if (img.dataset.src) {
+                                img.src = img.dataset.src;
+                                img.removeAttribute('data-src');
+                            }
+                            
+                            img.classList.remove('lazy');
+                            img.classList.add('loaded');
+                            observer.unobserve(img);
+                        }
+                    });
+                }, {
+                    rootMargin: '50px 0px',
+                    threshold: 0.01
+                });
+                
+                // Observar todas las imágenes lazy
+                document.querySelectorAll('img[data-src], img.lazy').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            } else {
+                // Fallback para navegadores sin soporte
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                });
+                document.querySelectorAll('.lazy').forEach(img => {
+                    img.classList.add('loaded');
+                });
+            }
         });
         
         // Detect if we're on home page and add appropriate class

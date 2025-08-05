@@ -41,7 +41,12 @@
         <div class="row align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
                 <div class="service-image-showcase">
-                    <img src="{{ asset('images/vtsa/3buses.png') }}" alt="Transporte de Personal VTSA" class="img-fluid rounded-20">
+                    @include('components.optimized-image', [
+                    'src' => 'vtsa/3buses.png',
+                    'alt' => 'Transporte de Personal VTSA',
+                    'class' => 'img-fluid rounded-20',
+                    'lazy' => true
+                ])
                     <div class="service-image-overlay">
                         <div class="overlay-content">
                             <h4>Flota Especializada</h4>
@@ -202,7 +207,12 @@
             </div>
             <div class="col-lg-7 order-lg-2" data-aos="fade-left">
                 <div class="service-image-showcase">
-                    <img src="{{ asset('images/vtsa/bus_solo2.png') }}" alt="Transporte Turístico VTSA" class="img-fluid rounded-20">
+                    @include('components.optimized-image', [
+                        'src' => 'vtsa/bus_solo2.png',
+                        'alt' => 'Transporte Turístico VTSA',
+                        'class' => 'img-fluid rounded-20',
+                        'lazy' => true
+                    ])
                     <div class="service-image-overlay touristic">
                         <div class="overlay-content">
                             <h4>Viaja con Estilo</h4>

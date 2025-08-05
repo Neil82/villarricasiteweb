@@ -59,7 +59,12 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/vtsa/bus.png') }}" alt="Ómnibus VTSA Villarrica Tours" class="img-fluid rounded">
+                        @include('components.optimized-image', [
+                            'src' => 'vtsa/bus.png',
+                            'alt' => 'Ómnibus VTSA Villarrica Tours',
+                            'class' => 'img-fluid rounded',
+                            'lazy' => true
+                        ])
                         <div class="fleet-badge">
                             <span class="badge-text">Premium</span>
                         </div>
@@ -78,7 +83,12 @@
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
-                            <img src="{{ asset('images/unidades/capacidad1.jpg') }}" alt="Distribución de asientos Ómnibus" class="capacity-img">
+                            @include('components.optimized-image', [
+                                'src' => 'unidades/capacidad1.jpg',
+                                'alt' => 'Distribución de asientos Ómnibus',
+                                'class' => 'capacity-img',
+                                'lazy' => true
+                            ])
                         </div>
                     </div>
                     
@@ -118,7 +128,12 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/unidades/Midvan_hourdorade.jpg') }}" alt="Minibús VTSA Villarrica Tours" class="img-fluid rounded">
+                        @include('components.optimized-image', [
+                            'src' => 'unidades/Midvan_hourdorade.jpg',
+                            'alt' => 'Minibús VTSA Villarrica Tours',
+                            'class' => 'img-fluid rounded',
+                            'lazy' => true
+                        ])
                         <div class="fleet-badge popular">
                             <span class="badge-text">Popular</span>
                         </div>
@@ -137,7 +152,12 @@
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
-                            <img src="{{ asset('images/unidades/capacidad2.jpg') }}" alt="Distribución de asientos Minibús" class="capacity-img">
+                            @include('components.optimized-image', [
+                                'src' => 'unidades/capacidad2.jpg',
+                                'alt' => 'Distribución de asientos Minibús',
+                                'class' => 'capacity-img',
+                                'lazy' => true
+                            ])
                         </div>
                     </div>
                     
@@ -177,7 +197,12 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/unidades/minivan.jpg') }}" alt="Van VTSA Villarrica Tours" class="img-fluid rounded">
+                        @include('components.optimized-image', [
+                            'src' => 'unidades/minivan.jpg',
+                            'alt' => 'Van VTSA Villarrica Tours',
+                            'class' => 'img-fluid rounded',
+                            'lazy' => true
+                        ])
                         <div class="fleet-badge compact">
                             <span class="badge-text">Compacto</span>
                         </div>
@@ -196,7 +221,12 @@
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
-                            <img src="{{ asset('images/unidades/capacidad3.jpg') }}" alt="Distribución de asientos Van" class="capacity-img">
+                            @include('components.optimized-image', [
+                                'src' => 'unidades/capacidad3.jpg',
+                                'alt' => 'Distribución de asientos Van',
+                                'class' => 'capacity-img',
+                                'lazy' => true
+                            ])
                         </div>
                     </div>
                     
@@ -579,7 +609,13 @@
         <div class="row mb-5">
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/revision-1.jpg') }}" alt="Revisión Técnica 1" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/revision-2.jpg',
+                        'alt' => 'Revisión Técnica 1',
+                        'class' => 'card-img-top',
+                        'style' => 'height: 200px; object-fit: cover;',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h6 class="card-title">Inspección Externa</h6>
                         <p class="card-text small">Control de carrocería y sistemas externos</p>
@@ -588,7 +624,13 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/revision-2.jpg') }}" alt="Revisión Técnica 2" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/revision-3.jpg',
+                        'alt' => 'Revisión Técnica 2',
+                        'class' => 'card-img-top',
+                        'style' => 'height: 200px; object-fit: cover;',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h6 class="card-title">Revisión de Motor</h6>
                         <p class="card-text small">Verificación de sistemas mecánicos</p>
@@ -597,7 +639,13 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/revision-3.jpg') }}" alt="Revisión Técnica 3" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/revision-4.jpg',
+                        'alt' => 'Revisión Técnica 3',
+                        'class' => 'card-img-top',
+                        'style' => 'height: 200px; object-fit: cover;',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h6 class="card-title">Control Interior</h6>
                         <p class="card-text small">Inspección de asientos y equipamiento</p>
@@ -606,7 +654,13 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/revision-4.jpg') }}" alt="Revisión Técnica 4" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/revision-1.jpg',
+                        'alt' => 'Revisión Técnica 4',
+                        'class' => 'card-img-top',
+                        'style' => 'height: 200px; object-fit: cover;',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h6 class="card-title">Sistemas de Seguridad</h6>
                         <p class="card-text small">Verificación de equipos de emergencia</p>
@@ -670,7 +724,12 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/galeria-4-1030x687.jpg') }}" alt="Unidad Villarrica Tours" class="card-img-top">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/tablero.jpg',
+                        'alt' => 'Unidad Villarrica Tours',
+                        'class' => 'card-img-top',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h5 class="card-title">Unidad Moderna</h5>
                         <p class="card-text">Equipada con tecnología de vanguardia y máxima comodidad.</p>
@@ -679,7 +738,12 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/galeria-5-1030x687.jpg') }}" alt="Interior Unidad" class="card-img-top">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/businterior.jpg',
+                        'alt' => 'Interior Unidad',
+                        'class' => 'card-img-top',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h5 class="card-title">Interior Confortable</h5>
                         <p class="card-text">Asientos ergonómicos y aire acondicionado para tu comodidad.</p>
@@ -688,7 +752,12 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/galeria-6-1030x687.jpg') }}" alt="Flota Villarrica" class="card-img-top">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/flotacompleta.jpg',
+                        'alt' => 'Flota Villarrica',
+                        'class' => 'card-img-top',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h5 class="card-title">Flota Completa</h5>
                         <p class="card-text">Diferentes tamaños para satisfacer todas tus necesidades.</p>
@@ -697,7 +766,12 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/galeria-7-1030x687.jpg') }}" alt="Servicio Premium" class="card-img-top">
+                    @include('components.optimized-image', [
+                        'src' => 'vtsa/serviciopremium.jpg',
+                        'alt' => 'Servicio Premium',
+                        'class' => 'card-img-top',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h5 class="card-title">Servicio Premium</h5>
                         <p class="card-text">Atención personalizada y profesional en cada viaje.</p>
@@ -706,7 +780,12 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/galeria-9-1030x687.jpg') }}" alt="Tecnología GPS" class="card-img-top">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/gpsunidad.jpg',
+                        'alt' => 'Tecnología GPS',
+                        'class' => 'card-img-top',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h5 class="card-title">Tecnología GPS</h5>
                         <p class="card-text">Rastreo en tiempo real para mayor seguridad y control.</p>
@@ -715,7 +794,12 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
                 <div class="card gallery-card">
-                    <img src="{{ asset('images/unidades/galeria-10-1030x687.jpg') }}" alt="Mantenimiento" class="card-img-top">
+                    @include('components.optimized-image', [
+                        'src' => 'unidades/interna.jpg',
+                        'alt' => 'Mantenimiento',
+                        'class' => 'card-img-top',
+                        'lazy' => true
+                    ])
                     <div class="card-body">
                         <h5 class="card-title">Mantenimiento Regular</h5>
                         <p class="card-text">Inspecciones constantes para garantizar la seguridad.</p>

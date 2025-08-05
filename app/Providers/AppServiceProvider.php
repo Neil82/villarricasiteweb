@@ -11,7 +11,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Registrar helper para autocargar
+        require_once app_path('Helpers/ImageHelper.php');
     }
 
     /**

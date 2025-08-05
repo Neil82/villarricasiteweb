@@ -155,7 +155,12 @@
                 <div class="company-info-card">
                     <div class="company-header">
                         <div class="company-logo-display mb-4 text-center" style="padding-top: 1.5rem;">
-                            <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A." class="company-brand-logo">
+                            @include('components.optimized-image', [
+                    'src' => 'logo.png',
+                    'alt' => 'Villarrica Tours S.A.',
+                    'class' => 'company-brand-logo',
+                    'lazy' => true
+                ])
                         </div>
                         <p class="company-tagline">Tu socio confiable en transporte</p>
                     </div>

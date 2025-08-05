@@ -35,7 +35,12 @@
                     
                     <!-- Logo principal -->
                     <div class="hero-logo mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours" class="img-fluid hero-logo-img">
+                        @include('components.optimized-image', [
+                            'src' => 'logo.png',
+                            'alt' => 'Villarrica Tours',
+                            'class' => 'img-fluid hero-logo-img',
+                            'lazy' => false
+                        ])
                     </div>
                     <h2 class="hero-subtitle h3 text-white mb-4 fw-bold" data-aos="fade-up" data-aos-delay="300">
                         TRANSPORTE DE CONFIANZA
@@ -145,9 +150,27 @@
                     <!-- Header con imagen y carousel -->
                     <div class="service-header">
                         <div class="service-image-container">
-                            <img src="{{ asset('images/vtsa/bus.png') }}" alt="Transporte de Personal" class="service-image active" data-index="0">
-                            <img src="{{ asset('images/vtsa/3_buses.png') }}" alt="Transporte de Personal" class="service-image" data-index="1">
-                            <img src="{{ asset('images/vtsa/bus_solo.png') }}" alt="Transporte de Personal" class="service-image" data-index="2">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/bus.png',
+                                'alt' => 'Transporte de Personal',
+                                'class' => 'service-image active',
+                                'data_index' => '0',
+                                'lazy' => true
+                            ])
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/3_buses.png',
+                                'alt' => 'Transporte de Personal',
+                                'class' => 'service-image',
+                                'data_index' => '1',
+                                'lazy' => true
+                            ])
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/bus_solo.png',
+                                'alt' => 'Transporte de Personal',
+                                'class' => 'service-image',
+                                'data_index' => '2',
+                                'lazy' => true
+                            ])
                         </div>
                         <div class="service-badge professional">
                             <span class="badge-text">Profesional</span>
@@ -205,9 +228,27 @@
                     <!-- Header con imagen y carousel -->
                     <div class="service-header">
                         <div class="service-image-container">
-                            <img src="{{ asset('images/vtsa/3buses_2.png') }}" alt="Transporte Turístico" class="service-image active" data-index="0">
-                            <img src="{{ asset('images/vtsa/2.png') }}" alt="Transporte Turístico" class="service-image" data-index="1">
-                            <img src="{{ asset('images/vtsa/bus_solo2.png') }}" alt="Transporte Turístico" class="service-image" data-index="2">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/3buses_2.png',
+                                'alt' => 'Transporte Turístico',
+                                'class' => 'service-image active',
+                                'data_index' => '0',
+                                'lazy' => true
+                            ])
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/2.png',
+                                'alt' => 'Transporte Turístico',
+                                'class' => 'service-image',
+                                'data_index' => '1',
+                                'lazy' => true
+                            ])
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/bus_solo2.png',
+                                'alt' => 'Transporte Turístico',
+                                'class' => 'service-image',
+                                'data_index' => '2',
+                                'lazy' => true
+                            ])
                         </div>
                         <div class="service-badge premium">
                             <span class="badge-text">Premium</span>
@@ -302,7 +343,12 @@
                     <!-- Imagen con overlay mejorado -->
                     <div class="trajectory-card-commercial">
                         <div class="trajectory-header">
-                            <img src="{{ asset('images/vtsa/3buses_2.png') }}" alt="Historia Villarrica Tours VTSA" class="trajectory-img">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/3buses_2.png',
+                                'alt' => 'Historia Villarrica Tours VTSA',
+                                'class' => 'trajectory-img',
+                                'lazy' => true
+                            ])
                             <div class="trajectory-overlay">
                                 <div class="trajectory-badge">
                                     <span class="badge-text">Nuestra Trayectoria</span>
@@ -453,7 +499,12 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/vtsa/bus.png') }}" alt="Ómnibus VTSA Villarrica Tours" class="img-fluid rounded">
+                        @include('components.optimized-image', [
+                            'src' => 'vtsa/bus.png',
+                            'alt' => 'Ómnibus VTSA Villarrica Tours',
+                            'class' => 'img-fluid rounded',
+                            'lazy' => true
+                        ])
                         <div class="fleet-badge">
                             <span class="badge-text">Premium</span>
                         </div>
@@ -472,7 +523,12 @@
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
-                            <img src="{{ asset('images/unidades/capacidad1.jpg') }}" alt="Distribución de asientos Ómnibus" class="capacity-img">
+                            @include('components.optimized-image', [
+                                'src' => 'unidades/capacidad1.jpg',
+                                'alt' => 'Distribución de asientos Ómnibus',
+                                'class' => 'capacity-img',
+                                'lazy' => true
+                            ])
                         </div>
                     </div>
                     
@@ -512,7 +568,12 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/unidades/Midvan_hourdorade.jpg') }}" alt="Minibús VTSA Villarrica Tours" class="img-fluid rounded">
+                        @include('components.optimized-image', [
+                            'src' => 'unidades/Midvan_hourdorade.jpg',
+                            'alt' => 'Minibús VTSA Villarrica Tours',
+                            'class' => 'img-fluid rounded',
+                            'lazy' => true
+                        ])
                         <div class="fleet-badge popular">
                             <span class="badge-text">Popular</span>
                         </div>
@@ -531,7 +592,12 @@
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
-                            <img src="{{ asset('images/unidades/capacidad2.jpg') }}" alt="Distribución de asientos Minibús" class="capacity-img">
+                            @include('components.optimized-image', [
+                                'src' => 'unidades/capacidad2.jpg',
+                                'alt' => 'Distribución de asientos Minibús',
+                                'class' => 'capacity-img',
+                                'lazy' => true
+                            ])
                         </div>
                     </div>
                     
@@ -571,7 +637,12 @@
                 <div class="fleet-card-commercial">
                     <!-- Header con imagen -->
                     <div class="fleet-header">
-                        <img src="{{ asset('images/unidades/minivan.jpg') }}" alt="Van VTSA Villarrica Tours" class="img-fluid rounded">
+                        @include('components.optimized-image', [
+                            'src' => 'unidades/minivan.jpg',
+                            'alt' => 'Van VTSA Villarrica Tours',
+                            'class' => 'img-fluid rounded',
+                            'lazy' => true
+                        ])
                         <div class="fleet-badge compact">
                             <span class="badge-text">Compacto</span>
                         </div>
@@ -590,7 +661,12 @@
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
-                            <img src="{{ asset('images/unidades/capacidad3.jpg') }}" alt="Distribución de asientos Van" class="capacity-img">
+                            @include('components.optimized-image', [
+                                'src' => 'unidades/capacidad3.jpg',
+                                'alt' => 'Distribución de asientos Van',
+                                'class' => 'capacity-img',
+                                'lazy' => true
+                            ])
                         </div>
                     </div>
                     
@@ -646,120 +722,272 @@
         <div class="clients-carousel-container">
             <div class="clients-carousel">
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-alconsa.png') }}" alt="Alconsa">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-alconsa.png',
+                        'alt' => 'Alconsa',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-amp-terminals.png') }}" alt="AMP Terminals">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-amp-terminals.png',
+                        'alt' => 'AMP Terminals',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-cemex.png') }}" alt="Cemex">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-cemex.png',
+                        'alt' => 'Cemex',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-fadesa.png') }}" alt="Fadesa">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-fadesa.png',
+                        'alt' => 'Fadesa',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-impala.png') }}" alt="Impala">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-impala.png',
+                        'alt' => 'Impala',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-ixm.png') }}" alt="IXM">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-ixm.png',
+                        'alt' => 'IXM',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-maersk.png') }}" alt="Maersk">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-maersk.png',
+                        'alt' => 'Maersk',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-mixercon.png') }}" alt="Mixercon">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-mixercon.png',
+                        'alt' => 'Mixercon',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-mra.png') }}" alt="MRA">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-mra.png',
+                        'alt' => 'MRA',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-palcon.png') }}" alt="Palcon">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-palcon.png',
+                        'alt' => 'Palcon',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-prodac.png') }}" alt="Prodac">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-prodac.png',
+                        'alt' => 'Prodac',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-qb.png') }}" alt="QB">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-qb.png',
+                        'alt' => 'QB',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-quimpac.png') }}" alt="Quimpac">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-quimpac.png',
+                        'alt' => 'Quimpac',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-rfs.png') }}" alt="RFS">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-rfs.png',
+                        'alt' => 'RFS',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-schneider.png') }}" alt="Schneider">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-schneider.png',
+                        'alt' => 'Schneider',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-stierlift.png') }}" alt="Stierlift">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-stierlift.png',
+                        'alt' => 'Stierlift',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-tasa.png') }}" alt="Tasa">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-tasa.png',
+                        'alt' => 'Tasa',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-tpp.png') }}" alt="TPP">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-tpp.png',
+                        'alt' => 'TPP',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-vartini.png') }}" alt="Vartini">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-vartini.png',
+                        'alt' => 'Vartini',
+                        'lazy' => true
+                    ])
                 </div>
                 
                 <!-- Duplicar logos para efecto infinito -->
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-alconsa.png') }}" alt="Alconsa">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-alconsa.png',
+                        'alt' => 'Alconsa',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-amp-terminals.png') }}" alt="AMP Terminals">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-amp-terminals.png',
+                        'alt' => 'AMP Terminals',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-cemex.png') }}" alt="Cemex">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-cemex.png',
+                        'alt' => 'Cemex',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-fadesa.png') }}" alt="Fadesa">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-fadesa.png',
+                        'alt' => 'Fadesa',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-impala.png') }}" alt="Impala">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-impala.png',
+                        'alt' => 'Impala',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-ixm.png') }}" alt="IXM">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-ixm.png',
+                        'alt' => 'IXM',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-maersk.png') }}" alt="Maersk">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-maersk.png',
+                        'alt' => 'Maersk',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-mixercon.png') }}" alt="Mixercon">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-mixercon.png',
+                        'alt' => 'Mixercon',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-mra.png') }}" alt="MRA">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-mra.png',
+                        'alt' => 'MRA',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-palcon.png') }}" alt="Palcon">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-palcon.png',
+                        'alt' => 'Palcon',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-prodac.png') }}" alt="Prodac">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-prodac.png',
+                        'alt' => 'Prodac',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-qb.png') }}" alt="QB">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-qb.png',
+                        'alt' => 'QB',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-quimpac.png') }}" alt="Quimpac">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-quimpac.png',
+                        'alt' => 'Quimpac',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-rfs.png') }}" alt="RFS">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-rfs.png',
+                        'alt' => 'RFS',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-schneider.png') }}" alt="Schneider">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-schneider.png',
+                        'alt' => 'Schneider',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-stierlift.png') }}" alt="Stierlift">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-stierlift.png',
+                        'alt' => 'Stierlift',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-tasa.png') }}" alt="Tasa">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-tasa.png',
+                        'alt' => 'Tasa',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-tpp.png') }}" alt="TPP">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-tpp.png',
+                        'alt' => 'TPP',
+                        'lazy' => true
+                    ])
                 </div>
                 <div class="client-logo">
-                    <img src="{{ asset('images/clientes/logotipo-vartini.png') }}" alt="Vartini">
+                    @include('components.optimized-image', [
+                        'src' => 'clientes/logotipo-vartini.png',
+                        'alt' => 'Vartini',
+                        'lazy' => true
+                    ])
                 </div>
             </div>
         </div>
