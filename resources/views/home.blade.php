@@ -774,13 +774,13 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-8 mx-auto">
-                <h2 class="mb-4">¿En qué podemos ayudarte?</h2>
+                <h2 class="mb-4">¿Necesitas transporte confiable?</h2>
                 <p class="lead mb-4">
-                    Si estás interesado en alguno de nuestros servicios o deseas hacernos alguna consulta, 
-                    estaremos encantados de atenderle.
+                    Contáctanos ahora y recibe una cotización personalizada en menos de 24 horas. 
+                    <strong>Sin compromiso, completamente gratis.</strong>
                 </p>
                 <a href="{{ route('contacto') }}" class="btn btn-light btn-lg">
-                    <i class="fas fa-phone me-2"></i>Solicitar Cotización
+                    <i class="fas fa-comments me-2"></i>Contactar Ahora
                 </a>
             </div>
         </div>

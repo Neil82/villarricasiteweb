@@ -237,120 +237,202 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Equipamiento de las Unidades</h2>
-                <p class="section-subtitle">Tecnología y comodidad en cada viaje</p>
+                <h2 class="section-title">Equipamiento Premium</h2>
+                <p class="section-subtitle">Tecnología de última generación para tu máxima comodidad</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon">
+                <div class="equipment-card-commercial">
+                    <div class="equipment-header">
+                        <div class="equipment-icon security">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h5 class="card-title">Seguridad y Confort</h5>
-                        <ul class="list-unstyled text-start">
-                            <li class="mb-2">
-                                <i class="fas fa-satellite text-primary me-2"></i>
-                                Sistema de Rastreo Satelital – GPS
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-snowflake text-primary me-2"></i>
-                                Aire Acondicionado
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-user-shield text-primary me-2"></i>
-                                Cinturones de seguridad en cada asiento
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-chair text-primary me-2"></i>
-                                Asientos reclinables y ergonómicos
-                            </li>
-                        </ul>
+                        <div class="equipment-badge premium">
+                            <span class="badge-text">Premium</span>
+                        </div>
+                    </div>
+                    <div class="equipment-content">
+                        <h5>Seguridad y Confort</h5>
+                        <div class="equipment-features">
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-satellite"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Sistema de Rastreo Satelital</strong>
+                                    <small>GPS en tiempo real</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-snowflake"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Aire Acondicionado</strong>
+                                    <small>Climatización total</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Cinturones de Seguridad</strong>
+                                    <small>En cada asiento</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chair"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Asientos Ergonómicos</strong>
+                                    <small>Reclinables y cómodos</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon">
+                <div class="equipment-card-commercial">
+                    <div class="equipment-header">
+                        <div class="equipment-icon entertainment">
                             <i class="fas fa-music"></i>
                         </div>
-                        <h5 class="card-title">Equipos de Audio</h5>
-                        <ul class="list-unstyled text-start">
-                            <li class="mb-2">
-                                <i class="fas fa-radio text-primary me-2"></i>
-                                Radio
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-tv text-primary me-2"></i>
-                                Televisor
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-compact-disc text-primary me-2"></i>
-                                DVD
-                            </li>
-                        </ul>
+                        <div class="equipment-badge standard">
+                            <span class="badge-text">Incluido</span>
+                        </div>
+                    </div>
+                    <div class="equipment-content">
+                        <h5>Equipos de Audio</h5>
+                        <div class="equipment-features">
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-radio"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Radio</strong>
+                                    <small>AM/FM estéreo</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tv"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Televisor</strong>
+                                    <small>Pantalla LED</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-compact-disc"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>DVD</strong>
+                                    <small>Reproductor multimedia</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon">
+                <div class="equipment-card-commercial">
+                    <div class="equipment-header">
+                        <div class="equipment-icon tools">
                             <i class="fas fa-tools"></i>
                         </div>
-                        <h5 class="card-title">Herramientas de Auxilio</h5>
-                        <ul class="list-unstyled text-start">
-                            <li class="mb-2">
-                                <i class="fas fa-car text-primary me-2"></i>
-                                Gata Hidráulica
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-wrench text-primary me-2"></i>
-                                Llave de rueda
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-tire text-primary me-2"></i>
-                                Llanta de repuesto
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-fire-extinguisher text-primary me-2"></i>
-                                Extintor
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-triangle text-primary me-2"></i>
-                                Triángulo o conos de seguridad
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-first-aid text-primary me-2"></i>
-                                Botiquín
-                            </li>
-                        </ul>
+                        <div class="equipment-badge safety">
+                            <span class="badge-text">Seguridad</span>
+                        </div>
+                    </div>
+                    <div class="equipment-content">
+                        <h5>Herramientas de Auxilio</h5>
+                        <div class="equipment-features">
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Gata Hidráulica</strong>
+                                    <small>Sistema profesional</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-wrench"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Llave de Rueda</strong>
+                                    <small>Kit completo</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-fire-extinguisher"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Extintor</strong>
+                                    <small>Certificado vigente</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-first-aid"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Botiquín</strong>
+                                    <small>Equipado completo</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card h-100">
-                    <div class="card-body text-center p-4">
-                        <div class="service-icon">
+                <div class="equipment-card-commercial">
+                    <div class="equipment-header">
+                        <div class="equipment-icon navigation">
                             <i class="fas fa-map-marked-alt"></i>
                         </div>
-                        <h5 class="card-title">Navegación</h5>
-                        <ul class="list-unstyled text-start">
-                            <li class="mb-2">
-                                <i class="fas fa-satellite text-primary me-2"></i>
-                                GPS en tiempo real
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-route text-primary me-2"></i>
-                                Rastreo satelital
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-mobile-alt text-primary me-2"></i>
-                                Comunicación constante
-                            </li>
-                        </ul>
+                        <div class="equipment-badge tech">
+                            <span class="badge-text">Tech</span>
+                        </div>
+                    </div>
+                    <div class="equipment-content">
+                        <h5>Navegación</h5>
+                        <div class="equipment-features">
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-satellite"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>GPS en Tiempo Real</strong>
+                                    <small>Ubicación exacta</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Rastreo Satelital</strong>
+                                    <small>Monitoreo 24/7</small>
+                                </div>
+                            </div>
+                            <div class="equipment-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <strong>Comunicación</strong>
+                                    <small>Contacto constante</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -360,69 +442,122 @@
 
 
 <!-- Legal Obligations Section -->
-<section class="py-5">
+<section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="section-title">Obligaciones Legales</h2>
-                <p class="section-subtitle">Cumplimos con todas las normativas vigentes</p>
+                <h2 class="section-title">Respaldo Legal Total</h2>
+                <p class="section-subtitle">Protección completa y tranquilidad garantizada</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
-                    <div class="card-body p-4">
-                        <h4 class="text-primary mb-3">Seguros en las Unidades:</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-shield-alt text-success me-2"></i>
-                                Seguro Obligatorio ante Accidentes de Tránsito (SOAT)
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-shield-alt text-success me-2"></i>
-                                Pólizas de Seguro a Todo Riesgo
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-shield-alt text-success me-2"></i>
-                                Pólizas de Seguro de Responsabilidad Civil
-                            </li>
-                        </ul>
+                <div class="legal-compliance-card">
+                    <div class="compliance-header">
+                        <div class="compliance-icon vehicle-insurance">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <div class="compliance-badge certified">
+                            <span class="badge-text">Certificado</span>
+                        </div>
+                    </div>
+                    <div class="compliance-content">
+                        <h4>Seguros en las Unidades</h4>
+                        <p class="compliance-description">Protección total para nuestras unidades y pasajeros</p>
+                        <div class="compliance-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt text-success"></i>
+                                <div class="feature-info">
+                                    <h6>SOAT Vigente</h6>
+                                    <small>Seguro Obligatorio ante Accidentes</small>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-umbrella text-success"></i>
+                                <div class="feature-info">
+                                    <h6>Seguro Todo Riesgo</h6>
+                                    <small>Cobertura completa de la unidad</small>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-handshake text-success"></i>
+                                <div class="feature-info">
+                                    <h6>Responsabilidad Civil</h6>
+                                    <small>Protección ante terceros</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compliance-guarantee">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>100% Asegurado</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
-                    <div class="card-body p-4">
-                        <h4 class="text-primary mb-3">Seguros al Personal:</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-user-shield text-success me-2"></i>
-                                Seguro Complementario de Trabajos de Riesgo (SCTR)
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-user-shield text-success me-2"></i>
-                                Póliza de Seguro Vida Ley
-                            </li>
-                        </ul>
-                        <h5 class="text-primary mt-4 mb-3">Beneficios del Personal:</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-file-invoice text-primary me-2"></i>
-                                Pagos de SUNAT: PDT Mensual – Renta Anual
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-heartbeat text-primary me-2"></i>
-                                Pago ESSALUD
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-piggy-bank text-primary me-2"></i>
-                                Sistema Nacional de Pensiones y AFP
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-users text-primary me-2"></i>
-                                Personal en planilla
-                            </li>
-                        </ul>
+                <div class="legal-compliance-card">
+                    <div class="compliance-header">
+                        <div class="compliance-icon personnel-benefits">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="compliance-badge premium">
+                            <span class="badge-text">Premium</span>
+                        </div>
+                    </div>
+                    <div class="compliance-content">
+                        <h4>Personal & Beneficios</h4>
+                        <p class="compliance-description">Conductores profesionales con todos los beneficios</p>
+                        <div class="compliance-features">
+                            <div class="feature-item">
+                                <i class="fas fa-user-shield text-primary"></i>
+                                <div class="feature-info">
+                                    <h6>Seguro SCTR</h6>
+                                    <small>Cobertura de Trabajos de Riesgo</small>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heartbeat text-primary"></i>
+                                <div class="feature-info">
+                                    <h6>ESSALUD + Vida Ley</h6>
+                                    <small>Atención médica completa</small>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-invoice text-primary"></i>
+                                <div class="feature-info">
+                                    <h6>Personal en Planilla</h6>
+                                    <small>SUNAT + AFP + Pensiones</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compliance-guarantee">
+                            <i class="fas fa-award text-primary me-2"></i>
+                            <span>Personal Certificado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trust Message -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="compliance-trust-message" data-aos="fade-up">
+                    <div class="trust-message-content">
+                        <div class="trust-message-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="trust-message-text">
+                            <h4>Todo este respaldo legal nos convierte en tu socio más confiable</h4>
+                            <p>Con {{ date('Y') - 1995 }}+ años de experiencia, 100+ clientes satisfechos y una flota de 75+ unidades completamente aseguradas, tienes la garantía de que tu transporte está en las mejores manos.</p>
+                        </div>
+                        <div class="trust-message-cta">
+                            <a href="{{ route('contacto') }}" class="btn btn-trust-cta">
+                                <i class="fas fa-handshake me-2"></i>
+                                <span>Únete a Nuestros Clientes</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -431,7 +566,7 @@
 </section>
 
 <!-- Maintenance Section -->
-<section class="py-5 bg-light">
+<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
@@ -596,16 +731,62 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-8 mx-auto">
-                <h2 class="mb-4">¿En qué podemos ayudarte?</h2>
+                <h2 class="mb-4">¿Necesitas transporte confiable?</h2>
                 <p class="lead mb-4">
-                    Si estás interesado en alguno de nuestros servicios o deseas hacernos alguna consulta, 
-                    estaremos encantados de atenderle.
+                    Contáctanos ahora y recibe una cotización personalizada en menos de 24 horas. 
+                    <strong>Sin compromiso, completamente gratis.</strong>
                 </p>
                 <a href="{{ route('contacto') }}" class="btn btn-light btn-lg">
-                    <i class="fas fa-phone me-2"></i>Solicitar Cotización
+                    <i class="fas fa-comments me-2"></i>Contactar Ahora
                 </a>
             </div>
         </div>
     </div>
 </section>
+@endsection
+
+@section('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Función para animar los contadores de la flota
+    function animateFleetCounters() {
+        const fleetCounters = document.querySelectorAll('.fleet-counter');
+        
+        fleetCounters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-count'));
+            const suffix = counter.getAttribute('data-suffix') || '';
+            const duration = 2000; // 2 segundos
+            const step = target / (duration / 16); // 60fps
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    counter.textContent = Math.floor(current) + suffix;
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target + suffix;
+                }
+            };
+            
+            updateCounter();
+        });
+    }
+
+    // Intersection Observer para activar la animación cuando sea visible
+    const statsSection = document.querySelector('.about-stats-commercial');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateFleetCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+    }
+});
+</script>
 @endsection 

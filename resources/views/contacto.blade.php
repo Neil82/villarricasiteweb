@@ -53,6 +53,7 @@
                 <p class="section-subtitle">Elige la opción que más te convenga para recibir atención inmediata</p>
             </div>
         </div>
+        
         <div class="row">
             <!-- Contact Cards -->
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -103,8 +104,8 @@
                                 <span>+51 954 778 370</span>
                             </div>
                             <div class="availability-tag">
-                                <i class="fas fa-circle text-success me-1"></i>
-                                <small>En línea ahora</small>
+                                <i class="fas fa-clock me-1 text-primary"></i>
+                                <small>Respuesta dentro del horario</small>
                             </div>
                         </div>
                         <div class="contact-action">
@@ -153,10 +154,9 @@
             <div class="col-lg-6 mb-4" data-aos="fade-right">
                 <div class="company-info-card">
                     <div class="company-header">
-                        <div class="company-logo">
-                            <i class="fas fa-building"></i>
+                        <div class="company-logo-display mb-4 text-center" style="padding-top: 1.5rem;">
+                            <img src="{{ asset('images/logo.png') }}" alt="Villarrica Tours S.A." class="company-brand-logo">
                         </div>
-                        <h4>Villarrica Tours S.A.</h4>
                         <p class="company-tagline">Tu socio confiable en transporte</p>
                     </div>
                     <div class="company-details">
@@ -239,7 +239,7 @@
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="trust-card">
                     <div class="trust-icon guarantee">
-                        <i class="fas fa-certificate"></i>
+                        <i class="fas fa-award"></i>
                     </div>
                     <h5>Garantía Total</h5>
                     <p class="text-muted">Certificaciones internacionales ISO 9001 y homologaciones oficiales que respaldan nuestro servicio.</p>
@@ -295,7 +295,7 @@
                             <i class="fas fa-calculator"></i>
                         </div>
                         <h4>Formulario de Cotización</h4>
-                        <p class="text-muted mb-0">Todos los campos marcados con * son obligatorios</p>
+                        <p class="text-white mb-0">Todos los campos marcados con * son obligatorios</p>
                     </div>
                     <div class="card-body p-4">
                         <form>
@@ -348,7 +348,6 @@
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <div class="urgency-content">
-                                    <h6>Respuesta Garantizada</h6>
                                     <p class="mb-0">Te contactaremos en menos de 24 horas con tu cotización personalizada</p>
                                 </div>
                             </div>
@@ -376,23 +375,75 @@
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mb-5">
+            <div class="col-12 text-center mb-4">
                 <h2 class="section-title">Dónde Estamos</h2>
-                <p class="section-subtitle">Visítanos en nuestras instalaciones</p>
+                <p class="section-subtitle mb-0">Visítanos en nuestras instalaciones</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body p-0">
-                        <div class="ratio ratio-21x9">
+                        <div class="ratio ratio-16x9">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.1234567890123!2d-77.12345678901234!3d-12.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzM0LjQiUyA3N8KwMDcnMzQuNCJX!5e0!3m2!1ses!2spe!4v1234567890123" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.44963209856!2d-77.10647923527907!3d-12.018552582102018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf52ef28c059%3A0xd4bae2a257f61041!2sVILLARRICA%20TOURS%20S.A.!5e0!3m2!1ses-419!2spe!4v1754348418377!5m2!1ses-419!2spe" 
                                 style="border:0;" 
                                 allowfullscreen="" 
                                 loading="lazy" 
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="location-info-card">
+                    <div class="location-header">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Cómo Llegar</h4>
+                        <p class="text-muted">Usa tu app favorita de navegación</p>
+                    </div>
+                    
+                    <div class="navigation-options">
+                        <div class="nav-option-card waze" data-aos="fade-up" data-aos-delay="100">
+                            <div class="nav-option-header">
+                                <div class="nav-option-icon">
+                                    <i class="fab fa-waze"></i>
+                                </div>
+                                <div class="nav-option-info">
+                                    <h6>Waze</h6>
+                                    <small>Navegación inteligente</small>
+                                </div>
+                            </div>
+                            <a href="https://waze.com/ul?q=VILLARRICA%20TOURS%20S.A.&navigate=yes&ll=-12.019338341457741,-77.08659641175947" target="_blank" class="btn btn-nav-waze">
+                                <i class="fas fa-route me-2"></i>Abrir en Waze
+                            </a>
+                        </div>
+                        
+                        <div class="nav-option-card google-maps" data-aos="fade-up" data-aos-delay="200">
+                            <div class="nav-option-header">
+                                <div class="nav-option-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="nav-option-info">
+                                    <h6>Google Maps</h6>
+                                    <small>Mapas de Google</small>
+                                </div>
+                            </div>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=-12.019338341457741,-77.08659641175947&destination_place_id=ChIJWcAo70_PBZERQRAWpSLqvtQ" target="_blank" class="btn btn-nav-google">
+                                <i class="fas fa-directions me-2"></i>Abrir en Google Maps
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="location-details mt-4">
+                        <h6 class="text-primary mb-3">Nuestra Dirección</h6>
+                        <div class="address-info">
+                            <i class="fas fa-building me-2 text-primary"></i>
+                            <span>Av. Los Próceres Nro. 201<br>San Martín de Porres, Lima</span>
                         </div>
                     </div>
                 </div>
@@ -512,4 +563,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-@endsection 
+@endsection

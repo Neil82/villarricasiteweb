@@ -1479,6 +1479,356 @@
             transform: translateY(-1px) scale(1.01);
         }
         
+        /* Professional Fleet Showcase */
+        .professional-fleet-showcase {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .professional-fleet-showcase img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        .fleet-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        .fleet-badge {
+            background: linear-gradient(135deg, rgba(25, 118, 210, 0.95), rgba(21, 101, 192, 0.95));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 8px 25px rgba(25, 118, 210, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .professional-fleet-showcase img {
+                height: 250px;
+            }
+            
+            .fleet-badge {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* Location Navigation Options */
+        .location-info-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .location-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .location-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), #1565c0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .navigation-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .nav-option-card {
+            background: var(--white);
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-option-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(25, 118, 210, 0.15);
+        }
+        
+        .nav-option-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .nav-option-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+        }
+        
+        .nav-option-card.waze .nav-option-icon {
+            background: linear-gradient(135deg, #33ccff, #0099cc);
+        }
+        
+        .nav-option-card.google-maps .nav-option-icon {
+            background: linear-gradient(135deg, #4285f4, #1a73e8);
+        }
+        
+        .nav-option-card.apple-maps .nav-option-icon {
+            background: linear-gradient(135deg, #007aff, #0056cc);
+        }
+        
+        .nav-option-info h6 {
+            margin: 0;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .nav-option-info small {
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+        
+        .btn-nav-waze,
+        .btn-nav-google,
+        .btn-nav-apple {
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: none;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-nav-waze {
+            background: linear-gradient(135deg, #33ccff, #0099cc);
+            color: white;
+        }
+        
+        .btn-nav-google {
+            background: linear-gradient(135deg, #4285f4, #1a73e8);
+            color: white;
+        }
+        
+        .btn-nav-apple {
+            background: linear-gradient(135deg, #007aff, #0056cc);
+            color: white;
+        }
+        
+        .btn-nav-waze:hover,
+        .btn-nav-google:hover,
+        .btn-nav-apple:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+        
+        .location-details {
+            border-top: 1px solid #e9ecef;
+            padding-top: 20px;
+        }
+        
+        .address-info {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .schedule-compact {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .schedule-item-compact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+            position: relative;
+        }
+        
+        .schedule-item-compact.highlight {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border-left-color: #28a745;
+        }
+        
+        .schedule-day {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .schedule-time {
+            text-align: right;
+            font-size: 0.85rem;
+            color: #495057;
+        }
+        
+        .always-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #28a745, #1e7e34);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+        }
+        
+        .quick-contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .quick-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-contact-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .quick-contact-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .quick-contact-icon.phone {
+            background: linear-gradient(135deg, var(--primary-color), #1565c0);
+        }
+        
+        .quick-contact-icon.mobile {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+        }
+        
+        .quick-contact-icon.whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+        }
+        
+        .quick-contact-icon.email {
+            background: linear-gradient(135deg, #6c757d, #495057);
+        }
+        
+        .quick-contact-info {
+            flex: 1;
+        }
+        
+        .quick-contact-info small {
+            display: block;
+            color: #6c757d;
+            font-size: 0.75rem;
+        }
+        
+        .quick-contact-info strong {
+            display: block;
+            color: var(--dark);
+            font-size: 0.9rem;
+        }
+        
+        .social-quick-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .social-quick-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .social-quick-item:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .social-quick-item.facebook:hover {
+            background: #1877f2;
+        }
+        
+        .social-quick-item.instagram:hover {
+            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+        }
+        
+        .social-quick-item.whatsapp:hover {
+            background: #25d366;
+        }
+        
+        .social-quick-item.email:hover {
+            background: #6c757d;
+        }
+        
+        @media (max-width: 768px) {
+            .location-info-card {
+                margin-top: 20px;
+                position: static;
+            }
+        }
+        
         /* Diseño Comercial de Tarjetas de Servicios */
         .service-card-commercial {
             background: var(--white);
@@ -2339,18 +2689,18 @@
         }
         
         .trust-icon.guarantee {
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            color: #b8860b;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
         }
         
         .trust-icon.experience {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
-            color: #d63031;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
         }
         
         .trust-icon.safety {
-            background: linear-gradient(135deg, #4ecdc4 0%, #6eddd6 100%);
-            color: #00b894;
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            color: white;
         }
         
         .trust-card:hover .trust-icon {
@@ -2368,15 +2718,15 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            background: linear-gradient(135deg, #32cd32 0%, #228b22 100%);
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
         }
         
         .trust-badge.popular {
-            background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
         }
         
         .trust-badge.safe {
-            background: linear-gradient(135deg, #4ecdc4 0%, #00b894 100%);
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
         }
         
         .trust-badge .badge-text {
@@ -2390,6 +2740,1074 @@
             margin-bottom: 1rem;
         }
         
+        /* Legal Compliance Cards */
+        .legal-compliance-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .legal-compliance-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .compliance-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .compliance-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .compliance-icon.vehicle-insurance {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+        }
+        
+        .compliance-icon.personnel-benefits {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+        }
+        
+        .compliance-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .compliance-badge.certified {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
+        }
+        
+        .compliance-badge.premium {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+        }
+        
+        .compliance-content h4 {
+            font-family: 'Signika Negative', sans-serif;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .compliance-description {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .compliance-features {
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        
+        .feature-item i {
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            width: 24px;
+        }
+        
+        .feature-info h6 {
+            margin: 0;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+        }
+        
+        .feature-info small {
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+        
+        .compliance-guarantee {
+            padding: 0.75rem 1rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .trust-item {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .trust-number {
+            font-family: 'Libertinus Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .trust-label {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .trust-indicators {
+                gap: 1rem;
+            }
+            
+            .trust-number {
+                font-size: 2rem;
+            }
+            
+            .feature-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .feature-item i {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* Compliance Trust Message */
+        .compliance-trust-message {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            border-radius: 25px;
+            padding: 3rem 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .compliance-trust-message::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .trust-message-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .trust-message-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+            position: relative;
+        }
+        
+        .trust-message-icon::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.3), rgba(40, 167, 69, 0.3));
+            border-radius: 50%;
+            z-index: -1;
+            animation: pulse-trust 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-trust {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.3;
+            }
+        }
+        
+        .trust-message-text {
+            flex: 1;
+        }
+        
+        .trust-message-text h4 {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .trust-message-text p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        .trust-message-cta {
+            flex-shrink: 0;
+        }
+        
+        .btn-trust-cta {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .btn-trust-cta:hover {
+            background: linear-gradient(135deg, #28a745 0%, var(--secondary-color) 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .trust-message-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            
+            .trust-message-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .trust-message-text h4 {
+                font-size: 1.25rem;
+            }
+            
+            .compliance-trust-message {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* About Page Commercial Styles */
+        .about-hero-commercial {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .min-vh-75 {
+            min-height: 75vh;
+        }
+        
+        .hero-trust-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 1rem;
+        }
+        
+        .trust-years {
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .hero-title-impact {
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle-commercial {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-stats-commercial {
+            margin-top: 3rem;
+        }
+        
+        .hero-stat-commercial {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .hero-stat-commercial:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+        
+        .hero-stat-number-big {
+            font-family: 'Libertinus Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            line-height: 1;
+        }
+        
+        .hero-stat-label-commercial {
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .hero-cta-section {
+            margin-top: 2rem;
+        }
+        
+        .btn-hero-primary {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .btn-hero-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+            color: white;
+        }
+        
+        .btn-hero-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        /* Story Commercial Section */
+        .story-commercial-section {
+            padding: 2rem 0;
+        }
+        
+        .story-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .story-title-commercial {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+        }
+        
+        .story-lead-commercial {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #495057;
+        }
+        
+        .story-highlight-box {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid var(--secondary-color);
+            margin-bottom: 2rem;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(25, 101, 192, 0.2);
+        }
+        
+        .highlight-icon {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--secondary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .highlight-text {
+            font-style: italic;
+            font-size: 1rem;
+            margin: 0;
+            color: white;
+        }
+        
+        .btn-story-primary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(25, 101, 192, 0.3);
+        }
+        
+        .btn-story-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(25, 101, 192, 0.4);
+            color: white;
+        }
+        
+        /* Timeline Commercial */
+        .timeline-commercial {
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .timeline-commercial::before {
+            content: '';
+            position: absolute;
+            left: 45px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+        
+        .timeline-year {
+            background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
+            color: var(--primary-color);
+            font-weight: 800;
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 25px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            min-width: 100px;
+            text-align: center;
+            border: 3px solid var(--primary-color);
+            flex-shrink: 0;
+            z-index: 3;
+            position: relative;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background: linear-gradient(135deg, white 0%, #fafbfc 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+            border-left: 5px solid var(--primary-color);
+            position: relative;
+        }
+        
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), transparent);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .timeline-content h5 {
+            margin: 0 0 0.75rem 0;
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.1rem;
+            font-family: 'Signika Negative', sans-serif;
+        }
+        
+        .timeline-content p {
+            margin: 0;
+            color: #495057;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        .timeline-icon {
+            position: absolute;
+            left: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            z-index: 4;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .timeline-icon.success {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+        }
+        
+        .timeline-icon.warning {
+            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+        }
+        
+        .timeline-icon.primary {
+            background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+        }
+        
+        .timeline-icon.current {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            width: 45px;
+            height: 45px;
+            font-size: 1.1rem;
+            animation: pulse-gold 2s ease-in-out infinite;
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+            left: 25px;
+        }
+        
+        .timeline-item.current .timeline-year {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            color: #333;
+            border-color: #ffd700;
+            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            border-width: 4px;
+        }
+        
+        .timeline-item.current .timeline-content {
+            border-left-color: #ffd700;
+            background: linear-gradient(135deg, #fffbf0 0%, #fff8e1 100%);
+        }
+        
+        .timeline-item.current .timeline-content::before {
+            background: linear-gradient(90deg, #ffd700, transparent);
+        }
+        
+        @keyframes pulse-gold {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+            }
+        }
+        
+        /* Why Choose Commercial Section */
+        .why-choose-commercial {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .choose-us-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title-commercial {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle-commercial {
+            font-size: 1.1rem;
+            color: #6c757d;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .advantage-card-commercial {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .advantage-card-commercial:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .advantage-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .advantage-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .advantage-icon.security {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+        }
+        
+        .advantage-icon.reliability {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+        }
+        
+        .advantage-icon.service {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+        }
+        
+        .advantage-icon.experience {
+            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+        }
+        
+        .advantage-icon.fleet {
+            background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+        }
+        
+        .advantage-icon.partnership {
+            background: linear-gradient(135deg, #fd7e14 0%, #e55a00 100%);
+        }
+        
+        .advantage-badge {
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .advantage-badge.premium {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            color: #333;
+        }
+        
+        .advantage-badge.popular {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+        }
+        
+        .advantage-badge.service {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+            color: white;
+        }
+        
+        .advantage-badge.leader {
+            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+            color: #333;
+        }
+        
+        .advantage-badge.modern {
+            background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+            color: white;
+        }
+        
+        .advantage-badge.strategic {
+            background: linear-gradient(135deg, #fd7e14 0%, #e55a00 100%);
+            color: white;
+        }
+        
+        .advantage-content h5 {
+            font-family: 'Signika Negative', sans-serif;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .advantage-content p {
+            color: #6c757d;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .advantage-proof {
+            background: #f8f9fa;
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .why-choose-cta {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-title {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .cta-subtitle {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-cta-primary {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .btn-cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+            color: white;
+        }
+        
+        .btn-cta-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cta-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title-impact {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stat-number-big {
+                font-size: 2rem;
+            }
+            
+            .story-title-commercial {
+                font-size: 2rem;
+            }
+            
+            .section-title-commercial {
+                font-size: 2rem;
+            }
+            
+            .timeline-commercial {
+                padding-left: 1rem;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .timeline-icon {
+                position: relative;
+                left: auto;
+            }
+            
+            .advantage-card-commercial {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Equipment Cards Commercial */
+        .equipment-card-commercial {
+            background: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .equipment-card-commercial:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .equipment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .equipment-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .equipment-icon.security {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+        }
+        
+        .equipment-icon.entertainment {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+        }
+        
+        .equipment-icon.tools {
+            background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
+        }
+        
+        .equipment-icon.navigation {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+        }
+        
+        .equipment-badge {
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .equipment-badge.premium {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            color: #333;
+        }
+        
+        .equipment-badge.standard {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+            color: white;
+        }
+        
+        .equipment-badge.safety {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            color: white;
+        }
+        
+        .equipment-badge.tech {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            color: white;
+        }
+        
+        .equipment-content h5 {
+            font-family: 'Signika Negative', sans-serif;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .equipment-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .equipment-feature {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .equipment-feature:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-text strong {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .feature-text small {
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .equipment-card-commercial {
+                padding: 1rem;
+            }
+            
+            .equipment-header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .equipment-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            
+            .equipment-feature {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+        }
+
         /* Quote Form Styles */
         .quote-form-card {
             background: rgba(255, 255, 255, 0.98);
@@ -2575,7 +3993,7 @@
         }
         
         .contact-method-icon.email {
-            background: linear-gradient(135deg, #ea4335 0%, #c23321 100%);
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
         }
         
         .contact-method-card:hover .contact-method-icon {
@@ -2596,15 +4014,15 @@
         }
         
         .contact-method-badge.urgent {
-            background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
         }
         
         .contact-method-badge.popular {
-            background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
         }
         
         .contact-method-badge.formal {
-            background: linear-gradient(135deg, #6c5ce7 0%, #5f3dc4 100%);
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
         }
         
         .contact-method-badge .badge-text {
@@ -2632,7 +4050,7 @@
         .contact-number-main a,
         .whatsapp-number span,
         .email-address a {
-            font-family: var(--font-mono);
+            font-family: 'Signika Negative', sans-serif;
             font-size: 1.1rem;
             font-weight: 600;
             color: var(--primary-color);
@@ -2642,7 +4060,7 @@
         }
         
         .contact-number-mobile a {
-            font-family: var(--font-mono);
+            font-family: 'Signika Negative', sans-serif;
             color: #636e72;
             text-decoration: none;
             font-size: 0.95rem;
@@ -2688,7 +4106,7 @@
         }
         
         .btn-contact-email {
-            background: linear-gradient(135deg, #ea4335 0%, #c23321 100%);
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
             color: white;
         }
         
@@ -2728,6 +4146,17 @@
             margin: 0 auto 1rem;
         }
         
+        .company-brand-logo {
+            max-width: 220px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .company-brand-logo:hover {
+            opacity: 1;
+        }
+        
         .company-header h4 {
             font-family: 'Signika Negative', sans-serif;
             font-weight: 600;
@@ -2739,6 +4168,7 @@
             font-family: 'Signika Negative', sans-serif;
             color: #636e72;
             font-style: italic;
+            margin-top: 1.5rem;
         }
         
         .detail-item {
@@ -2840,7 +4270,7 @@
         }
         
         .schedule-time {
-            font-family: var(--font-mono);
+            font-family: 'Signika Negative', sans-serif;
             font-size: 0.9rem;
             margin-bottom: 0.25rem;
         }
@@ -3551,7 +4981,7 @@
                     <li class="nav-item">
                         <a href="tel:+5115679670" class="nav-phone">
                             <i class="fas fa-phone me-1"></i>
-                            <span>(511) 567-9670</span>
+                            <span>(01) 567-9670</span>
                         </a>
                     </li>
                 </ul>
