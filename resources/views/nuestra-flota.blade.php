@@ -236,6 +236,7 @@
                         </div>
                     </div>
                     
+                    
                     <!-- Información técnica -->
                     <div class="fleet-specs">
                         <div class="spec-item">
