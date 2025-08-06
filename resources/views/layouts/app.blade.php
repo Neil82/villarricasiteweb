@@ -6170,7 +6170,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Contacto</h5>
                     <div class="contact-info-footer">
-                        <p><i class="fas fa-phone me-2"></i> (511) 567-9670</p>
+                        <p><i class="fas fa-phone me-2"></i> (01) 567-9670</p>
                         <p><i class="fas fa-envelope me-2"></i> turismo@transvillarrica.com</p>
                         <p><i class="fas fa-map-marker-alt me-2"></i> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</p>
                     </div>

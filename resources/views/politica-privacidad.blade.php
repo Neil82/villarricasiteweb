@@ -47,7 +47,7 @@
                         <li><strong>RUC:</strong> 20295999129</li>
                         <li><strong>Domicilio:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
                         <li><strong>Correo electrónico:</strong> turismo@transvillarrica.com</li>
-                        <li><strong>Teléfono:</strong> (511) 567-9670</li>
+                        <li><strong>Teléfono:</strong> (01) 567-9670</li>
                     </ul>
 
                     <h2 class="section-title">3. Información que Recopilamos</h2>
@@ -155,7 +155,7 @@
                     </p>
                     <ul class="legal-list">
                         <li><strong>Correo electrónico:</strong> turismo@transvillarrica.com</li>
-                        <li><strong>Teléfono:</strong> (511) 567-9670</li>
+                        <li><strong>Teléfono:</strong> (01) 567-9670</li>
                         <li><strong>Dirección:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
                     </ul>
 
