@@ -2,6 +2,12 @@
 
 @section('title', 'Servicios - Villarrica Tours S.A.')
 @section('description', 'Transporte de personal y turístico a nivel nacional. Servicios especializados con {{ date("Y") - 1995 }} años de experiencia en el rubro.')
+@section('keywords', 'transporte personal empresas, transporte turístico nacional, servicios transporte especializado, alquiler buses peru, transporte empresarial seguro, buses modernos GPS')
+@section('og_type', 'service')
+@section('og_title', 'Servicios de Transporte Especializado | Villarrica Tours S.A.')
+@section('og_description', 'Transporte de personal y turístico con {{ date("Y") - 1995 }} años de experiencia. ✓ GPS tiempo real ✓ Conductores certificados ✓ Flota moderna')
+@section('twitter_title', 'Servicios de Transporte Especializado | Villarrica Tours S.A.')
+@section('twitter_description', 'Transporte especializado con {{ date("Y") - 1995 }} años de experiencia. ✓ GPS tiempo real ✓ Conductores certificados ✓ Flota moderna')
 
 @section('content')
 <!-- Hero Section -->
@@ -41,12 +47,40 @@
         <div class="row align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
                 <div class="service-image-showcase">
-                    @include('components.optimized-image', [
-                    'src' => 'vtsa/3buses.png',
-                    'alt' => 'Transporte de Personal VTSA',
-                    'class' => 'img-fluid rounded-20',
-                    'lazy' => true
-                ])
+                    <div class="service-slider-container">
+                        <div class="service-slider-item active">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/3buses_portada.png',
+                                'alt' => 'Transporte de Personal - Flota Principal',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                        <div class="service-slider-item">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/corporativo2.jpg',
+                                'alt' => 'Transporte de Personal - Servicio Corporativo',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                        <div class="service-slider-item">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/corporativo1.jpg',
+                                'alt' => 'Transporte de Personal - Ejecutivo',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                        <div class="service-slider-item">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/corporativo3.jpg',
+                                'alt' => 'Transporte de Personal - Empresarial',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                    </div>
                     <div class="service-image-overlay">
                         <div class="overlay-content">
                             <h4>Flota Especializada</h4>
@@ -207,12 +241,40 @@
             </div>
             <div class="col-lg-7 order-lg-2" data-aos="fade-left">
                 <div class="service-image-showcase">
-                    @include('components.optimized-image', [
-                        'src' => 'vtsa/bus_solo2.png',
-                        'alt' => 'Transporte Turístico VTSA',
-                        'class' => 'img-fluid rounded-20',
-                        'lazy' => true
-                    ])
+                    <div class="service-slider-container">
+                        <div class="service-slider-item active">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/selva_bus.jpg',
+                                'alt' => 'Transporte Turístico - Aventura en la Selva',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                        <div class="service-slider-item">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/playa_coaster.jpg',
+                                'alt' => 'Transporte Turístico - Turismo de Playa',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                        <div class="service-slider-item">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/ica_bus.jpg',
+                                'alt' => 'Transporte Turístico - Destinos de Ica',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                        <div class="service-slider-item">
+                            @include('components.optimized-image', [
+                                'src' => 'vtsa/sierra.png',
+                                'alt' => 'Transporte Turístico - Turismo de Sierra',
+                                'class' => 'img-fluid rounded-20',
+                                'lazy' => true
+                            ])
+                        </div>
+                    </div>
                     <div class="service-image-overlay touristic">
                         <div class="overlay-content">
                             <h4>Viaja con Estilo</h4>

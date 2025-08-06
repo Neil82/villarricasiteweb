@@ -2,6 +2,12 @@
 
 @section('title', 'Villarrica Tours S.A. - Transporte de Confianza')
 @section('description', 'Transporte de personal y turístico a nivel nacional con {{ date("Y") - 1995 }} años de experiencia. Seguridad, comodidad y confort garantizados.')
+@section('keywords', 'villarrica tours, transporte personal lima, transporte turístico peru, alquiler buses, empresa transporte confiable, GPS tiempo real, flota moderna EURO 5')
+@section('og_type', 'website')
+@section('og_title', 'Villarrica Tours S.A. - Líder en Transporte desde 1995')
+@section('og_description', 'Transporte de confianza con {{ date("Y") - 1995 }} años de experiencia. ✓ 120+ unidades modernas ✓ GPS tiempo real ✓ 100+ empresas nos eligen ✓ Disponible 24/7')
+@section('twitter_title', 'Villarrica Tours S.A. - Líder en Transporte desde 1995')
+@section('twitter_description', 'Transporte de confianza con {{ date("Y") - 1995 }} años de experiencia. ✓ 120+ unidades ✓ GPS tiempo real ✓ 100+ empresas nos eligen')
 
 @section('content')
 <!-- Hero Section with Video Background -->
@@ -112,7 +118,7 @@
                         </div>
                         <div class="col-3">
                             <div class="hero-stat">
-                                <div class="hero-stat-number counter" data-count="75" data-suffix="+">0+</div>
+                                <div class="hero-stat-number counter" data-count="120" data-suffix="+">0+</div>
                                 <div class="hero-stat-label">Unidades</div>
                             </div>
                         </div>
@@ -151,21 +157,21 @@
                     <div class="service-header">
                         <div class="service-image-container">
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/bus.png',
+                                'src' => 'vtsa/corporativo2.jpg',
                                 'alt' => 'Transporte de Personal',
                                 'class' => 'service-image active',
                                 'data_index' => '0',
                                 'lazy' => true
                             ])
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/3_buses.png',
+                                'src' => 'vtsa/corporativo3.jpg',
                                 'alt' => 'Transporte de Personal',
                                 'class' => 'service-image',
                                 'data_index' => '1',
                                 'lazy' => true
                             ])
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/bus_solo.png',
+                                'src' => 'vtsa/corporativo1.jpg',
                                 'alt' => 'Transporte de Personal',
                                 'class' => 'service-image',
                                 'data_index' => '2',
@@ -229,21 +235,21 @@
                     <div class="service-header">
                         <div class="service-image-container">
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/3buses_2.png',
+                                'src' => 'vtsa/playa_coaster.jpg',
                                 'alt' => 'Transporte Turístico',
                                 'class' => 'service-image active',
                                 'data_index' => '0',
                                 'lazy' => true
                             ])
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/2.png',
+                                'src' => 'vtsa/selva_bus.jpg',
                                 'alt' => 'Transporte Turístico',
                                 'class' => 'service-image',
                                 'data_index' => '1',
                                 'lazy' => true
                             ])
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/bus_solo2.png',
+                                'src' => 'vtsa/ica_bus.jpg',
                                 'alt' => 'Transporte Turístico',
                                 'class' => 'service-image',
                                 'data_index' => '2',
@@ -372,7 +378,7 @@
                                 <div class="stat-label-about">Clientes Satisfechos</div>
                             </div>
                             <div class="stat-item-commercial">
-                                <div class="stat-number-about about-counter" data-count="75" data-suffix="+">0+</div>
+                                <div class="stat-number-about about-counter" data-count="120" data-suffix="+">0+</div>
                                 <div class="stat-label-about">Unidades Modernas</div>
                             </div>
                             <div class="stat-item-commercial">
@@ -497,14 +503,47 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="fleet-card-commercial">
-                    <!-- Header con imagen -->
+                    <!-- Header con carrusel de imágenes -->
                     <div class="fleet-header">
-                        @include('components.optimized-image', [
-                            'src' => 'vtsa/bus.png',
-                            'alt' => 'Ómnibus VTSA Villarrica Tours',
-                            'class' => 'img-fluid rounded',
-                            'lazy' => true
-                        ])
+                        <div class="fleet-carousel" data-fleet-type="omnibus">
+                            <div class="fleet-carousel-inner">
+                                <div class="fleet-carousel-item active">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/bus/bus_yutong.png',
+                                        'alt' => 'Ómnibus Yutong',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                                <div class="fleet-carousel-item">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/bus/bus_higer.png',
+                                        'alt' => 'Ómnibus Higer',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                                <div class="fleet-carousel-item">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/bus/bus_goldendragon.jpg',
+                                        'alt' => 'Ómnibus Golden Dragon',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                            </div>
+                            <button class="fleet-carousel-control prev" onclick="changeFleetSlide(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="fleet-carousel-control next" onclick="changeFleetSlide(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="fleet-carousel-indicators">
+                                <button class="fleet-carousel-indicator active" onclick="goToFleetSlide(this, 0)"></button>
+                                <button class="fleet-carousel-indicator" onclick="goToFleetSlide(this, 1)"></button>
+                                <button class="fleet-carousel-indicator" onclick="goToFleetSlide(this, 2)"></button>
+                            </div>
+                        </div>
                         <div class="fleet-badge">
                             <span class="badge-text">Premium</span>
                         </div>
@@ -545,12 +584,15 @@
                     <div class="fleet-brands">
                         <h6><i class="fas fa-award text-primary me-2"></i>Marcas Disponibles</h6>
                         <div class="brands-list">
-                            <span class="brand-tag">Hyundai</span>
+                            <span class="brand-tag">Yutong</span>
                             <span class="brand-tag">Mercedes Benz</span>
+                            <span class="brand-tag">Hyundai</span>
                             <span class="brand-tag">Higer</span>
-                            <span class="brand-tag">Iveco</span>
                             <span class="brand-tag">Golden Dragon</span>
-                            <span class="brand-tag">+4 más</span>
+                            <span class="brand-tag">Iveco</span>
+                            <span class="brand-tag">International</span>
+                            <span class="brand-tag">Marco Polo</span>
+                            <span class="brand-tag">DongFeng</span>
                         </div>
                     </div>
                     
@@ -566,14 +608,47 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="fleet-card-commercial">
-                    <!-- Header con imagen -->
+                    <!-- Header con carrusel de imágenes -->
                     <div class="fleet-header">
-                        @include('components.optimized-image', [
-                            'src' => 'unidades/Midvan_hourdorade.jpg',
-                            'alt' => 'Minibús VTSA Villarrica Tours',
-                            'class' => 'img-fluid rounded',
-                            'lazy' => true
-                        ])
+                        <div class="fleet-carousel" data-fleet-type="coaster">
+                            <div class="fleet-carousel-inner">
+                                <div class="fleet-carousel-item active" data-vehicle-title="Coaster">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/coaster/coaster_hcounty.jpg',
+                                        'alt' => 'Coaster Hyundai County',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                                <div class="fleet-carousel-item" data-vehicle-title="Coaster">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/coaster/coaster_hyundai.jpg',
+                                        'alt' => 'Coaster Hyundai',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                                <div class="fleet-carousel-item" data-vehicle-title="Minibús">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
+                                        'alt' => 'Kamaz Busscar',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                            </div>
+                            <button class="fleet-carousel-control prev" onclick="changeFleetSlide(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="fleet-carousel-control next" onclick="changeFleetSlide(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="fleet-carousel-indicators">
+                                <button class="fleet-carousel-indicator active" onclick="goToFleetSlide(this, 0)"></button>
+                                <button class="fleet-carousel-indicator" onclick="goToFleetSlide(this, 1)"></button>
+                                <button class="fleet-carousel-indicator" onclick="goToFleetSlide(this, 2)"></button>
+                            </div>
+                        </div>
                         <div class="fleet-badge popular">
                             <span class="badge-text">Popular</span>
                         </div>
@@ -581,14 +656,14 @@
                     
                     <!-- Título principal -->
                     <div class="fleet-title">
-                        <h3>Minibús</h3>
-                        <p class="fleet-subtitle">Ideal para equipos</p>
+                        <h3 data-dynamic-title="true" data-default-title="Coaster">Coaster</h3>
+                        <p class="fleet-subtitle">Grupos medianos</p>
                     </div>
                     
                     <!-- Capacidad destacada -->
                     <div class="fleet-capacity-highlight">
                         <div class="capacity-main">
-                            <span class="capacity-number">30-38</span>
+                            <span class="capacity-number">20-27</span>
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
@@ -614,12 +689,12 @@
                     <div class="fleet-brands">
                         <h6><i class="fas fa-award text-primary me-2"></i>Marcas Disponibles</h6>
                         <div class="brands-list">
-                            <span class="brand-tag">Toyota</span>
-                            <span class="brand-tag">Hyundai</span>
+                            <span class="brand-tag">Kamaz</span>
+                            <span class="brand-tag">DongFeng</span>
+                            <span class="brand-tag">Yutong</span>
                             <span class="brand-tag">Higer</span>
-                            <span class="brand-tag">Marco Polo</span>
-                            <span class="brand-tag">Mercedes Benz</span>
-                            <span class="brand-tag">+2 más</span>
+                            <span class="brand-tag">Agrelo</span>
+                            <span class="brand-tag">Hyundai</span>
                         </div>
                     </div>
                     
@@ -635,14 +710,47 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="fleet-card-commercial">
-                    <!-- Header con imagen -->
+                    <!-- Header con carrusel de imágenes -->
                     <div class="fleet-header">
-                        @include('components.optimized-image', [
-                            'src' => 'unidades/minivan.jpg',
-                            'alt' => 'Van VTSA Villarrica Tours',
-                            'class' => 'img-fluid rounded',
-                            'lazy' => true
-                        ])
+                        <div class="fleet-carousel" data-fleet-type="van">
+                            <div class="fleet-carousel-inner">
+                                <div class="fleet-carousel-item active">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/minivan.jpg',
+                                        'alt' => 'Van VTSA Villarrica Tours - Vista 1',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                                <div class="fleet-carousel-item">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/minivan.jpg',
+                                        'alt' => 'Van VTSA Villarrica Tours - Vista 2',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                                <div class="fleet-carousel-item">
+                                    @include('components.optimized-image', [
+                                        'src' => 'unidades/minivan.jpg',
+                                        'alt' => 'Van VTSA Villarrica Tours - Vista 3',
+                                        'class' => 'img-fluid',
+                                        'lazy' => true
+                                    ])
+                                </div>
+                            </div>
+                            <button class="fleet-carousel-control prev" onclick="changeFleetSlide(this, -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="fleet-carousel-control next" onclick="changeFleetSlide(this, 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="fleet-carousel-indicators">
+                                <button class="fleet-carousel-indicator active" onclick="goToFleetSlide(this, 0)"></button>
+                                <button class="fleet-carousel-indicator" onclick="goToFleetSlide(this, 1)"></button>
+                                <button class="fleet-carousel-indicator" onclick="goToFleetSlide(this, 2)"></button>
+                            </div>
+                        </div>
                         <div class="fleet-badge compact">
                             <span class="badge-text">Compacto</span>
                         </div>
@@ -683,7 +791,10 @@
                     <div class="fleet-brands">
                         <h6><i class="fas fa-award text-primary me-2"></i>Marcas Disponibles</h6>
                         <div class="brands-list">
-                            <span class="brand-tag">Toyota Hiace</span>
+                            <span class="brand-tag">Fotón</span>
+                            <span class="brand-tag">Maxus</span>
+                            <span class="brand-tag">Jac</span>
+                            <span class="brand-tag">Sprinter</span>
                             <span class="brand-tag">Joylong</span>
                         </div>
                     </div>
@@ -1102,6 +1213,56 @@
         if (aboutStatsSection) {
             aboutStatsObserver.observe(aboutStatsSection);
         }
+
+        // Funciones para el carrusel de imágenes de flota
+        window.changeFleetSlide = function(button, direction) {
+            const carousel = button.closest('.fleet-carousel');
+            const items = carousel.querySelectorAll('.fleet-carousel-item');
+            const indicators = carousel.querySelectorAll('.fleet-carousel-indicator');
+            
+            let currentIndex = Array.from(items).findIndex(item => item.classList.contains('active'));
+            items[currentIndex].classList.remove('active');
+            indicators[currentIndex].classList.remove('active');
+            
+            currentIndex = (currentIndex + direction + items.length) % items.length;
+            
+            items[currentIndex].classList.add('active');
+            indicators[currentIndex].classList.add('active');
+            
+            // Actualizar título si es dinámico
+            updateFleetTitle(carousel, items[currentIndex]);
+        };
+        
+        window.updateFleetTitle = function(carousel, activeItem) {
+            const card = carousel.closest('.fleet-card-commercial');
+            const titleElement = card.querySelector('h3[data-dynamic-title="true"]');
+            if (titleElement && activeItem.dataset.vehicleTitle) {
+                titleElement.style.opacity = '0';
+                setTimeout(() => {
+                    titleElement.textContent = activeItem.dataset.vehicleTitle;
+                    titleElement.style.opacity = '1';
+                }, 150);
+            }
+        };
+
+        window.goToFleetSlide = function(indicator, index) {
+            const carousel = indicator.closest('.fleet-carousel');
+            const items = carousel.querySelectorAll('.fleet-carousel-item');
+            const indicators = carousel.querySelectorAll('.fleet-carousel-indicator');
+            
+            items.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+            
+            indicators.forEach((ind, i) => {
+                ind.classList.toggle('active', i === index);
+            });
+            
+            // Actualizar título si es dinámico
+            updateFleetTitle(carousel, items[index]);
+        };
+
+        // Carrusel solo manual - sin auto-play para evitar conflictos
     });
 </script>
 @endsection 

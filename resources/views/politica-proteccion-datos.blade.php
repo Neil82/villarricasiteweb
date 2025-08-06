@@ -211,10 +211,10 @@
                         Para consultas sobre protección de datos personales:
                     </p>
                     <ul class="legal-list">
-                        <li><strong>Responsable:</strong> [Nombre del responsable de datos]</li>
-                        <li><strong>Correo:</strong> [email de protección de datos]</li>
+                        <li><strong>Responsable:</strong> Villarrica Tours S.A.</li>
+                        <li><strong>Correo:</strong> turismo@transvillarrica.com</li>
                         <li><strong>Teléfono:</strong> (511) 567-9670</li>
-                        <li><strong>Dirección:</strong> [Dirección de oficinas]</li>
+                        <li><strong>Dirección:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
                     </ul>
 
                     <div class="legal-notice">

@@ -7,14 +7,112 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <meta name="description" content="@yield('description', 'Transporte de personal y turístico a nivel nacional con {{ date("Y") - 1995 }} años de experiencia. Seguridad, comodidad y confort garantizados.')">
     
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="@yield('keywords', 'transporte personal, transporte turístico, alquiler buses, transporte empresarial, Villarrica Tours, transporte seguro Perú, buses modernos, GPS tiempo real')">
+    <meta name="author" content="Villarrica Tours S.A.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="PE">
+    <meta name="geo.country" content="Peru">
+    <meta name="geo.placename" content="Lima, Peru">
+    <link rel="canonical" href="{{ url()->current() }}">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:title" content="@yield('og_title', 'Villarrica Tours S.A. - Transporte de Confianza')">
+    <meta property="og:description" content="@yield('og_description', 'Transporte de personal y turístico a nivel nacional con 30 años de experiencia. Seguridad, comodidad y confort garantizados.')">
+    <meta property="og:image" content="@yield('og_image', asset('images/logo.png'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Villarrica Tours S.A.">
+    <meta property="og:locale" content="es_PE">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Villarrica Tours S.A. - Transporte de Confianza')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Transporte de personal y turístico a nivel nacional con 30 años de experiencia. Seguridad, comodidad y confort garantizados.')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('images/logo.png'))">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#32CD32">
+    <meta name="msapplication-TileColor" content="#32CD32">
+    <meta name="application-name" content="Villarrica Tours">
+    <meta name="apple-mobile-web-app-title" content="Villarrica Tours">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'TransportationCompany',
+        'name' => 'Villarrica Tours S.A.',
+        'description' => 'Empresa de transporte de personal y turístico a nivel nacional con 30 años de experiencia. Seguridad, comodidad y confort garantizados.',
+        'url' => url('/'),
+        'logo' => asset('images/logo.png'),
+        'image' => asset('images/logo.png'),
+        'foundingDate' => '1995-01-01',
+        'founder' => [
+            '@type' => 'Person',
+            'name' => 'Camilo Paitan Obregón'
+        ],
+        'address' => [
+            '@type' => 'PostalAddress',
+            'addressCountry' => 'PE',
+            'addressRegion' => 'Lima',
+            'addressLocality' => 'San Martín de Porres',
+            'streetAddress' => 'Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa'
+        ],
+        'contactPoint' => [
+            '@type' => 'ContactPoint',
+            'telephone' => '+51-1-567-9670',
+            'contactType' => 'customer service',
+            'availableLanguage' => 'es',
+            'hoursAvailable' => [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['https://schema.org/Monday', 'https://schema.org/Tuesday', 'https://schema.org/Wednesday', 'https://schema.org/Thursday', 'https://schema.org/Friday'],
+                'opens' => '08:00',
+                'closes' => '17:00'
+            ]
+        ],
+        'sameAs' => [
+            'https://www.facebook.com/profile.php?id=100064287904488',
+            'https://www.instagram.com/villarrica_tours_sa/'
+        ],
+        'serviceArea' => [
+            '@type' => 'Country',
+            'name' => 'Peru'
+        ],
+        'makesOffer' => [
+            [
+                '@type' => 'Offer',
+                'name' => 'Transporte de Personal',
+                'description' => 'Servicio especializado para empresas que requieren traslado seguro y puntual de su personal'
+            ],
+            [
+                '@type' => 'Offer', 
+                'name' => 'Transporte Turístico',
+                'description' => 'Experiencias turísticas únicas con la mejor flota del país'
+            ]
+        ],
+        'aggregateRating' => [
+            '@type' => 'AggregateRating',
+            'ratingValue' => '4.8',
+            'reviewCount' => '150',
+            'bestRating' => '5',
+            'worstRating' => '1'
+        ]
+    ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+    </script>
+    
     
     <style>
         @font-face {
@@ -1064,13 +1162,13 @@
             justify-content: center;
             text-align: center;
             transition: all 0.3s ease;
-            padding: 1.5rem 1rem;
+            padding: 2rem 1.5rem;
             border-radius: 12px;
             background: rgba(255, 255, 255, 0.7);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            width: 200px;
-            height: 160px;
-            flex: 0 0 200px;
+            width: 280px;
+            height: 200px;
+            flex: 0 0 280px;
         }
         
         .certification-logo-item:hover {
@@ -1080,8 +1178,8 @@
         }
         
         .certification-logo-item img {
-            max-width: 120px;
-            max-height: 80px;
+            max-width: 200px;
+            max-height: 140px;
             object-fit: contain;
             margin-bottom: 0.75rem;
             transition: all 0.3s ease;
@@ -1095,14 +1193,48 @@
             font-family: 'Signika Negative', sans-serif;
             font-size: 0.85rem;
             font-weight: 500;
-            color: var(--text-dark);
+            color: white;
             line-height: 1.3;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
+            opacity: 0;
+            transition: all 0.3s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 35%;
+            background: linear-gradient(to top, rgba(25, 101, 192, 0.85), rgba(25, 101, 192, 0.45));
+            padding: 0;
+            border-radius: 0 0 12px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Colores específicos para cada certificación */
+        .certification-logo-item[data-cert="bureau-veritas"] span {
+            background: linear-gradient(to top, rgba(220, 20, 60, 0.85), rgba(220, 20, 60, 0.45));
+        }
+
+        .certification-logo-item[data-cert="rodelpe"] span {
+            background: linear-gradient(to top, rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.45));
+        }
+
+        .certification-logo-item[data-cert="cial"] span {
+            background: linear-gradient(to top, rgba(0, 140, 186, 0.85), rgba(0, 140, 186, 0.45));
+        }
+
+        .certification-logo-item[data-cert="mega"] span {
+            background: linear-gradient(to top, rgba(25, 101, 192, 0.85), rgba(25, 101, 192, 0.45));
         }
         
         .certification-logo-item:hover span {
             opacity: 1;
+        }
+
+        .certification-logo-item {
+            position: relative;
         }
         
         /* Información de contacto en footer */
@@ -1257,6 +1389,103 @@
             position: relative;
             overflow: hidden;
             border-radius: 20px 20px 0 0;
+            height: 180px;
+        }
+        
+        .fleet-carousel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .fleet-carousel-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .fleet-carousel-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+        
+        .fleet-carousel-item.active {
+            opacity: 1;
+        }
+        
+        .fleet-carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .fleet-carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+        
+        .fleet-carousel:hover .fleet-carousel-control {
+            opacity: 1;
+        }
+        
+        .fleet-carousel-control:hover {
+            background: rgba(0, 0, 0, 0.9);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .fleet-carousel-control.prev {
+            left: 10px;
+        }
+        
+        .fleet-carousel-control.next {
+            right: 10px;
+        }
+        
+        .fleet-carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 2;
+        }
+        
+        .fleet-carousel-indicator {
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .fleet-carousel-indicator.active {
+            background: white;
+            width: 24px;
+            border-radius: 4px;
         }
         
         .fleet-header img {
@@ -1306,6 +1535,10 @@
             font-size: 1.6rem;
             color: var(--primary-color);
             margin-bottom: 6px;
+        }
+
+        .fleet-title h3[data-dynamic-title="true"] {
+            transition: opacity 0.3s ease;
         }
         
         .fleet-subtitle {
@@ -1429,6 +1662,18 @@
         .brand-tag:hover {
             background: linear-gradient(135deg, #bbdefb, #90caf9);
             transform: translateY(-1px);
+        }
+        
+        .expand-brands {
+            cursor: pointer;
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7) !important;
+            color: #7b1fa2 !important;
+            border: 1px solid rgba(123, 31, 162, 0.2) !important;
+        }
+        
+        .expand-brands:hover {
+            background: linear-gradient(135deg, #e1bee7, #ce93d8) !important;
+            color: #6a1b9a !important;
         }
         
         .fleet-cta {
@@ -3357,13 +3602,34 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
         
-        .service-image-showcase img {
+        .service-slider-container {
+            position: relative;
             width: 100%;
-            height: auto;
+            height: 400px;
+        }
+        
+        .service-slider-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        .service-slider-item.active {
+            opacity: 1;
+        }
+        
+        .service-slider-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .service-image-showcase:hover img {
+        .service-image-showcase:hover .service-slider-item.active img {
             transform: scale(1.05);
         }
         
@@ -4950,14 +5216,31 @@
             border-radius: 12px;
             margin: 0 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
         
         .client-logo img {
-            max-width: 220px;
-            max-height: 120px;
+            max-width: 260px;
+            max-height: 140px;
             object-fit: contain;
             opacity: 0.8;
             transition: all 0.3s ease;
+        }
+        
+        /* Logos específicos que necesitan ser más grandes */
+        .client-logo img[alt="Cemex"],
+        .client-logo img[alt="Impala"],
+        .client-logo img[alt="IXM"],
+        .client-logo img[alt="Palcon"],
+        .client-logo img[alt="Abtechnology"] {
+            max-width: 300px;
+            max-height: 160px;
+        }
+        
+        /* Schneider necesita ser aún más grande */
+        .client-logo img[alt="Schneider"] {
+            max-width: 340px;
+            max-height: 180px;
         }
         
         .client-logo:hover {
@@ -4968,7 +5251,7 @@
         
         .client-logo:hover img {
             opacity: 1;
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
         
         .clients-carousel:hover {
@@ -5485,11 +5768,28 @@
                 margin: 0 5px;
                 background: rgba(255, 255, 255, 0.7);
                 border-radius: 8px;
+                overflow: hidden;
             }
             
             .client-logo img {
-                max-width: 160px;
-                max-height: 80px;
+                max-width: 180px;
+                max-height: 90px;
+            }
+            
+            /* Logos específicos más grandes en móvil */
+            .client-logo img[alt="Cemex"],
+            .client-logo img[alt="Impala"],
+            .client-logo img[alt="IXM"],
+            .client-logo img[alt="Palcon"],
+            .client-logo img[alt="Abtechnology"] {
+                max-width: 200px;
+                max-height: 100px;
+            }
+            
+            /* Schneider más grande en móvil */
+            .client-logo img[alt="Schneider"] {
+                max-width: 220px;
+                max-height: 110px;
             }
             
             .clients-carousel {
@@ -5539,25 +5839,199 @@
             }
             
             .certification-logo-item {
-                padding: 1rem 0.5rem;
-                width: 150px;
-                height: 140px;
-                flex: 0 0 150px;
+                padding: 1.5rem 1rem;
+                width: 200px;
+                height: 180px;
+                flex: 0 0 200px;
             }
             
             .certification-logo-item img {
-                max-width: 90px;
-                max-height: 60px;
+                max-width: 160px;
+                max-height: 120px;
             }
             
             .certification-logo-item span {
                 font-size: 0.75rem;
-                margin-top: 0.5rem;
+                height: 35%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(to top, rgba(25, 101, 192, 0.85), rgba(25, 101, 192, 0.45));
+                border-radius: 0 0 12px 12px;
+                padding: 0;
             }
             
             .certifications-title {
                 font-size: 0.95rem;
                 margin-bottom: 1.5rem;
+            }
+        }
+        
+        /* Social Share Buttons */
+        .social-share-buttons {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .share-label {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 600;
+            color: var(--text-dark);
+            white-space: nowrap;
+            margin-right: 0.5rem;
+        }
+        
+        .share-buttons-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex: 1;
+        }
+        
+        .share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            color: white;
+        }
+        
+        .share-btn.facebook-share {
+            background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
+        }
+        
+        .share-btn.facebook-share:hover {
+            background: linear-gradient(135deg, #166fe5 0%, #1464d6 100%);
+        }
+        
+        .share-btn.twitter-share {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        .share-btn.twitter-share:hover {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+        }
+        
+        .share-btn.linkedin-share {
+            background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+        }
+        
+        .share-btn.linkedin-share:hover {
+            background: linear-gradient(135deg, #005885 0%, #004d73 100%);
+        }
+        
+        .share-btn.whatsapp-share {
+            background: linear-gradient(135deg, #25d366 0%, #20b358 100%);
+        }
+        
+        .share-btn.whatsapp-share:hover {
+            background: linear-gradient(135deg, #20b358 0%, #1a9647 100%);
+        }
+        
+        .share-btn.email-share {
+            background: linear-gradient(135deg, #ea4335 0%, #d93025 100%);
+        }
+        
+        .share-btn.email-share:hover {
+            background: linear-gradient(135deg, #d93025 0%, #c5221f 100%);
+        }
+        
+        .share-btn.copy-link-btn {
+            background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+        }
+        
+        .share-btn.copy-link-btn:hover {
+            background: linear-gradient(135deg, #5a6268 0%, #495057 100%);
+        }
+        
+        .share-btn.copy-link-btn.copied {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #28a745 100%);
+        }
+        
+        /* Social Share with Text */
+        .social-share-buttons.with-text .share-btn {
+            width: auto;
+            height: auto;
+            padding: 0.75rem 1.25rem;
+            border-radius: 25px;
+            gap: 0.5rem;
+        }
+        
+        .social-share-buttons.with-text .share-btn span {
+            font-family: 'Signika Negative', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        /* Compact Version */
+        .social-share-buttons.compact {
+            margin: 1rem 0;
+            padding: 1rem 1.5rem;
+            gap: 0.75rem;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+        }
+        
+        .social-share-buttons.compact .share-label {
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+        
+        .social-share-buttons.compact .share-buttons-container {
+            gap: 0.75rem;
+        }
+        
+        .social-share-buttons.compact .share-btn {
+            width: 42px;
+            height: 42px;
+            font-size: 1.1rem;
+        }
+        
+        /* X (Twitter) icon fallback */
+        .share-btn.twitter-share i.fa-x-twitter::before {
+            content: "𝕏";
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .social-share-buttons {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.75rem;
+            }
+            
+            .share-buttons-container {
+                justify-content: center;
+            }
+            
+            .share-label {
+                text-align: center;
             }
         }
     </style>
@@ -5570,8 +6044,7 @@
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
                 @php
-                    use App\Helpers\ImageHelper;
-                    $logoData = ImageHelper::webpImage('logo.png', false);
+                    $logoData = \App\Helpers\ImageHelper::webpImage('logo.png', false);
                 @endphp
                 <picture>
                     @if($logoData['webp'])
@@ -5620,13 +6093,13 @@
     </main>
 
     <!-- Certifications Section -->
-    <section class="certifications-section py-4">
+    <section class="certifications-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h6 class="certifications-title mb-4">Certificaciones y Homologaciones</h6>
                     <div class="certifications-logos-container">
-                        <div class="certification-logo-item">
+                        <div class="certification-logo-item" data-cert="bureau-veritas">
                             @include('components.optimized-image', [
                                 'src' => 'homologacion/BV_certification_9001.png',
                                 'alt' => 'ISO 9001 Bureau Veritas Certification',
@@ -5634,7 +6107,7 @@
                             ])
                             <span>ISO 9001<br>Bureau Veritas</span>
                         </div>
-                        <div class="certification-logo-item">
+                        <div class="certification-logo-item" data-cert="rodelpe">
                             @include('components.optimized-image', [
                                 'src' => 'homologacion/hodelpe-homologado.png',
                                 'alt' => 'HODELPE Homologaciones Perú',
@@ -5642,17 +6115,17 @@
                             ])
                             <span>HODELPE<br>Homologaciones Perú</span>
                         </div>
-                        <div class="certification-logo-item">
+                        <div class="certification-logo-item" data-cert="cial">
                             @include('components.optimized-image', [
-                                'src' => 'homologacion/cial.png',
+                                'src' => 'homologacion/cial_transparent.png',
                                 'alt' => 'CIAL Certification',
                                 'lazy' => true
                             ])
                             <span>CIAL<br>Certificación</span>
                         </div>
-                        <div class="certification-logo-item">
+                        <div class="certification-logo-item" data-cert="mega">
                             @include('components.optimized-image', [
-                                'src' => 'homologacion/Mega-homologado.png',
+                                'src' => 'homologacion/Mega-homologado_transparent.png',
                                 'alt' => 'Mega Homologado',
                                 'lazy' => true
                             ])
@@ -5699,7 +6172,7 @@
                     <div class="contact-info-footer">
                         <p><i class="fas fa-phone me-2"></i> (511) 567-9670</p>
                         <p><i class="fas fa-envelope me-2"></i> turismo@transvillarrica.com</p>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Lima, Perú</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</p>
                     </div>
                 </div>
             </div>
@@ -5876,8 +6349,123 @@
         
         // Initialize counter animation when DOM is ready
         document.addEventListener('DOMContentLoaded', animateCounters);
+        
+        // Social Share Copy Link Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const copyButtons = document.querySelectorAll('.copy-link-btn');
+            
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const url = this.getAttribute('data-url');
+                    
+                    // Try to use the modern clipboard API
+                    if (navigator.clipboard && window.isSecureContext) {
+                        navigator.clipboard.writeText(url).then(() => {
+                            showCopySuccess(this);
+                        }).catch(() => {
+                            fallbackCopyTextToClipboard(url, this);
+                        });
+                    } else {
+                        // Fallback for older browsers
+                        fallbackCopyTextToClipboard(url, this);
+                    }
+                });
+            });
+            
+            function fallbackCopyTextToClipboard(text, button) {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.top = "0";
+                textArea.style.left = "0";
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                
+                try {
+                    document.execCommand('copy');
+                    showCopySuccess(button);
+                } catch (err) {
+                    console.error('Copy failed:', err);
+                }
+                
+                document.body.removeChild(textArea);
+            }
+            
+            function showCopySuccess(button) {
+                const originalIcon = button.querySelector('i');
+                const originalClass = originalIcon.className;
+                
+                // Change button appearance
+                button.classList.add('copied');
+                originalIcon.className = 'fas fa-check';
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                    originalIcon.className = originalClass;
+                }, 2000);
+            }
+        });
+        
+        // Service Image Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderContainers = document.querySelectorAll('.service-slider-container');
+            
+            sliderContainers.forEach(container => {
+                const items = container.querySelectorAll('.service-slider-item');
+                if (items.length <= 1) return;
+                
+                let currentIndex = 0;
+                
+                function nextSlide() {
+                    items[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % items.length;
+                    items[currentIndex].classList.add('active');
+                }
+                
+                // Start automatic rotation
+                const interval = setInterval(nextSlide, 4000);
+                
+                // Optional: pause on hover
+                container.addEventListener('mouseenter', () => {
+                    clearInterval(interval);
+                });
+                
+                container.addEventListener('mouseleave', () => {
+                    // Resume rotation when mouse leaves
+                    setInterval(nextSlide, 4000);
+                });
+            });
+        });
     </script>
     
     @yield('scripts')
+    <script>
+        function toggleBrands(button) {
+            const brandsList = button.parentElement;
+            const hiddenBrands = brandsList.querySelectorAll('.hidden-brand');
+            const isExpanded = button.textContent.includes('menos');
+            
+            if (isExpanded) {
+                // Ocultar marcas adicionales
+                hiddenBrands.forEach(brand => {
+                    brand.style.display = 'none';
+                });
+                // Restaurar texto original
+                const count = hiddenBrands.length;
+                button.textContent = `+${count} más`;
+            } else {
+                // Mostrar marcas adicionales
+                hiddenBrands.forEach(brand => {
+                    brand.style.display = 'inline-block';
+                });
+                // Cambiar texto a "menos"
+                button.textContent = 'menos';
+            }
+        }
+    </script>
 </body>
 </html> 

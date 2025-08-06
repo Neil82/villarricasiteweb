@@ -44,9 +44,9 @@
                     <h2 class="section-title">2. Responsable del Tratamiento</h2>
                     <ul class="legal-list">
                         <li><strong>Razón social:</strong> Villarrica Tours S.A.</li>
-                        <li><strong>RUC:</strong> [RUC de la empresa]</li>
-                        <li><strong>Domicilio:</strong> [Dirección legal]</li>
-                        <li><strong>Correo electrónico:</strong> [Email de contacto]</li>
+                        <li><strong>RUC:</strong> 20295999129</li>
+                        <li><strong>Domicilio:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
+                        <li><strong>Correo electrónico:</strong> turismo@transvillarrica.com</li>
                         <li><strong>Teléfono:</strong> (511) 567-9670</li>
                     </ul>
 
@@ -136,7 +136,7 @@
                         <li><strong>Limitación:</strong> Restringir el procesamiento en ciertas circunstancias</li>
                     </ul>
                     <p>
-                        Para ejercer estos derechos, contáctenos a través de [email de contacto] o presente una solicitud en nuestras oficinas.
+                        Para ejercer estos derechos, contáctenos a través de turismo@transvillarrica.com o presente una solicitud en nuestras oficinas.
                     </p>
 
                     <h2 class="section-title">10. Menores de Edad</h2>
@@ -154,9 +154,9 @@
                         Si tiene preguntas sobre esta Política de Privacidad o sobre el tratamiento de sus datos personales, puede contactarnos a través de:
                     </p>
                     <ul class="legal-list">
-                        <li><strong>Correo electrónico:</strong> [email de privacidad]</li>
+                        <li><strong>Correo electrónico:</strong> turismo@transvillarrica.com</li>
                         <li><strong>Teléfono:</strong> (511) 567-9670</li>
-                        <li><strong>Dirección:</strong> [Dirección de oficinas]</li>
+                        <li><strong>Dirección:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
                     </ul>
 
                     <div class="legal-footer">

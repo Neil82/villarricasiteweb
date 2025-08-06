@@ -198,26 +198,10 @@
                         Si tiene preguntas sobre nuestro uso de cookies, puede contactarnos:
                     </p>
                     <ul class="legal-list">
-                        <li><strong>Email:</strong> [email de contacto]</li>
+                        <li><strong>Email:</strong> turismo@transvillarrica.com</li>
                         <li><strong>Teléfono:</strong> (511) 567-9670</li>
-                        <li><strong>Dirección:</strong> [Dirección de la empresa]</li>
+                        <li><strong>Dirección:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
                     </ul>
-
-                    <div class="cookie-settings-box">
-                        <h3 class="text-center mb-3">
-                            <i class="fas fa-cookie-bite text-primary me-2"></i>
-                            Configuración de Cookies
-                        </h3>
-                        <p class="text-center">
-                            Para modificar sus preferencias de cookies, haga clic en el siguiente botón:
-                        </p>
-                        <div class="text-center">
-                            <button class="btn btn-primary" onclick="openCookieSettings()">
-                                <i class="fas fa-cog me-2"></i>
-                                Configurar Cookies
-                            </button>
-                        </div>
-                    </div>
 
                     <div class="legal-footer">
                         <p class="text-center">
@@ -230,11 +214,4 @@
         </div>
     </div>
 </section>
-
-<script>
-function openCookieSettings() {
-    // Aquí se puede integrar con un sistema de gestión de cookies como Cookiebot, OneTrust, etc.
-    alert('Función de configuración de cookies. Integrar con sistema de gestión de consentimiento.');
-}
-</script>
 @endsection

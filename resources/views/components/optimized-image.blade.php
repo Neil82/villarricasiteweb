@@ -1,6 +1,5 @@
 @php
-use App\Helpers\ImageHelper;
-$imageData = ImageHelper::webpImage($src, $lazy ?? true);
+$imageData = \App\Helpers\ImageHelper::webpImage($src, $lazy ?? true);
 @endphp
 
 <picture>

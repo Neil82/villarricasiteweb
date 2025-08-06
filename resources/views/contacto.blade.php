@@ -2,6 +2,12 @@
 
 @section('title', 'Contacto - Villarrica Tours S.A.')
 @section('description', 'Contáctanos para solicitar cotizaciones de transporte de personal y turístico. Atención 24/7 en todo el Perú.')
+@section('keywords', 'contacto villarrica tours, cotización transporte, solicitar presupuesto transporte, alquiler buses lima, transporte empresarial contacto, whatsapp transporte')
+@section('og_type', 'website')
+@section('og_title', 'Contacto - Solicita tu Cotización | Villarrica Tours S.A.')
+@section('og_description', 'Obtén una cotización personalizada para transporte de personal y turístico. Respuesta en 24 horas. ✓ Atención 24/7 ✓ Sin compromiso')
+@section('twitter_title', 'Contacto - Solicita tu Cotización | Villarrica Tours S.A.')
+@section('twitter_description', 'Obtén una cotización personalizada para transporte. Respuesta en 24 horas ✓ Atención 24/7 ✓ Sin compromiso')
 
 @section('content')
 <!-- Hero Section -->
@@ -176,8 +182,8 @@
                             <i class="fas fa-map-marker-alt me-3"></i>
                             <div>
                                 <strong>Dirección:</strong><br>
-                                Av. Los Próceres Nro. 201<br>
-                                San Martín de Porres, Lima
+                                Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa<br>
+                                San Martin de Porres
                             </div>
                         </div>
                     </div>
@@ -391,7 +397,7 @@
                     <div class="card-body p-0">
                         <div class="ratio ratio-16x9">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.44963209856!2d-77.10647923527907!3d-12.018552582102018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf52ef28c059%3A0xd4bae2a257f61041!2sVILLARRICA%20TOURS%20S.A.!5e0!3m2!1ses-419!2spe!4v1754348418377!5m2!1ses-419!2spe" 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d390.80107154728955!2d-77.10850546678464!3d-11.98893735791797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1754428333939!5m2!1ses-419!2spe" 
                                 style="border:0;" 
                                 allowfullscreen="" 
                                 loading="lazy" 
@@ -422,7 +428,7 @@
                                     <small>Navegación inteligente</small>
                                 </div>
                             </div>
-                            <a href="https://waze.com/ul?q=VILLARRICA%20TOURS%20S.A.&navigate=yes&ll=-12.019338341457741,-77.08659641175947" target="_blank" class="btn btn-nav-waze">
+                            <a href="https://waze.com/ul?q=VILLARRICA%20TOURS%20S.A.&navigate=yes&ll=-11.98893735791797,-77.10850546678464" target="_blank" class="btn btn-nav-waze">
                                 <i class="fas fa-route me-2"></i>Abrir en Waze
                             </a>
                         </div>
@@ -437,7 +443,7 @@
                                     <small>Mapas de Google</small>
                                 </div>
                             </div>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=-12.019338341457741,-77.08659641175947&destination_place_id=ChIJWcAo70_PBZERQRAWpSLqvtQ" target="_blank" class="btn btn-nav-google">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=-11.98893735791797,-77.10850546678464" target="_blank" class="btn btn-nav-google">
                                 <i class="fas fa-directions me-2"></i>Abrir en Google Maps
                             </a>
                         </div>
@@ -448,7 +454,7 @@
                         <h6 class="text-primary mb-3">Nuestra Dirección</h6>
                         <div class="address-info">
                             <i class="fas fa-building me-2 text-primary"></i>
-                            <span>Av. Los Próceres Nro. 201<br>San Martín de Porres, Lima</span>
+                            <span>Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa<br>San Martin de Porres</span>
                         </div>
                     </div>
                 </div>
@@ -547,6 +553,17 @@
                             <i class="fab fa-whatsapp me-2"></i>WhatsApp
                         </a>
                     </div>
+                </div>
+                
+                <!-- Social Share Buttons -->
+                <div class="mt-4">
+                    @include('components.social-share', [
+                        'title' => 'Contacto - Villarrica Tours S.A.',
+                        'description' => 'Contáctanos para solicitar cotizaciones de transporte. Atención 24/7 con ' . (date('Y') - 1995) . ' años de experiencia.',
+                        'class' => 'compact',
+                        'showLabel' => true,
+                        'label' => 'Recomiéndanos:'
+                    ])
                 </div>
             </div>
         </div>

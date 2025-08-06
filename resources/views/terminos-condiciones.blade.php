@@ -234,16 +234,16 @@
                     </p>
                     <ul class="legal-list">
                         <li><strong>Razón Social:</strong> Villarrica Tours S.A.</li>
-                        <li><strong>Dirección:</strong> [Dirección de la empresa]</li>
+                        <li><strong>Dirección:</strong> Av. Carlos Alberto Izaguirre Mza. C Lote. 7 a.V. Casuarinas de Santa Rosa - San Martin de Porres</li>
                         <li><strong>Teléfono:</strong> (511) 567-9670</li>
-                        <li><strong>Email:</strong> [Email de contacto]</li>
+                        <li><strong>Email:</strong> turismo@transvillarrica.com</li>
                         <li><strong>Horario de atención:</strong> Lunes a Sábado de 8:00 AM a 6:00 PM</li>
                     </ul>
 
                     <div class="legal-footer">
                         <p class="text-center">
                             <strong>Villarrica Tours S.A.</strong><br>
-                            RUC: [Número de RUC]<br>
+                            RUC: 20295999129<br>
                             Todos los derechos reservados © {{ date('Y') }}
                         </p>
                     </div>
