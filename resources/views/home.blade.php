@@ -164,7 +164,7 @@
                                 'lazy' => true
                             ])
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/corporativo3.jpg',
+                                'src' => 'vtsa/bus_airport.png',
                                 'alt' => 'Transporte de Personal',
                                 'class' => 'service-image',
                                 'data_index' => '1',
@@ -235,7 +235,7 @@
                     <div class="service-header">
                         <div class="service-image-container">
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/playa_coaster.jpg',
+                                'src' => 'vtsa/bus_desierto.png',
                                 'alt' => 'Transporte Turístico',
                                 'class' => 'service-image active',
                                 'data_index' => '0',
@@ -571,14 +571,6 @@
                         </div>
                     </div>
                     
-                    <!-- Información técnica -->
-                    <div class="fleet-specs">
-                        <div class="spec-item">
-                            <i class="fas fa-gas-pump text-primary"></i>
-                            <span class="spec-label">Combustible:</span>
-                            <span class="spec-value">Diesel</span>
-                        </div>
-                    </div>
                     
                     <!-- Marcas disponibles -->
                     <div class="fleet-brands">
@@ -612,18 +604,18 @@
                     <div class="fleet-header">
                         <div class="fleet-carousel" data-fleet-type="coaster">
                             <div class="fleet-carousel-inner">
-                                <div class="fleet-carousel-item active" data-vehicle-title="Coaster">
+                                <div class="fleet-carousel-item active" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/coaster_hcounty.jpg',
-                                        'alt' => 'Coaster Hyundai County',
+                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
+                                        'alt' => 'Kamaz Busscar',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
                                 </div>
-                                <div class="fleet-carousel-item" data-vehicle-title="Coaster">
+                                <div class="fleet-carousel-item" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/coaster_hyundai.jpg',
-                                        'alt' => 'Coaster Hyundai',
+                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
+                                        'alt' => 'Kamaz Busscar',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
@@ -656,14 +648,14 @@
                     
                     <!-- Título principal -->
                     <div class="fleet-title">
-                        <h3 data-dynamic-title="true" data-default-title="Coaster">Coaster</h3>
+                        <h3 data-dynamic-title="true" data-default-title="Coaster">Minibús</h3>
                         <p class="fleet-subtitle">Grupos medianos</p>
                     </div>
                     
                     <!-- Capacidad destacada -->
                     <div class="fleet-capacity-highlight">
                         <div class="capacity-main">
-                            <span class="capacity-number">20-27</span>
+                            <span class="capacity-number">30-38</span>
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
@@ -676,14 +668,6 @@
                         </div>
                     </div>
                     
-                    <!-- Información técnica -->
-                    <div class="fleet-specs">
-                        <div class="spec-item">
-                            <i class="fas fa-gas-pump text-primary"></i>
-                            <span class="spec-label">Combustible:</span>
-                            <span class="spec-value">Diesel 2</span>
-                        </div>
-                    </div>
                     
                     <!-- Marcas disponibles -->
                     <div class="fleet-brands">
@@ -778,14 +762,6 @@
                         </div>
                     </div>
                     
-                    <!-- Información técnica -->
-                    <div class="fleet-specs">
-                        <div class="spec-item">
-                            <i class="fas fa-gas-pump text-primary"></i>
-                            <span class="spec-label">Combustible:</span>
-                            <span class="spec-value">Diesel 2</span>
-                        </div>
-                    </div>
                     
                     <!-- Marcas disponibles -->
                     <div class="fleet-brands">

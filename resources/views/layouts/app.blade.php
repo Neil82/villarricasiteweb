@@ -1137,6 +1137,41 @@
             border-top: 1px solid rgba(0, 0, 0, 0.05);
         }
         
+        /* Estilos para logos clickeables con certificados */
+        .certification-logo-item.clickable-cert {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .certification-logo-item.clickable-cert:hover {
+            transform: translateY(-5px);
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+        }
+        
+        .certification-logo-item.clickable-cert::after {
+            content: '\f06e';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .certification-logo-item.clickable-cert:hover::after {
+            opacity: 1;
+        }
+        
         .certifications-title {
             font-family: 'Signika Negative', sans-serif;
             font-weight: 600;
@@ -6107,7 +6142,7 @@
                             ])
                             <span>ISO 9001<br>Bureau Veritas</span>
                         </div>
-                        <div class="certification-logo-item" data-cert="rodelpe">
+                        <div class="certification-logo-item clickable-cert" data-cert="rodelpe" onclick="openCertificateModal('/certificados/CERTIFICADO_APMT-365.pdf', 'Certificado APMT-365 - HODELPE')" style="cursor: pointer;">
                             @include('components.optimized-image', [
                                 'src' => 'homologacion/hodelpe-homologado.png',
                                 'alt' => 'HODELPE Homologaciones Perú',
@@ -6115,7 +6150,7 @@
                             ])
                             <span>HODELPE<br>Homologaciones Perú</span>
                         </div>
-                        <div class="certification-logo-item" data-cert="cial">
+                        <div class="certification-logo-item clickable-cert" data-cert="cial" onclick="openCertificateModal('/certificados/CERTIFICADO - VILLARRICA TOURS S.A - IMPALA.pdf', 'Certificado IMPALA - CIAL')" style="cursor: pointer;">
                             @include('components.optimized-image', [
                                 'src' => 'homologacion/cial_transparent.png',
                                 'alt' => 'CIAL Certification',
@@ -6123,7 +6158,7 @@
                             ])
                             <span>CIAL<br>Certificación</span>
                         </div>
-                        <div class="certification-logo-item" data-cert="mega">
+                        <div class="certification-logo-item clickable-cert" data-cert="mega" onclick="openCertificateModal('/certificados/Certificado Lev. Villarrica Tours SA - TASA GEN.pdf', 'Certificado TASA - MEGA')" style="cursor: pointer;">
                             @include('components.optimized-image', [
                                 'src' => 'homologacion/Mega-homologado_transparent.png',
                                 'alt' => 'Mega Homologado',
@@ -6465,6 +6500,35 @@
                 // Cambiar texto a "menos"
                 button.textContent = 'menos';
             }
+        }
+    </script>
+    
+    <!-- Modal para certificados PDF -->
+    <div id="certificateModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="certificateModalTitle">Certificado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe id="certificatePdfViewer" src="" style="width: 100%; height: 70vh; border: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function openCertificateModal(pdfPath, title) {
+            const modal = new bootstrap.Modal(document.getElementById('certificateModal'));
+            document.getElementById('certificateModalTitle').textContent = title;
+            document.getElementById('certificatePdfViewer').src = pdfPath;
+            modal.show();
+            
+            // Limpiar el iframe cuando se cierra el modal
+            document.getElementById('certificateModal').addEventListener('hidden.bs.modal', function () {
+                document.getElementById('certificatePdfViewer').src = '';
+            });
         }
     </script>
 </body>

@@ -131,14 +131,6 @@
                         </div>
                     </div>
                     
-                    <!-- Información técnica -->
-                    <div class="fleet-specs">
-                        <div class="spec-item">
-                            <i class="fas fa-gas-pump text-primary"></i>
-                            <span class="spec-label">Combustible:</span>
-                            <span class="spec-value">Diesel</span>
-                        </div>
-                    </div>
                     
                     <!-- Marcas disponibles -->
                     <div class="fleet-brands">
@@ -172,18 +164,18 @@
                     <div class="fleet-header">
                         <div class="fleet-carousel" data-fleet-type="coaster">
                             <div class="fleet-carousel-inner">
-                                <div class="fleet-carousel-item active" data-vehicle-title="Coaster">
+                                <div class="fleet-carousel-item active" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/coaster_hcounty.jpg',
-                                        'alt' => 'Coaster Hyundai County',
+                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
+                                        'alt' => 'Kamaz Busscar',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
                                 </div>
-                                <div class="fleet-carousel-item" data-vehicle-title="Coaster">
+                                <div class="fleet-carousel-item" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/coaster_hyundai.jpg',
-                                        'alt' => 'Coaster Hyundai',
+                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
+                                        'alt' => 'Kamaz Busscar',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
@@ -223,7 +215,7 @@
                     <!-- Capacidad destacada -->
                     <div class="fleet-capacity-highlight">
                         <div class="capacity-main">
-                            <span class="capacity-number">20-27</span>
+                            <span class="capacity-number">30-38</span>
                             <span class="capacity-label">Pasajeros</span>
                         </div>
                         <div class="capacity-visual">
@@ -237,14 +229,6 @@
                     </div>
                     
                     
-                    <!-- Información técnica -->
-                    <div class="fleet-specs">
-                        <div class="spec-item">
-                            <i class="fas fa-gas-pump text-primary"></i>
-                            <span class="spec-label">Combustible:</span>
-                            <span class="spec-value">Diesel 2</span>
-                        </div>
-                    </div>
                     
                     <!-- Marcas disponibles -->
                     <div class="fleet-brands">
@@ -339,14 +323,6 @@
                         </div>
                     </div>
                     
-                    <!-- Información técnica -->
-                    <div class="fleet-specs">
-                        <div class="spec-item">
-                            <i class="fas fa-gas-pump text-primary"></i>
-                            <span class="spec-label">Combustible:</span>
-                            <span class="spec-value">Diesel 2</span>
-                        </div>
-                    </div>
                     
                     <!-- Marcas disponibles -->
                     <div class="fleet-brands">
