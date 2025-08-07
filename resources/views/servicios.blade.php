@@ -74,7 +74,7 @@
                         </div>
                         <div class="service-slider-item">
                             @include('components.optimized-image', [
-                                'src' => 'vtsa/corporativo3.jpg',
+                                'src' => 'unidades/flotacompleta.jpg',
                                 'alt' => 'Transporte de Personal - Empresarial',
                                 'class' => 'img-fluid rounded-20',
                                 'lazy' => true
