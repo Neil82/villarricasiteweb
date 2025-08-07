@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title', 'Villarrica Tours S.A. - Transporte de Confianza')
-@section('description', 'Transporte de personal y turístico a nivel nacional con 29 años de experiencia. Seguridad, comodidad y confort garantizados.')
+@section('description', 'Transporte de personal y turístico a nivel nacional con 30 años de experiencia. Seguridad, comodidad y confort garantizados.')
 @section('keywords', 'villarrica tours, transporte personal lima, transporte turístico peru, alquiler buses, empresa transporte confiable, GPS tiempo real, flota moderna EURO 5')
 @section('og_type', 'website')
 @section('og_title', 'Villarrica Tours S.A. - Líder en Transporte desde 1995')
-@section('og_description', 'Transporte de confianza con 29 años de experiencia. ✓ 120+ unidades modernas ✓ GPS tiempo real ✓ 100+ empresas nos eligen ✓ Disponible 24/7')
+@section('og_description', 'Transporte de confianza con 30 años de experiencia. ✓ 120+ unidades modernas ✓ GPS tiempo real ✓ 100+ empresas nos eligen ✓ Disponible 24/7')
 @section('twitter_title', 'Villarrica Tours S.A. - Líder en Transporte desde 1995')
-@section('twitter_description', 'Transporte de confianza con 29 años de experiencia. ✓ 120+ unidades ✓ GPS tiempo real ✓ 100+ empresas nos eligen')
+@section('twitter_description', 'Transporte de confianza con 30 años de experiencia. ✓ 120+ unidades ✓ GPS tiempo real ✓ 100+ empresas nos eligen')
 
 @section('content')
 <!-- Hero Section with Video Background -->

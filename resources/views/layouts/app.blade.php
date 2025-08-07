@@ -6128,13 +6128,13 @@
     </main>
 
     <!-- Certifications Section -->
-    <section class="certifications-section py-5">
+    <section id="certifications-section" class="certifications-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h6 class="certifications-title mb-4">Certificaciones y Homologaciones</h6>
                     <div class="certifications-logos-container">
-                        <div class="certification-logo-item" data-cert="bureau-veritas">
+                        <div class="certification-logo-item clickable-cert" data-cert="bureau-veritas" onclick="openCertificateModal('/certificados/C. PER 440-21-036-01(I) VILLARRICA (107130).pdf', 'Certificado Bureau Veritas - ISO 9001')" style="cursor: pointer;">
                             @include('components.optimized-image', [
                                 'src' => 'homologacion/BV_certification_9001.png',
                                 'alt' => 'ISO 9001 Bureau Veritas Certification',
@@ -6530,6 +6530,24 @@
                 document.getElementById('certificatePdfViewer').src = '';
             });
         }
+        
+        // Scroll suave para enlaces internos
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html> 
