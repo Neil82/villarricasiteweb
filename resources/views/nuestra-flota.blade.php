@@ -208,7 +208,7 @@
                     
                     <!-- Título principal -->
                     <div class="fleet-title">
-                        <h3 data-dynamic-title="true" data-default-title="Coaster">Coaster</h3>
+                        <h3 data-dynamic-title="true" data-default-title="Coaster">Minibús</h3>
                         <p class="fleet-subtitle">Grupos medianos</p>
                     </div>
                     
