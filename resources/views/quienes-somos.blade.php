@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title', 'Quienes Somos - Villarrica Tours S.A.')
-@section('description', 'Conoce la historia de Villarrica Tours S.A., fundada en 1995 por Don Camilo Paitan Obregón. 29 años de confianza en el transporte de personal y turístico.')
+@section('description', 'Conoce la historia de Villarrica Tours S.A., fundada en 1995 por Don Camilo Paitan Obregón. 30 años de confianza en el transporte de personal y turístico.')
 @section('keywords', 'historia villarrica tours, empresa transporte 1995, Camilo Paitan Obregón, trayectoria empresarial transporte, líderes transporte peru, empresa familiar transporte')
 @section('og_type', 'website')
 @section('og_title', 'Nuestra Historia desde 1995 | Villarrica Tours S.A.')
-@section('og_description', 'Conoce la historia de Villarrica Tours S.A., fundada en 1995. 29 años de experiencia, 100+ empresas confían en nosotros. ✓ Líderes del mercado ✓ Historia de éxito')
+@section('og_description', 'Conoce la historia de Villarrica Tours S.A., fundada en 1995. 30 años de experiencia, 100+ empresas confían en nosotros. ✓ Líderes del mercado ✓ Historia de éxito')
 @section('twitter_title', 'Nuestra Historia desde 1995 | Villarrica Tours S.A.')
-@section('twitter_description', '29 años de experiencia en transporte. Fundada en 1995, 100+ empresas confían en nosotros. ✓ Líderes del mercado')
+@section('twitter_description', '30 años de experiencia en transporte. Fundada en 1995, 100+ empresas confían en nosotros. ✓ Líderes del mercado')
 
 @section('content')
 <!-- Hero Section -->

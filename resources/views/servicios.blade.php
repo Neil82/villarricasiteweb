@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title', 'Servicios - Villarrica Tours S.A.')
-@section('description', 'Transporte de personal y turístico a nivel nacional. Servicios especializados con 29 años de experiencia en el rubro.')
+@section('description', 'Transporte de personal y turístico a nivel nacional. Servicios especializados con 30 años de experiencia en el rubro.')
 @section('keywords', 'transporte personal empresas, transporte turístico nacional, servicios transporte especializado, alquiler buses peru, transporte empresarial seguro, buses modernos GPS')
 @section('og_type', 'service')
 @section('og_title', 'Servicios de Transporte Especializado | Villarrica Tours S.A.')
-@section('og_description', 'Transporte de personal y turístico con 29 años de experiencia. ✓ GPS tiempo real ✓ Conductores certificados ✓ Flota moderna')
+@section('og_description', 'Transporte de personal y turístico con 30 años de experiencia. ✓ GPS tiempo real ✓ Conductores certificados ✓ Flota moderna')
 @section('twitter_title', 'Servicios de Transporte Especializado | Villarrica Tours S.A.')
-@section('twitter_description', 'Transporte especializado con 29 años de experiencia. ✓ GPS tiempo real ✓ Conductores certificados ✓ Flota moderna')
+@section('twitter_description', 'Transporte especializado con 30 años de experiencia. ✓ GPS tiempo real ✓ Conductores certificados ✓ Flota moderna')
 
 @section('content')
 <!-- Hero Section -->
