@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Villarrica Tours S.A. - Transporte de Confianza')</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <meta name="description" content="@yield('description', 'Transporte de personal y turístico a nivel nacional con {{ date("Y") - 1995 }} años de experiencia. Seguridad, comodidad y confort garantizados.')">
+    <meta name="description" content="@yield('description', 'Transporte de personal y turístico a nivel nacional con 29 años de experiencia. Seguridad, comodidad y confort garantizados.')">
     
     <!-- SEO Meta Tags -->
     <meta name="keywords" content="@yield('keywords', 'transporte personal, transporte turístico, alquiler buses, transporte empresarial, Villarrica Tours, transporte seguro Perú, buses modernos, GPS tiempo real')">
