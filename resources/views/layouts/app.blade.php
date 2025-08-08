@@ -6069,6 +6069,294 @@
                 text-align: center;
             }
         }
+
+        /* Awards Section Styles */
+        .awards-section {
+            position: relative;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .awards-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: transparent;
+            animation: none;
+        }
+
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .award-card {
+            position: relative;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .award-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, rgba(240, 240, 240, 0.5), rgba(251, 191, 36, 0.2), rgba(240, 240, 240, 0.5));
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .award-card:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .award-card:hover::before {
+            opacity: 1;
+            animation: shimmer 2s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .award-image-container {
+            position: relative;
+            padding: 2rem;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .award-image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Light beam effect */
+        .award-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -150%;
+            width: 30%;
+            height: 200%;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255, 255, 255, 0.1) 40%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0.1) 60%, 
+                transparent 100%);
+            transform: skewX(-25deg);
+            animation: lightBeam 8s ease-in-out infinite;
+            animation-delay: inherit;
+            z-index: 1;
+        }
+
+        @keyframes lightBeam {
+            0%, 75%, 100% {
+                left: -150%;
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            25% {
+                left: 150%;
+                opacity: 1;
+            }
+            30% {
+                opacity: 0;
+            }
+        }
+
+        .award-image-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        .award-card:hover .award-image-wrapper::after {
+            opacity: 1;
+        }
+
+        .award-shine {
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.3) 50%,
+                transparent 70%
+            );
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            pointer-events: none;
+        }
+
+        .award-card:hover .award-shine {
+            animation: shine 0.6s ease-in-out;
+        }
+
+        @keyframes shine {
+            0% { transform: rotate(45deg) translateY(-100%); }
+            100% { transform: rotate(45deg) translateY(100%); }
+        }
+
+        .award-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.25);
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .award-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .award-badge:hover {
+            transform: translateY(-3px) scale(1.05);
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.35);
+        }
+
+        .award-badge:hover::before {
+            left: 100%;
+        }
+
+        /* Variación para el segundo badge de cada premio */
+        .award-badge:nth-child(2) {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.25);
+        }
+
+        .award-badge:nth-child(2):hover {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.35);
+        }
+
+        .award-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1f2937 0%, rgba(50, 205, 50, 0.7) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .awards-section .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .awards-section .section-title::after {
+            content: '✨';
+            position: absolute;
+            top: -10px;
+            right: -30px;
+            font-size: 1.5rem;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            50% { 
+                transform: scale(1.2) rotate(180deg);
+                opacity: 0.7;
+            }
+        }
+
+        .trophy-icon {
+            color: #fbbf24;
+            animation: trophy-bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes trophy-bounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-5px) rotate(-5deg); }
+            75% { transform: translateY(-5px) rotate(5deg); }
+        }
+
+        /* Particles animation for awards section */
+        .awards-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .award-particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fbbf24;
+            border-radius: 50%;
+            animation: floatParticle 15s infinite linear;
+        }
+
+        .award-particle:nth-child(odd) {
+            background: rgba(50, 205, 50, 0.6);
+            animation-duration: 20s;
+        }
+
+        @keyframes floatParticle {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
     </style>
     
     @yield('styles')

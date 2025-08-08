@@ -1081,6 +1081,93 @@
     </div>
 </section>
 
+<!-- Awards and Recognition Section -->
+<section class="py-5 bg-light awards-section" id="certifications-section">
+    <!-- Animated particles background -->
+    <div class="awards-particles">
+        <div class="award-particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="award-particle" style="left: 20%; animation-delay: 2s;"></div>
+        <div class="award-particle" style="left: 30%; animation-delay: 4s;"></div>
+        <div class="award-particle" style="left: 40%; animation-delay: 6s;"></div>
+        <div class="award-particle" style="left: 50%; animation-delay: 8s;"></div>
+        <div class="award-particle" style="left: 60%; animation-delay: 10s;"></div>
+        <div class="award-particle" style="left: 70%; animation-delay: 12s;"></div>
+        <div class="award-particle" style="left: 80%; animation-delay: 14s;"></div>
+        <div class="award-particle" style="left: 90%; animation-delay: 16s;"></div>
+    </div>
+    
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">Premios y Reconocimientos</h2>
+                <p class="section-subtitle">Excelencia reconocida por nuestros clientes y socios</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                <div class="award-card h-100">
+                    <div class="award-shine"></div>
+                    <div class="card-body text-center p-5">
+                        <div class="award-image-container mb-4">
+                            <div class="award-image-wrapper" style="animation-delay: 0s;">
+                                @include('components.optimized-image', [
+                                    'src' => 'premios/impala.png',
+                                    'alt' => 'Premio Impala - Proveedor Destacado',
+                                    'class' => 'img-fluid',
+                                    'style' => 'max-height: 300px; width: 100%; object-fit: contain;',
+                                    'lazy' => true
+                                ])
+                            </div>
+                        </div>
+                        <h4 class="award-title">Premio Impala</h4>
+                        <p class="card-text text-muted">
+                            Reconocimiento como proveedor destacado por nuestro servicio de excelencia y compromiso con la calidad en el transporte corporativo.
+                        </p>
+                        <div class="mt-3">
+                            <span class="award-badge">Proveedor Destacado</span>
+                            <span class="award-badge">Excelencia en Servicio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                <div class="award-card h-100">
+                    <div class="award-shine"></div>
+                    <div class="card-body text-center p-5">
+                        <div class="award-image-container mb-4">
+                            <div class="award-image-wrapper" style="animation-delay: 4s;">
+                                @include('components.optimized-image', [
+                                    'src' => 'premios/schneider.png',
+                                    'alt' => 'Premio Schneider Electric - Partner de Confianza',
+                                    'class' => 'img-fluid',
+                                    'style' => 'max-height: 300px; width: 100%; object-fit: contain;',
+                                    'lazy' => true
+                                ])
+                            </div>
+                        </div>
+                        <h4 class="award-title">Premio Schneider Electric</h4>
+                        <p class="card-text text-muted">
+                            Distinción como partner de confianza por nuestra confiabilidad, seguridad y cumplimiento en el transporte de personal especializado.
+                        </p>
+                        <div class="mt-3">
+                            <span class="award-badge">Partner de Confianza</span>
+                            <span class="award-badge">Seguridad Certificada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                <p class="lead text-muted">
+                    <i class="fas fa-trophy trophy-icon me-2" style="font-size: 1.5rem;"></i>
+                    Estos reconocimientos reflejan nuestro compromiso continuo con la excelencia y la satisfacción de nuestros clientes.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- CTA Section -->
 <section class="py-5 bg-primary text-white">
     <div class="container">
