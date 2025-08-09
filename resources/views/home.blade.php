@@ -1082,7 +1082,7 @@
 </section>
 
 <!-- Awards and Recognition Section -->
-<section class="py-5 bg-light awards-section" id="certifications-section">
+<section class="py-5 bg-light awards-section" id="awards-section">
     <!-- Animated particles background -->
     <div class="awards-particles">
         <div class="award-particle" style="left: 10%; animation-delay: 0s;"></div>
