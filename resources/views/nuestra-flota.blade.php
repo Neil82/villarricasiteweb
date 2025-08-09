@@ -166,24 +166,24 @@
                             <div class="fleet-carousel-inner">
                                 <div class="fleet-carousel-item active" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
-                                        'alt' => 'Kamaz Busscar',
+                                        'src' => 'vtsa/minibus_yutong.webp',
+                                        'alt' => 'Minibús Yutong',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
                                 </div>
                                 <div class="fleet-carousel-item" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
-                                        'alt' => 'Kamaz Busscar',
+                                        'src' => 'vtsa/minibus_salabus.webp',
+                                        'alt' => 'Minibús Salabus',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
                                 </div>
                                 <div class="fleet-carousel-item" data-vehicle-title="Minibús">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/coaster/kamaz_busscar.jpg',
-                                        'alt' => 'Kamaz Busscar',
+                                        'src' => 'vtsa/minibus_yutong.webp',
+                                        'alt' => 'Minibús Yutong - Vista Lateral',
                                         'class' => 'img-fluid',
                                         'lazy' => true
                                     ])
@@ -269,7 +269,7 @@
                                 </div>
                                 <div class="fleet-carousel-item">
                                     @include('components.optimized-image', [
-                                        'src' => 'unidades/minivan.jpg',
+                                        'src' => 'unidades/van/minivan2.webp',
                                         'alt' => 'Van VTSA Villarrica Tours - Vista 2',
                                         'class' => 'img-fluid',
                                         'lazy' => true
